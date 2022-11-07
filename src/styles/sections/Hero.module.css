@@ -49,7 +49,7 @@
 .logoDescriptionStyle {
   @apply
     /* Spacing */
-    lg:mt-1
+    mt-1
     /* Typography */
     md:text-xl lg:text-2xl
     leading-none
