@@ -18,7 +18,7 @@ const solutions =  [
     imageSrc:`${imageFolder}compliance`
   },
   {
-    text: 'Consultoria & asesoria fiscal',
+    text: 'Consultoría y asesoría fiscal',
     imageSrc:`${imageFolder}consulting`
   },
   {
@@ -44,9 +44,11 @@ const SolutionsSection = () => {
           Nuestras soluciones
         </Heading>
 
-        <Paragraph center small space='top-xs'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quasi
-          enim fuga optio tenetur possimus sit harum.
+        <Paragraph center small space='top-sm'>
+          Nuestra razón de ser consiste en convertirnos en un aliado
+          determinante en el éxito presente y futuro de nuestros clientes.
+          Nos apasiona crear posibilidades que generen valor a sus modelos
+          de negocio para que, día con día, se vuelvan más competitivos.
         </Paragraph>
 
         <ul className={listStyle}>
@@ -58,6 +60,14 @@ const SolutionsSection = () => {
             </li>
           ))}
         </ul>
+
+        <Paragraph center small space='top-xl'>
+          Constantemente salimos de la zona de confort que establece
+          el mercado, con el único objetivo de que nuestros clientes
+          alcancen su máximo potencial. Date la oportunidad de conocernos.
+          Te sorprenderás.
+
+        </Paragraph>
 
         <CallToAction space='top-xl' />
 

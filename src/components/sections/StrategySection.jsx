@@ -19,9 +19,11 @@ const StrategySection = () => {
         </Heading>
 
         <Paragraph center small space='top-xs'>
-          Mas allá de querer ser un experto en todas las áreas de una empresa
-          o negocio, busca rodearte de un equipo de expertos que complemente
-          correctamente las habilidades y conocimientos que no tienes.
+          El éxito a corto, mediano y largo plazo de cualquier empresa
+          no depende de un solo aspecto, sino de la sincronización de
+          muchos. Aquí te presentamos los más importantes para nosotros,
+          mismos que forman parte de nuestro ADN y que son clave en la
+          generación de soluciones de valor para nuestros clientes.
         </Paragraph>
 
         <ul className={listStyle}>
@@ -34,13 +36,12 @@ const StrategySection = () => {
         </ul>
 
         <Paragraph center small>
-          ¡Nos encanta que las cosas nos salgan bien a la primera!.. Por eso
-          analizamos y elegimos con mucho cuidado la mejor forma de llegar
-          a donde tu quieres, administrando de manera optima tus recursos y
-          encontrando para ti las mejores oportunidades a tu medida.
+          "Aquel que falla en no planear, esta planeado en fallar"
         </Paragraph>
 
-        <CallToAction space='top-lg' />
+        <p className='font-archivo-bold text-xs md:text-sm mt-4'>Sir Winston Chrrchill</p>
+
+        <CallToAction space='top-md' />
 
       </Container>
 
