@@ -1,0 +1,42 @@
+.wrapperStyle {
+  @apply
+    /* Layout */
+    flex
+    justify-center
+    items-center;
+}
+
+.cercleStyle {
+  @apply
+    /* Sizing */
+    w-7 md:w-8 lg:w-10
+    h-7 md:h-8 lg:h-10
+    /* Layout */
+    flex flex-col
+    justify-center
+    items-center
+    /* Border */
+    border-2
+    border-white
+    rounded-full;
+}
+
+.iconStyle {
+  @apply
+    /* Sizing */
+    w-2 md:w-2.5 lg:w-3
+    /* Spacing */
+    ml-px md:ml-0.5 lg:ml-0.75;
+}
+
+.textStyle {
+  @apply
+    /* Spacing */
+    ml-2.5 md:ml-3 lg:ml-3.5
+    /* Typography */
+    font-archivo-medium
+    md:text-lg lg:text-xl
+    text-white
+    /* Shadow */
+    drop-shadow-3xl;
+}

@@ -1,0 +1,69 @@
+/* Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply
+      /* Typography */
+      bg-white
+      font-archivo-regular
+      /* Interactivity */
+      scroll-smooth;
+  }
+
+  *, *::before, *::after {
+    @apply
+      /* Layout */
+      box-border
+      /* Spacing */
+      p-0
+      m-0;
+  }
+
+  *:focus {
+    @apply
+      /* Border */
+      outline-none;
+  }
+
+  /* Typography */
+
+  a {
+    @apply
+      /* Typography */
+      text-inherit
+      no-underline;
+  }
+
+  @font-face {
+    font-family: Archivo Regular;
+    src: url(../../public/fonts/archivo/regular.ttf);
+  }
+
+  @font-face {
+    font-family: Archivo Medium;
+    src: url(../../public/fonts/archivo/medium.ttf);
+  }
+
+  @font-face {
+    font-family: Archivo Semibold;
+    src: url(../../public/fonts/archivo/semibold.ttf);
+  }
+
+  @font-face {
+    font-family: Archivo Bold;
+    src: url(../../public/fonts/archivo/bold.ttf);
+  }
+
+  @font-face {
+    font-family: Archivo Extrabold;
+    src: url(../../public/fonts/archivo/extrabold.ttf);
+  }
+
+  @font-face {
+    font-family: Archivo Black;
+    src: url(../../public/fonts/archivo/black.ttf);
+  }
+}

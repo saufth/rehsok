@@ -1,0 +1,49 @@
+// Components
+import Container from '../../core/components/layout/Container'
+import Navbar from '../navigation/Navbar'
+import PlayButton from '../../core/components/input/PlayButton'
+// Styles
+import {
+  heroStyle,
+  contentStyle,
+  logomarkStyle,
+  titleStyle,
+  logoNameStyle,
+  logoDescriptionStyle,
+  logoSloganStyle,
+  playButtonStyle
+} from '../../styles/sections/Hero.module.css'
+
+const Hero = () => {
+
+  return (
+    <section id='home' className={heroStyle}>
+
+      <Navbar />
+
+      <Container alignment='center' fullHeight>
+
+        <img
+          className={logomarkStyle}
+          src='/images/logos/logomark-hero.png'
+          alt='Rehsok logo'
+        />
+
+        <h1 className={titleStyle}>
+          <span className={logoNameStyle}>REHSOK</span>
+          <span className={logoDescriptionStyle}>CONSULTORES</span>
+          <span className={logoSloganStyle}>CREAMOS POSIBILIDADES</span>
+        </h1>
+
+        <div className={playButtonStyle}>
+          <PlayButton/>
+        </div>
+
+
+      </Container>
+
+    </section>
+  )
+}
+
+export default Hero

@@ -1,0 +1,52 @@
+.buttonStyle {
+  @apply
+    /* Typography */
+    font-archivo-bold
+    /* Background */
+    bg-gradient-to-tr
+    from-rehsok-indigo
+    to-blue-pantone
+    /* Border */
+    rounded
+    /* Shadow */
+    shadow-lg
+    shadow-rich-black/10;
+}
+
+.buttonLargeStyle {
+  @apply
+    /* Spacing */
+    py-3 lg:py-4
+    px-5 md:px-6 lg:px-8
+    /* Typography */
+    md:text-lg lg:text-xl;
+}
+
+.buttonSmallStyle {
+  @apply
+    /* Spacing */
+    py-2.5 lg:py-3
+    px-3.5 lg:px-4
+    /* Typography */
+    text-sm lg:text-base;
+}
+
+.buttonPrimaryStyle {
+  @apply
+    /* Typography */
+    text-white
+    /* Background */
+    bg-gradient-to-tr
+    from-rehsok-indigo
+    to-[#2761a3];
+}
+
+.buttonSecondaryStyle {
+  @apply
+    /* Typography */
+    text-rich-black
+    /* Background */
+    bg-gradient-to-tr
+    from-white
+    to-zinc-300;
+}

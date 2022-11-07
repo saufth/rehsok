@@ -1,0 +1,97 @@
+.navbarStyle {
+  @apply
+    /* Sizing */
+    w-full
+    /* Layout */
+    absolute
+    top-0
+    z-40
+    /* Spacing */
+    py-6 sm:py-8 lg:py-10;
+}
+
+.navigationStyle {
+  @apply
+    /* Layout */
+    pr-2 md:pr-0
+    /* Flexbox */
+    flex
+    justify-between
+    items-center;
+}
+
+.logoStyle {
+  @apply
+    /* Sizing */
+    w-16 md:w-18 lg:w-20
+    /* Shadow */
+    drop-shadow-2xl;
+}
+
+.listStyle {
+  @apply
+    /* Layout */
+    hidden
+    /* Flexbox & Grid */
+    md:md:flex
+    md:justify-center
+    md:items-center
+    /* Spacing */
+    [&>li]:px-4 lg:[&>li]:px-6
+    last:[&>li]:pr-0
+    first:[&>li]:pl-0
+    /* Typography */
+    text-white
+    text-sm lg:text-base
+    /* Shadow */
+    drop-shadow-3xl;
+}
+
+.itemStyle {
+  @apply
+    /* Spacing */
+    py-3
+    /* Animation */
+    transition-transform
+    ease-linear
+    duration-400;
+}
+
+.buttonBurgerStyle {
+  @apply
+    /* Sizing */
+    w-6
+    h-5
+    /* Layout */
+    relative md:hidden;
+}
+
+.buttonBurgerSticksStyle {
+  @apply
+    /* Sizing */
+    before:w-7
+    before:h-0.75
+    w-7
+    h-0.75
+    after:w-7
+    after:h-0.75
+    /* Spacing */
+    m-auto
+    /* Background */
+    before:bg-zinc-200
+    bg-zinc-200
+    after:bg-zinc-200
+    /* Layout */
+    before:absolute
+    before:-top-3
+    before:right-0
+    before:bottom-0
+    absolute
+    top-0
+    right-0
+    bottom-0
+    after:absolute
+    after:top-3
+    after:right-0
+    after:bottom-0;
+}

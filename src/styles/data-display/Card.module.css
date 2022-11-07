@@ -1,0 +1,38 @@
+.layoutStyle {
+  @apply
+    /* Sizing */
+    w-72
+    /* Layout */
+    flex flex-col;
+}
+
+.imageStyle {
+  @apply
+    /* Sizing */
+    w-72
+    h-48
+    /* Layout */
+    relative
+    overflow-hidden
+    /* Background */
+    bg-cover
+    bg-no-repeat
+    bg-top
+    /* Border */
+    rounded
+    /* Shadow */
+    shadow-lg
+    shadow-rich-black/30;
+}
+
+.headingStyle {
+  @apply
+    /* Spacing */
+    mt-6 lg:mt-8
+    /* Typography */
+    font-archivo-bold
+    text-lg md:text-xl lg:text-2xl
+    text-center
+    leading-none
+    text-rehsok-gray;
+}

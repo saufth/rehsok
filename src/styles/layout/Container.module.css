@@ -1,0 +1,51 @@
+.autoStyle {
+  @apply
+    /* Sizing */
+    max-w-6xl
+    /* Spacing */
+    my-0
+    mx-auto
+    px-6 sm:px-10 lg:px-6;
+}
+
+.fullHeightStyle {
+  @apply
+    /* Sizing */
+    h-full;
+}
+
+.gapYStyle {
+  @apply
+    /* Sizing */
+    py-20 md:py-24 lg:py-32;
+}
+
+.perspectiveStyle {
+  @apply
+    /* 3D */
+    [perspective:1280px];
+}
+
+.flexCenterStartStyle {
+  @apply
+    /* Flexbox & Grid */
+    flex flex-col
+    justify-center
+    items-start;
+}
+
+.flexCenterStyle {
+  @apply
+    /* Flexbox & Grid */
+    flex flex-col
+    justify-center
+    items-center;
+}
+
+.flexCenterEndStyle {
+  @apply
+    /* Flexbox & Grid */
+    flex flex-col
+    justify-center
+    items-end;
+}

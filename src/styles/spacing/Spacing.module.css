@@ -1,0 +1,29 @@
+.spaceTopXS {
+  @apply
+    /* Spacing */
+    mt-6 md:mt-8 lg:mt-10;
+}
+
+.spaceTopSM {
+  @apply
+    /* Spacing */
+    mt-8 md:mt-10 lg:mt-12;
+}
+
+.spaceTopMD {
+  @apply
+    /* Spacing */
+    mt-10 md:mt-12 lg:mt-14;
+}
+
+.spaceTopLG {
+  @apply
+    /* Spacing */
+    mt-12 md:mt-14 lg:mt-16;
+}
+
+.spaceTopXL {
+  @apply
+    /* Spacing */
+    mt-14 md:mt-16 lg:mt-20;
+}

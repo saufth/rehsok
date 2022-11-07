@@ -1,0 +1,73 @@
+.heroStyle {
+  @apply
+    /* Sizing */
+    w-full
+    h-2xl sm:h-3xl lg:h-4xl
+    /* Layout */
+    relative
+    overflow-hidden
+    /* Background */
+    bg-cover
+    bg-no-repeat
+    bg-center;
+  background-image: url(/images/backgrounds/hero.jpg);
+}
+
+.logomarkStyle {
+  @apply
+    /* Sizing */
+    w-40 md:w-48 lg:w-56;
+}
+
+.titleStyle {
+  @apply
+  /* Layout */
+  flex flex-col
+  justify-center
+  items-center
+  /* Typography */
+  text-center
+  text-transparent
+  /* Background */
+  bg-clip-text
+  bg-gradient-to-r
+  from-neutral-400
+  via-neutral-400
+  to-neutral-300
+  /* Shadow */
+  drop-shadow-3xl;
+}
+
+.logoNameStyle {
+  @apply
+    /* Typography */
+    font-archivo-medium
+    text-[4.9rem] md:text-8xl lg:text-[6.5rem]
+    leading-none;
+}
+
+.logoDescriptionStyle {
+  @apply
+    /* Spacing */
+    mt-1 md:mt-0 lg:mt-1
+    /* Typography */
+    text-[1.1rem] md:text-xl lg:text-2xl
+    leading-none
+    tracking-[1.17rem] md:tracking-[1.56rem] lg:tracking-[1.58rem]
+    indent-6 md:indent-[2.1rem] lg:indent-[2.2rem];
+}
+
+.logoSloganStyle {
+  @apply
+    /* Spacing */
+    mt-6 md:mt-7 lg:mt-8
+    /* Typography */
+    text-base md:text-[1.15rem] lg:text-[1.4rem]
+    leading-none;
+}
+
+.playButtonStyle {
+  @apply
+    /* Spacin */
+    mt-8 md:mt-9 lg:mt-10;
+}

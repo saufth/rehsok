@@ -1,0 +1,23 @@
+.textColorStyle {
+  @apply
+    /* Typography */
+    text-rehsok-gray;
+}
+
+.textLargeStyle {
+  @apply
+    /* Typography */
+    text-xl md:text-2xl lg:text-3xl;
+}
+
+.textSmallStyle {
+  @apply
+    /* Typography */
+    text-lg md:text-xl lg:text-2xl;
+}
+
+.textCenterStyle {
+  @apply
+    /* Typography */
+    text-center;
+}

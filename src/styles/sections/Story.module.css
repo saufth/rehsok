@@ -1,0 +1,16 @@
+.sectionStyle {
+  @apply
+    /* Background */
+    bg-zinc-200;
+}
+
+.textStyle {
+  @apply
+    /* Sizing */
+    max-w-2xl
+    /* Spacing */
+    mt-6 md:mt-8 lg:mt-10
+    /* Typography */
+    md:text-lg lg:text-xl
+    text-rehsok-gray;   
+}

@@ -1,0 +1,31 @@
+.footerStyle {
+  @apply
+    /* Typography */
+    text-white
+    /* Background */
+    bg-rehsok-gray;
+}
+
+.headingStyle {
+  @apply
+    /* Typography */
+    text-3xl md:text-4xl lg:text-5xl
+    text-zinc-200;
+}
+
+.messageStyle {
+  @apply
+    /* Flexbox & Grid */
+    flex
+    /* Typography */
+    text-2xl;
+}
+
+.registeredMarkStyle {
+  @apply
+    /* Spacing */
+    ml-1
+    mt-1
+    /* Typography */
+    text-sm;
+}

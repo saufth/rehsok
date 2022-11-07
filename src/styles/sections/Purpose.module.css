@@ -1,0 +1,19 @@
+.sectionStyle {
+  @apply
+    /* Background */
+    bg-zinc-200;
+}
+
+.logoStyle {
+  @apply
+    /* Sizing */
+    w-24 md:w-28 lg:w-32
+    /* Background */
+    opacity-80;
+}
+
+.headingStyle {
+  @apply
+    /* Spacing */
+    mt-6 md:mt-8 lg:mt-10;
+}
