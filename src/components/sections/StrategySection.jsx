@@ -49,7 +49,7 @@ const StrategySection = () => {
           Metodología MVP
         </Heading>
 
-        <Paragraph center space='top-xs'>
+        <Paragraph center small space='top-xs'>
           ¡Somos amantes del minimalismo!.. Creemos que cada aspecto o elemento dentro
           de tu organización existe porque suma valor a tus clientes, trabajadores y
           a la razón de la misma, por lo que adoptamos la metodología MVP (Minimum Viable Product).

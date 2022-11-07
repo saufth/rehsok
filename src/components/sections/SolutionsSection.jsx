@@ -44,7 +44,7 @@ const SolutionsSection = () => {
           Nuestras soluciones
         </Heading>
 
-        <Paragraph center space='top-xs'>
+        <Paragraph center small space='top-xs'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quasi
           enim fuga optio tenetur possimus sit harum.
         </Paragraph>
