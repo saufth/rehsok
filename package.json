@@ -2,7 +2,7 @@
   "name": "rehsok",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://saufth.github.io/rehsok",
+  "homepage": "https://rehsok.vercel.app",
   "scripts": {
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
