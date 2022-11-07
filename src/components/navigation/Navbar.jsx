@@ -43,11 +43,9 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <PageTransition>
-                <Link href='/historia'>
-                  Historia
-                </Link>
-              </PageTransition>
+              <Link href='/historia'>
+                Historia
+              </Link>
             </li>
             <li>
               <CallToAction small secondary />
