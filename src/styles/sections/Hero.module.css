@@ -16,7 +16,7 @@
 .logomarkStyle {
   @apply
     /* Sizing */
-    w-40 md:w-48 lg:w-56;
+    w-36 md:w-48 lg:w-56;
 }
 
 .titleStyle {
@@ -42,19 +42,19 @@
   @apply
     /* Typography */
     font-archivo-medium
-    text-[4.9rem] md:text-8xl lg:text-[6.5rem]
-    leading-none;
+    text-7xl md:text-8xl lg:text-[6.5rem]
+    lg:leading-none;
 }
 
 .logoDescriptionStyle {
   @apply
     /* Spacing */
-    mt-1 md:mt-0 lg:mt-1
+    lg:mt-1
     /* Typography */
-    text-[1.1rem] md:text-xl lg:text-2xl
+    md:text-xl lg:text-2xl
     leading-none
-    tracking-[1.17rem] md:tracking-[1.56rem] lg:tracking-[1.58rem]
-    indent-6 md:indent-[2.1rem] lg:indent-[2.2rem];
+    tracking-[1.11rem] md:tracking-[1.56rem] lg:tracking-[1.58rem]
+    indent-[1.55rem] md:indent-[2.1rem] lg:indent-[2.2rem];
 }
 
 .logoSloganStyle {
@@ -62,7 +62,7 @@
     /* Spacing */
     mt-6 md:mt-7 lg:mt-8
     /* Typography */
-    text-base md:text-[1.15rem] lg:text-[1.4rem]
+    text-[0.9ren] md:text-[1.15rem] lg:text-[1.4rem]
     leading-none;
 }
 
