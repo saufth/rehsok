@@ -53,8 +53,8 @@
     /* Typography */
     md:text-xl lg:text-2xl
     leading-none
-    tracking-[1.11rem] md:tracking-[1.56rem] lg:tracking-[1.58rem]
-    indent-[1.54rem] md:indent-[2.1rem] lg:indent-[2.2rem];
+    tracking-[1.13rem] md:tracking-[1.56rem] lg:tracking-[1.58rem]
+    indent-[1.55rem] md:indent-[2.1rem] lg:indent-[2.2rem];
 }
 
 .logoSloganStyle {
