@@ -12,7 +12,7 @@ const StorySection = () => {
     <section>
       <Container auto alignment='center' gapY>
 
-        <Heading>
+        <Heading center>
           Nuestra historia
         </Heading>
 

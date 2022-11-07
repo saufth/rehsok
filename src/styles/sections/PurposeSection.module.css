@@ -1,7 +1,7 @@
 .sectionStyle {
   @apply
     /* Spacing */
-    py-32 md:py-0
+    py-32 md:py-16
     /* Background */
     bg-zinc-200;
 }
