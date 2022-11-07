@@ -3,11 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://saufth.github.io/rehsok",
-  "engines": {
-    "node": "16.18.0",
-    "yarn": "1.22.19",
-    "npm": "please-use-yarn"
-  },
   "scripts": {
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
