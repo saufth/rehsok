@@ -1,7 +1,6 @@
 // Components
 import CallToAction from '../input/CallToAction'
 import Container from '../../core/components/layout/Container'
-import PageTransition from '../layout/PageTransition'
 import Link from 'next/link'
 // Styles
 import {
@@ -9,7 +8,6 @@ import {
   navigationStyle,
   logoStyle,
   listStyle,
-  itemStyle,
   buttonBurgerStyle,
   buttonBurgerSticksStyle
 } from '../../styles/navigation/Navbar.module.css'
