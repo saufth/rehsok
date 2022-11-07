@@ -4,13 +4,12 @@ import Container from '../../core/components/layout/Container'
 import Heading from '../../core/components/data-display/Heading'
 // Styles
 import {
-  sectionStyle,
   textStyle
 } from '../../styles/sections/StorySection.module.css'
 
 const StorySection = () => {
   return (
-    <section className={sectionStyle}>
+    <section>
       <Container auto alignment='center' gapY>
 
         <Heading>
