@@ -14,7 +14,7 @@ const StrategySection = () => {
     <section id='estrategia'>
       <Container auto alignment='center' gapY>
 
-        <Heading>
+        <Heading center>
           Nuestra estrategia
         </Heading>
 
@@ -47,7 +47,7 @@ const StrategySection = () => {
       <div className={mehodologyStyle}>
         <Container auto alignment='center' gapY>
 
-          <Heading>
+          <Heading center>
             Metodología MVP
           </Heading>
 

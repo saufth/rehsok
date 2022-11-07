@@ -1,5 +1,8 @@
 // Styles
-import { typographyStyle } from '../../../styles/data-display/Heading.module.css'
+import {
+  typographyStyle,
+  centerStyle
+} from '../../../styles/data-display/Heading.module.css'
 import { 
   spaceTopXS,
   spaceTopSM,
@@ -16,9 +19,10 @@ const spaceConfig = {
   'top-xl': spaceTopXL
 }
 
-const Heading = ({ children, space }) => {
+const Heading = ({ children, center, space }) => {
+  const centerTextStyle = center ? centerStyle : ''
   const spaceStyle = space ? spaceConfig[space] : ''
-  const headingStyle = `${typographyStyle} ${spaceStyle}`
+  const headingStyle = `${typographyStyle} ${centerTextStyle} ${spaceStyle}`
 
   return (
     <h1 className={headingStyle}>

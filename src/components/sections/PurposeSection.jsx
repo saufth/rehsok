@@ -26,7 +26,7 @@ const PurposeSection = () => {
         </div>
 
         <div className={headingStyle}>
-          <Heading>
+          <Heading center>
             Nuestro proposito
           </Heading>
         </div>

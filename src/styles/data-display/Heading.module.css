@@ -3,6 +3,11 @@
     /* Typography */
     font-archivo-semibold
     text-3xl md:text-4xl lg:text-5xl
-    text-center
     text-rehsok-indigo;
+}
+
+.centerStyle {
+  @apply
+    /* Typography */
+    text-center;
 }

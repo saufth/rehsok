@@ -40,7 +40,7 @@ const SolutionsSection = () => {
     <section id='soluciones'>
       <Container auto alignment='center' gapY>
 
-        <Heading>
+        <Heading center>
           Nuestras soluciones
         </Heading>
 
