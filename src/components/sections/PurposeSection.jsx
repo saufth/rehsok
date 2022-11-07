@@ -31,7 +31,7 @@ const PurposeSection = () => {
           </Heading>
         </div>
 
-        <Paragraph center small space='top-xs'>
+        <Paragraph center space='top-xs'>
           Creamos posibilidades para empresas orientadas al progreso, 
           con el objetivo de construir un legado de verdad.
         </Paragraph>
