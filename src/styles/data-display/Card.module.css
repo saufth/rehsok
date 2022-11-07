@@ -1,7 +1,7 @@
 .layoutStyle {
   @apply
     /* Sizing */
-    w-72
+    w-60 md:w-72
     /* Layout */
     flex flex-col;
 }
@@ -9,8 +9,8 @@
 .imageStyle {
   @apply
     /* Sizing */
-    w-72
-    h-48
+    w-60 md:w-72
+    h-36 md:h-48
     /* Layout */
     relative
     overflow-hidden

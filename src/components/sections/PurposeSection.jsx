@@ -36,7 +36,7 @@ const PurposeSection = () => {
           con el objetivo de construir un legado de verdad.
         </Paragraph>
 
-        <CallToAction space='top-md' />
+        <CallToAction space='top-lg' />
 
       </Container>
     </section>

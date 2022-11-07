@@ -39,7 +39,7 @@ const StrategySection = () => {
           encontrando para ti las mejores oportunidades a tu medida.
         </Paragraph>
 
-        <CallToAction space='top-md' />
+        <CallToAction space='top-lg' />
 
       </Container>
 
@@ -139,7 +139,7 @@ const StrategySection = () => {
 
         </div>
 
-        <CallToAction space='top-lg' />
+        <CallToAction space='top-xl' />
 
       </Container>
 
