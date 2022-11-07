@@ -37,12 +37,12 @@
     md:justify-center
     md:items-center
     /* Spacing */
-    [&>li]:px-4 lg:[&>li]:px-6
+    [&>li]:px-3 lg:[&>li]:px-4
     last:[&>li]:pr-0
     first:[&>li]:pl-0
     /* Typography */
     text-white
-    text-sm lg:text-base
+    text-xs lg:text-sm
     /* Shadow */
     drop-shadow-3xl;
 }
