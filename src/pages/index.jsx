@@ -1,16 +1,15 @@
 // Components
-import PageTransition from '../components/layout/PageTransition'
-import Solutions from '../components/sections/SolutionsSection'
-import Purpose from '../components/sections/PurposeSection'
-import Strategy from '../components/sections/StrategySection'
+import SolutionsSection from '../components/sections/SolutionsSection'
+import PurposeSection from '../components/sections/PurposeSection'
+import StrategySection from '../components/sections/StrategySection'
 
 const Home = () => {
   return (
-    <PageTransition>
-      <Solutions />
-      <Purpose />
-      <Strategy />
-    </PageTransition>
+    <>
+      <SolutionsSection />
+      <PurposeSection />
+      <StrategySection />
+    </>
   )
 }
 
