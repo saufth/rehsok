@@ -68,12 +68,12 @@
     /* Spacing */
     m-auto
     /* Background */
-    before:bg-zinc-200
-    bg-zinc-200
-    after:bg-zinc-200
+    before:bg-white
+    bg-white
+    after:bg-white
     /* Layout */
     before:absolute
-    before:-top-3
+    before:-top-2.5
     before:right-0
     before:bottom-0
     absolute
@@ -81,7 +81,7 @@
     right-0
     bottom-0
     after:absolute
-    after:top-3
+    after:top-2.5
     after:right-0
     after:bottom-0;
 }
