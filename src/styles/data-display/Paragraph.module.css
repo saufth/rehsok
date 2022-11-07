@@ -13,7 +13,7 @@
 .textSmallStyle {
   @apply
     /* Typography */
-    text-lg md:text-xl lg:text-2xl;
+    md:text-lg lg:text-xl;
 }
 
 .textCenterStyle {
