@@ -1,11 +1,10 @@
 // Components
-import Anchor from '../../core/components/navigation/Anchor'
 import CallToAction from '../input/CallToAction'
 import Container from '../../core/components/layout/Container'
-import MagnetAnchor from './MagnetAnchor'
+import PageTransition from '../layout/PageTransition'
+import Link from 'next/link'
 // Styles
 import {
-  group,
   navbarStyle,
   navigationStyle,
   logoStyle,
@@ -15,60 +14,53 @@ import {
   buttonBurgerSticksStyle
 } from '../../styles/navigation/Navbar.module.css'
 
-const listGroupStyle = `${listStyle} ${group}`
-
 const Navbar = () => {
   return (
     <header className={navbarStyle}>
       <Container auto>
         <nav className={navigationStyle}>
-            <Anchor href='#'>
-              <img
-                className={logoStyle}
-                src='/images/logos/logomark-white.svg'
-                alt='Inicio'
-              />
-            </Anchor>
 
-            <ul className={listGroupStyle}>
-              <li>
-                <MagnetAnchor href='#solutions'>
-                  <span className={itemStyle}>
-                    Soluciones
-                  </span>
-                </MagnetAnchor>
-              </li>
-              <li>
-                <MagnetAnchor href='#purpose'>
-                  <span className={itemStyle}>
-                    Proposito
-                  </span>
-                </MagnetAnchor>
-              </li>
-              <li>
-                <MagnetAnchor href='#strategy'>
-                  <span className={itemStyle}>
-                    Estrategia
-                  </span>
-                </MagnetAnchor>
-              </li>
-              <li>
-                <MagnetAnchor href='#story'>
-                  <span className={itemStyle}>
-                    Historia
-                  </span>
-                </MagnetAnchor>
-              </li>
-              <li>
-                <CallToAction small secondary />
-              </li>
-            </ul>
+          <Link href='/'>
+            <img
+              className={logoStyle}
+              src='/images/logos/logomark-white.svg'
+              alt='Inicio'
+            />
+          </Link>
 
-            <button className={buttonBurgerStyle} onClick={() => alert('Menu opened!')} >
-              <div className={buttonBurgerSticksStyle}></div>
-            </button>
+          <ul className={listStyle}>
+            <li>
+              <Link href='/#soluciones'>
+                Soluciones
+              </Link>
+            </li>
+            <li>
+              <Link href='/#propuesta'>
+                Proposito
+              </Link>
+            </li>
+            <li>
+              <Link href='/#estrategia'>
+                Estrategia
+              </Link>
+            </li>
+            <li>
+              <PageTransition>
+                <Link href='/historia'>
+                  Historia
+                </Link>
+              </PageTransition>
+            </li>
+            <li>
+              <CallToAction small secondary />
+            </li>
+          </ul>
 
-          </nav>
+          <button className={buttonBurgerStyle} onClick={() => alert('Menu opened!')} >
+            <div className={buttonBurgerSticksStyle}></div>
+          </button>
+
+        </nav>
       </Container>
     </header>
   )

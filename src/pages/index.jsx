@@ -1,19 +1,16 @@
-// Styles
-import Hero from '../components/sections/Hero'
-import Solutions from '../components/sections/Solutions'
-import Purpose from '../components/sections/Purpose'
-import Strategy from '../components/sections/Strategy'
-import Story from '../components/sections/Story'
+// Components
+import PageTransition from '../components/layout/PageTransition'
+import Solutions from '../components/sections/SolutionsSection'
+import Purpose from '../components/sections/PurposeSection'
+import Strategy from '../components/sections/StrategySection'
 
 const Home = () => {
   return (
-    <>
-      <Hero />
+    <PageTransition>
       <Solutions />
       <Purpose />
       <Strategy />
-      <Story />
-    </>
+    </PageTransition>
   )
 }
 

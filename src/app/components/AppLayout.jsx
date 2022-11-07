@@ -1,6 +1,7 @@
 // Components
 import Footer from '../../components/sections/Footer'
 import Head from 'next/head'
+import Hero from '../../components/sections/Hero'
 
 const keywordList = [
   'rehsok',
@@ -23,6 +24,7 @@ const AppLayout = ({ children }) => {
       </Head>
 
       <main>
+        <Hero />
         {children}
       </main>
 

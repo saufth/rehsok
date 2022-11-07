@@ -1,9 +1,0 @@
-.magnetStyle {
-  @apply
-    /* Spacing */
-    py-1
-    /* Animation */
-    transition-transform
-    ease-linear
-    duration-300;
-}

@@ -1,7 +1,7 @@
 // Components
-import Anchor from '../../core/components/navigation/Anchor'
 import CallToAction from '../input/CallToAction'
 import Container from '../../core/components/layout/Container'
+import Link from 'next/link'
 // Styles
 import {
   footerStyle,
@@ -12,7 +12,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer id='contact' className={footerStyle}>
+    <footer className={footerStyle}>
 
       <Container auto gapY>
 
@@ -31,13 +31,6 @@ const Footer = () => {
             <div className='flex gap-x-3'>
               <img
                 className='w-6'
-                src='/images/social/whatsapp.svg'
-              />
-              <span>555-555-555</span>
-            </div>
-            <div className='flex gap-x-3'>
-              <img
-                className='w-6'
                 src='/images/social/email.svg'
               />
               <span>hola@rehsok.com</span>
@@ -49,11 +42,11 @@ const Footer = () => {
       </Container>
 
       <div className='flex justify-center py-4 bg-zinc-700'>
-        <Anchor href='#'>
+        <Link href='#'>
           <span className={messageStyle}>
             REHSOK<span className={registeredMarkStyle}>®</span>
           </span>
-        </Anchor>
+        </Link>
       </div>
 
     </footer>

@@ -21,9 +21,9 @@ const Heading = ({ children, space }) => {
   const headingStyle = `${typographyStyle} ${spaceStyle}`
 
   return (
-    <h2 className={headingStyle}>
+    <h1 className={headingStyle}>
       {children}
-    </h2>
+    </h1>
   )
 }
 

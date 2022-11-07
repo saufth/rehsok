@@ -30,7 +30,7 @@ const spacingConfig = {
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx}',
+    './src/pages/*.{js,ts,jsx,tsx}',
     './src/components/**/*.{js,ts,jsx,tsx}',
     './src/core/components/**/*.{js,ts,jsx,tsx}',
     './src/app/components/**/*.{js,ts,jsx,tsx}'
@@ -69,88 +69,6 @@ module.exports = {
       },
       dropShadow: {
         '3xl': '0px 4px 8px rgba(0, 0, 0, .4)'
-      },
-      animation: {
-        'steam-to-t': 'steam-to-t 5s ease-in-out',
-        'steam-to-b': 'steam-to-b 5s ease-in-out',
-        'steam-to-r': 'steam-to-r 5s ease-in-out',
-        'steam-to-tr': 'steam-to-tr 5s ease-in-out',
-        'steam-to-br': 'steam-to-br 5s ease-in-out',
-        'steam-to-l': 'steam-to-l 5s ease-in-out',
-        'steam-to-tl': 'steam-to-tl 5s ease-in-out',
-        'steam-to-bl': 'steam-to-bl 5s ease-in-out',
-      },
-      keyframes: {
-        'steam-to-t': {
-          '64%': { opacity: 0.4 },
-          '100%': {
-            transform: 'translateY(-8rem)',
-            opacity: 0
-          }
-        },
-        'steam-to-b': {
-          '64%': { opacity: 0.4 },
-          '100%': {
-            transform: 'translateY(8rem)',
-            opacity: 0
-          }
-        },
-        'steam-to-r': {
-          '64%': { opacity: 0.4 },
-          '100%': {
-            transform: 'translateX(8rem)',
-            opacity: 0
-          }
-        },
-        'steam-to-tr': {
-          '64%': { opacity: 0.4 },
-          '100%': {
-            transform: 'translate(3rem, -8rem)',
-            opacity: 0
-          }
-        },
-        'steam-to-br': {
-          '64%': { opacity: 0.4 },
-          '100%': {
-            transform: 'translate(3rem, 8rem)',
-            opacity: 0
-          }
-        },
-        'steam-to-l': {
-          '64%': { opacity: 0.4 },
-          '100%': {
-            transform: 'translateX(-8rem)',
-            opacity: 0
-          }
-        },
-        'steam-to-tl': {
-          '64%': { opacity: 0.4 },
-          '100%': {
-            transform: 'translate(-3rem, -8rem)',
-            opacity: 0
-          }
-        },
-        'steam-to-bl': {
-          '64%': { opacity: 0.4 },
-          '100%': {
-            transform: 'translate(-3rem, 8rem)',
-            opacity: 0
-          }
-        }
-      },
-      transitionDuration: {
-        '50': '50ms',
-        '400': '400ms',
-        '600': '600ms',
-        '800': '800ms',
-        '900': '900ms'
-      },
-      transitionDelay: {
-        '0': '0ms',
-        '400': '400ms',
-        '600': '600ms',
-        '800': '800ms',
-        '1200': '1200ms'
       }
     }
   },

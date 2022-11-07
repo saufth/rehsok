@@ -6,11 +6,11 @@ import Paragraph from '../../core/components/data-display/Paragraph'
 // Styles
 import {
   listStyle
-} from '../../styles/sections/Strategy.module.css'
+} from '../../styles/sections/StrategySection.module.css'
 
-const Strategy = () => {
+const StrategySection = () => {
   return (
-    <section id='strategy'>
+    <section id='estrategia'>
       <Container auto alignment='center' gapY>
 
         <Heading>
@@ -147,4 +147,4 @@ const Strategy = () => {
   )
 }
 
-export default Strategy
+export default StrategySection

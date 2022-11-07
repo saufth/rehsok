@@ -47,16 +47,6 @@
     drop-shadow-3xl;
 }
 
-.itemStyle {
-  @apply
-    /* Spacing */
-    py-3
-    /* Animation */
-    transition-transform
-    ease-linear
-    duration-400;
-}
-
 .buttonBurgerStyle {
   @apply
     /* Sizing */

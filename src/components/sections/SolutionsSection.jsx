@@ -8,7 +8,7 @@ import Paragraph from '../../core/components/data-display/Paragraph'
 import {
   listStyle,
   listItemStyle
-} from '../../styles/sections/Solutions.module.css'
+} from '../../styles/sections/SolutionsSection.module.css'
 
 const imageFolder = 'solutions/'
 
@@ -35,9 +35,9 @@ const solutions =  [
   }
 ]
 
-const Solutions = () => {
+const SolutionsSection = () => {
   return (
-    <section id='solutions'>
+    <section id='soluciones'>
       <Container auto alignment='center' gapY>
 
         <Heading>
@@ -66,4 +66,4 @@ const Solutions = () => {
   )
 }
 
-export default Solutions
+export default SolutionsSection

@@ -1,11 +1,10 @@
 // Components
 import Container from '../../core/components/layout/Container'
 import Navbar from '../navigation/Navbar'
-import PlayButton from '../../core/components/input/PlayButton'
+import PlayButton from '../input/PlayButton'
 // Styles
 import {
   heroStyle,
-  contentStyle,
   logomarkStyle,
   titleStyle,
   logoNameStyle,
@@ -17,7 +16,7 @@ import {
 const Hero = () => {
 
   return (
-    <section id='home' className={heroStyle}>
+    <section className={heroStyle}>
 
       <Navbar />
 

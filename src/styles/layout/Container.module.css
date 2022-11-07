@@ -1,4 +1,4 @@
-.autoStyle {
+.layoutStyle {
   @apply
     /* Sizing */
     max-w-6xl
@@ -17,13 +17,7 @@
 .gapYStyle {
   @apply
     /* Sizing */
-    py-20 md:py-24 lg:py-32;
-}
-
-.perspectiveStyle {
-  @apply
-    /* 3D */
-    [perspective:1280px];
+    py-32 md:py-36 lg:py-40;
 }
 
 .flexCenterStartStyle {

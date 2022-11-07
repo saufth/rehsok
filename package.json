@@ -2,10 +2,8 @@
   "name": "rehsok",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rehsok.vercel.app",
+  "homepage": "http://localhost:3000",
   "scripts": {
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",

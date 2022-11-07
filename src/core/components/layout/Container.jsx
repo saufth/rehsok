@@ -1,8 +1,8 @@
+// Styles
 import {
-  autoStyle,
+  layoutStyle,
   fullHeightStyle,
   gapYStyle,
-  perspectiveStyle,
   flexCenterStartStyle,
   flexCenterStyle,
   flexCenterEndStyle
@@ -20,16 +20,14 @@ const Container = (
     auto,
     fullHeight,
     alignment,
-    gapY,
-    perspective
+    gapY
   }
 ) => {
-  const spacingStyle = auto ? autoStyle : ''
+  const autoStyle = auto ? layoutStyle : ''
   const heightStyle = fullHeight ? fullHeightStyle : ''
-  const paddingStyle = gapY ? gapYStyle : ''
+  const spacingStyle = gapY ? gapYStyle : ''
   const alignmentStyle = alignment ? alignmentStyles[alignment] : ''
-  const layoutStyle = perspective ? perspectiveStyle : ''
-  const containerStyle = `${spacingStyle} ${heightStyle} ${paddingStyle} ${alignmentStyle} ${layoutStyle}`
+  const containerStyle = `${autoStyle} ${heightStyle} ${spacingStyle} ${alignmentStyle}`
 
   return (
     <div className={containerStyle}>

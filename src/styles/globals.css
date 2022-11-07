@@ -7,7 +7,6 @@
   html {
     @apply
       /* Typography */
-      bg-white
       font-archivo-regular
       /* Interactivity */
       scroll-smooth;
@@ -27,8 +26,6 @@
       /* Border */
       outline-none;
   }
-
-  /* Typography */
 
   a {
     @apply

@@ -4,7 +4,7 @@ import {
   cercleStyle,
   iconStyle,
   textStyle
-} from '../../../styles/input/PlayButton.module.css'
+} from '../../styles/input/PlayButton.module.css'
 
 const PlayButton = () => {
   return (
@@ -17,7 +17,7 @@ const PlayButton = () => {
             alt='Play video'
           />
         </span>
-        <span className={textStyle}>Ver video</span>
+        <span className={textStyle}>VER VIDEO</span>
       </span>
     </button>
   )
