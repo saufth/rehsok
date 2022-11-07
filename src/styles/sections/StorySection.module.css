@@ -1,9 +1,3 @@
-.sectionStyle {
-  @apply
-    /* Background */
-    bg-zinc-200;
-}
-
 .textStyle {
   @apply
     /* Sizing */

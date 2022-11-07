@@ -19,3 +19,9 @@
     text-rehsok-gray
     list-disc;
 }
+
+.mehodologyStyle {
+  @apply
+    /* Background */
+    bg-zinc-200;
+}
