@@ -28,7 +28,7 @@
     py-2.5 lg:py-3
     px-3.5 lg:px-4
     /* Typography */
-    text-xs lg:text-sm;
+    text-sm lg:text-base;
 }
 
 .buttonPrimaryStyle {

@@ -69,7 +69,7 @@ const SolutionsSection = () => {
 
         </Paragraph>
 
-        <CallToAction space='top-xl' />
+        <CallToAction space='top-md' />
 
       </Container>
     </section>
