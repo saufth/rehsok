@@ -39,7 +39,7 @@ const StrategySection = () => {
           "Aquel que falla en no planear, esta planeado en fallar"
         </Paragraph>
 
-        <p className='font-archivo-bold text-xs md:text-sm mt-4'>Sir Winston Chrrchill</p>
+        <p className='font-archivo-bold text-xs text-rehsok-gray md:text-sm mt-4'>Sir Winston Chrrchill</p>
 
         <CallToAction space='top-md' />
 

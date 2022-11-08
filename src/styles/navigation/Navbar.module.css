@@ -42,7 +42,7 @@
     first:[&>li]:pl-0
     /* Typography */
     text-white
-    text-xs lg:text-sm
+    text-sm lg:text-base
     /* Shadow */
     drop-shadow-3xl;
 }
