@@ -27,13 +27,15 @@ const Footer = () => {
 
           </div>
 
-          <div className='w-full md:w-2/5 mt-24 md:mt-0 flex flex-col justify-center gap-y-6 text-2xl'>
-            <div className='flex gap-x-3'>
+          <div className='w-full md:w-2/5 mt-24 md:mt-0 flex flex-col justify-center gap-y-6 text-lg md:text-xl lg:text-2xl'>
+            <div className='flex gap-x-2 md:gap-x-3'>
               <img
-                className='w-6'
+                className='w-5 md:w-5 lg:w-6'
                 src='/images/social/email.svg'
               />
-              <span>hola@rehsok.com</span>
+              <Link href='mailto:contacto@rehsok.com'>
+                contacto@rehsok.com
+              </Link>
             </div>
           </div>
 

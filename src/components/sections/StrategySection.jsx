@@ -7,7 +7,7 @@ import Paragraph from '../../core/components/data-display/Paragraph'
 // Styles
 import { contentStyle } from '../../styles/sections/StrategySection.module.css'
 
-const imageFolder = 'solutions/'
+const imageFolder = 'strategy/'
 
 const strategy = [
   {
@@ -16,7 +16,7 @@ const strategy = [
       'Filosofía: Los negocios son opuestos a las matemáticas. Mientras que las matemáticas plantean que la mejor forma de sumar es multiplicar, en los negocios, la mejor forma de sumar es dividir. Dividir el esfuerzo, el trabajo, las tareas y hasta los ingresos.',
       'Mas allá de querer ser un experto en todas las áreas de una empresa o negocio, busca rodearte de un equipo de expertos que complemente correctamente las habilidades y conocimientos que no tienes.'
     ],
-    imageSrc: `${imageFolder}compliance`
+    imageSrc: `${imageFolder}team`
   },
   {
     heading: 'Transformando problemas en oportunidades',
@@ -24,7 +24,7 @@ const strategy = [
       'Problemas = Áreas de oportunidad.',
       'Mientras más grande y frecuente sea el problema, mayor será la posibilidad de generar valor.'
     ],
-    imageSrc: `${imageFolder}planning`
+    imageSrc: `${imageFolder}oportunity`
   },
   {
     heading: 'No asumiendo',
@@ -33,7 +33,7 @@ const strategy = [
       'Evitar los retrabajos dando indicaciones claras asegura que las cosas se haran bien a la primera.',
       'Cualquier duda, pregunta o sugerencia de nuestros clientes y colaboradores es siempre bienvenida.'
     ],
-    imageSrc: `${imageFolder}requirements`
+    imageSrc: `${imageFolder}assume`
   },
   {
     heading: 'Trabajamos con estrategia',
@@ -42,7 +42,7 @@ const strategy = [
       'Administrar con eficiencia los recursos disponibles.',
       'Siempre hay una forma óptima o mejor de hacer las cosas.'
     ],
-    imageSrc: `${imageFolder}litigation`
+    imageSrc: `${imageFolder}strategy`
   },
   {
     heading: 'Prever las tendencias futuras',
@@ -50,7 +50,7 @@ const strategy = [
       'Hay que saber prever o anticipar cuándo entrar y salir de cualquier oportunidad, situación y/o negocio, nada es eterno, todo tiene un ciclo, un punto alto y un punto bajo.',
       'Lo único constante es el cambio.'
     ],
-    imageSrc: `${imageFolder}planning`
+    imageSrc: `${imageFolder}prevent`
   },
   {
     heading: 'Innovamos constantemente',
@@ -58,16 +58,16 @@ const strategy = [
       'Lo importante es generar innovación alrededor de lo que el cliente considera valioso.',
       'Para lograr generar innovaciones de valor, es imperativo conocer al cliente, a la competencia, al mercado y a ti mismo como organización.'
     ],
-    imageSrc: `${imageFolder}requirements`
+    imageSrc: `${imageFolder}innovate`
   },
   {
-    heading: 'Buscamos progreso, no Perfección',
+    heading: 'Buscamos progreso, no perfección',
     descriptions: [
       'El mundo de los negocios es un juego infinito en el que no se tiene certeza plena de todos los elementos que están participando en el mercado ni la variabilidad de estos.  A lo máximo que se puede aspirar es a tener estimaciones.',
       '¿Qué sí está en nuestro control?',
       'El generar una cultura de progreso constante dentro de nuestra organización, aspirar a ser mejores cada día con relación a nuestras propias métricas e inspirar el cambio a esta cultura de progreso en cada rincón de la organización.'
     ],
-    imageSrc: `${imageFolder}compliance`
+    imageSrc: `${imageFolder}progress`
   },
 ]
 
