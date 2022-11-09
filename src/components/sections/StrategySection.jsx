@@ -13,7 +13,7 @@ const strategy = [
   {
     heading: 'Trabajamos en equipo',
     descriptions: [
-      'Filosofía: Los negocios son opuestos a las matemáticas. Mientras que las matemáticas plantean que la mejor forma de sumar es multiplicar, los negocios, la mejor forma de sumar es dividir. Dividir el esfuerzo, el trabajo, las tareas y hasta los ingresos.',
+      'Filosofía: Los negocios son opuestos a las matemáticas. Mientras que las matemáticas plantean que la mejor forma de sumar es multiplicar, en los negocios, la mejor forma de sumar es dividir. Dividir el esfuerzo, el trabajo, las tareas y hasta los ingresos.',
       'Mas allá de querer ser un experto en todas las áreas de una empresa o negocio, busca rodearte de un equipo de expertos que complemente correctamente las habilidades y conocimientos que no tienes.'
     ],
     imageSrc: `${imageFolder}compliance`
@@ -29,7 +29,7 @@ const strategy = [
   {
     heading: 'No asumiendo',
     descriptions: [
-      'Se debe tener certeza en cada tarea u objetivo a realizar. nunca asumir en caso no tener certeza plena.',
+      'Se debe tener certeza en cada tarea u objetivo a realizar, nunca asumir en caso no tener certeza plena.',
       'Evitar los retrabajos dando indicaciones claras asegura que las cosas se haran bien a la primera.',
       'Cualquier duda, pregunta o sugerencia de nuestros clientes es siempre bienvenida.'
     ],
