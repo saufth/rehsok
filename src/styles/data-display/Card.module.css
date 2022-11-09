@@ -3,7 +3,8 @@
     /* Sizing */
     w-56 md:w-60
     /* Layout */
-    flex flex-col;
+    flex
+    flex-col;
 }
 
 .imageStyle {

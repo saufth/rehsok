@@ -23,7 +23,8 @@
 .flexCenterStartStyle {
   @apply
     /* Flexbox & Grid */
-    flex flex-col
+    flex
+    flex-col
     justify-center
     items-start;
 }
@@ -31,7 +32,8 @@
 .flexCenterStyle {
   @apply
     /* Flexbox & Grid */
-    flex flex-col
+    flex
+    flex-col
     justify-center
     items-center;
 }
@@ -39,7 +41,8 @@
 .flexCenterEndStyle {
   @apply
     /* Flexbox & Grid */
-    flex flex-col
+    flex
+    flex-col
     justify-center
     items-end;
 }

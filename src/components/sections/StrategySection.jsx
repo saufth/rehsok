@@ -2,12 +2,73 @@
 import CallToAction from '../input/CallToAction'
 import Container from '../../core/components/layout/Container'
 import Heading from '../../core/components/data-display/Heading'
+import ImageQuote from '../data-display/ImageQuote'
 import Paragraph from '../../core/components/data-display/Paragraph'
 // Styles
-import {
-  listStyle,
-  mehodologyStyle
-} from '../../styles/sections/StrategySection.module.css'
+import { contentStyle } from '../../styles/sections/StrategySection.module.css'
+
+const imageFolder = 'solutions/'
+
+const strategy = [
+  {
+    heading: 'Trabajamos en equipo',
+    descriptions: [
+      'Filosofía: Los negocios son opuestos a las matemáticas.',
+      'Mientras que las matemáticas plantean que la mejor forma de sumar es multiplicar, los negocios, la mejor forma de sumar es dividir. Dividir el esfuerzo, el trabajo, las tareas y hasta los ingresos. Mas allá de querer ser un experto en todas las áreas de una empresa o negocio, busca rodearte de un equipo de expertos que complemente correctamente las habilidades y conocimientos que no tienes.'
+    ],
+    imageSrc: `${imageFolder}compliance`
+  },
+  {
+    heading: 'Transformando problemas en oportunidades',
+    descriptions: [
+      'Problemas = Áreas de oportunidad.',
+      'Mientras más grande y frecuente sea el problema, mayor será la posibilidad de generar valor.'
+    ],
+    imageSrc: `${imageFolder}planning`
+  },
+  {
+    heading: 'No asumiendo',
+    descriptions: [
+      'Se debe tener certeza en cada tarea u objetivo a realizar. Nunca asumir en caso no tener certeza plena.',
+      'Evitar el retrabajo dando indicaciones claras se asegura de que las cosas se hagan bien a la primera.',
+      'Cualquier duda, pregunta o sugerencia de nuestros trabajadores es siempre bienvenida.'
+    ],
+    imageSrc: `${imageFolder}requirements`
+  },
+  {
+    heading: 'Trabajamos con estrategia',
+    descriptions: [
+      'Cuál es la mejor forma de llegar de un punto A (donde estamos) a un punto B (a donde se quiere llegar).',
+      'Administrar con eficiencia los recursos disponibles.',
+      'Siempre hay una forma óptima o mejor de hacer las cosas.'
+    ],
+    imageSrc: `${imageFolder}litigation`
+  },
+  {
+    heading: 'Prever las tendencias futuras',
+    descriptions: [
+      'Saber cuándo entrar y salir de cualquier oportunidad de negocio. Nada es eterno, todo tiene un ciclo, un punto alto y un punto bajo.',
+      'Lo único constante es el cambio.'
+    ],
+    imageSrc: `${imageFolder}planning`
+  },
+  {
+    heading: 'Innovamos constantemente',
+    descriptions: [
+      'Lo importante es generar innovación alrededor de lo que el cliente considera valioso.',
+      'Para lograr generar innovaciones de valor, es imperativo conocer al cliente, a la competencia, al mercado y a ti mismo como organización.'
+    ],
+    imageSrc: `${imageFolder}requirements`
+  },
+  {
+    heading: 'Buscamos progreso, No Perfección',
+    descriptions: [
+      'El mundo de los negocios es un juego infinito en el que no se tiene certeza plena de todos los elementos que están participando en el mercado ni la variabilidad de estos.  A lo máximo que se puede aspirar es a tener estimaciones.',
+      '¿Qué sí está en nuestro control? El generar una cultura de progreso constante dentro de nuestra organización, aspirar a ser mejores cada día con relación a nuestras propias métricas e inspirar el cambio a esta cultura de progreso en cada rincón de la organización.'
+    ],
+    imageSrc: `${imageFolder}compliance`
+  },
+]
 
 const StrategySection = () => {
   return (
@@ -26,14 +87,22 @@ const StrategySection = () => {
           generación de soluciones de valor para nuestros clientes.
         </Paragraph>
 
-        <ul className={listStyle}>
-          <li>Trabajamos en equipo, dividimos el esfuerzo y vencemos</li>
-          <li>Transformamos problemas en oportunidades valiosas</li>
-          <li>Nunca asumimos, tenemos certeza en los objetivos</li>
-          <li>Prevenimos futuras tendencias, cazamos oportunidades</li>
-          <li>Innovamos constantemente, sabemos lo que es valioso</li>
-          <li>Buscamos progreso siempre, no perfección</li>
-        </ul>
+        <div className={contentStyle}>
+          {strategy.map(({ heading, descriptions, imageSrc }, index) => {
+            const reverse = Boolean(index % 2)
+
+            return (
+              <div key={index}>
+                <ImageQuote
+                  heading={heading}
+                  descriptions={descriptions}
+                  src={imageSrc}
+                  reverse={reverse}
+                />
+              </div>
+            )
+          })}
+        </div>
 
         <Paragraph center small>
           "Aquel que falla en no planear, esta planeado en fallar"
@@ -44,109 +113,6 @@ const StrategySection = () => {
         <CallToAction space='top-md' />
 
       </Container>
-
-      <div className={mehodologyStyle}>
-        <Container auto alignment='center' gapY>
-
-          <Heading center>
-            Metodología MVP
-          </Heading>
-
-          <Paragraph center small space='top-xs'>
-            ¡Somos amantes del minimalismo!.. Creemos que cada aspecto o elemento dentro
-            de tu organización existe porque suma valor a tus clientes, trabajadores y
-            a la razón de la misma, por lo que adoptamos la metodología MVP (Minimum Viable Product).
-          </Paragraph>
-
-          <div className='w-full mt-32 flex flex-wrap justify-center gap-32 md:gap-24 lg:gap-x-20'>
-
-            <div className='w-52 relative flex flex-col items-center'>
-              <div className='w-12 lg:w-14 h-12 lg:h-14 absolute -top-12 lg:-top-14 -left-1 lg:-left-2 flex justify-center items-center font-archivo-bold lg:font-archivo-extrabold text-xl text-white bg-rehsok-gray rounded-full'>
-                <div className='mt-0.5'>
-                  1
-                </div>
-              </div>
-              <img
-                className='w-20 md:w-[86px] lg:w-24'
-                src='/images/icons/idea.svg'
-                alt='Idea'
-              />
-              <p className='mt-10 md:mt-12 lg:mt-14 font-archivo-bold text-xl md:text-2xl lg:text-3xl text-center text-rehsok-gray'>
-                Piensa una idea
-              </p>
-              <p className='mt-4 md:mt-5 lg:mt-6 md:tex-lg lg:text-xl text-center text-rehsok-gray'>
-                Crea las hipotesis que desas comprovar y define tus metricas para
-                obtener la información que te ayude a lograrlo.
-              </p>
-            </div>
-
-            <div className='w-52 relative flex flex-col items-center'>
-              <div className='w-12 lg:w-14 h-12 lg:h-14 absolute -top-12 lg:-top-14 -left-1 lg:-left-2 flex justify-center items-center font-archivo-bold lg:font-archivo-extrabold text-xl text-white bg-rehsok-gray rounded-full'>
-                <div className='mt-0.5'>
-                  2
-                </div>
-              </div>
-              <img
-                className='w-20 md:w-[86px] lg:w-24'
-                src='/images/icons/evaluation.svg'
-                alt='Evaluación'
-              />
-              <p className='mt-10 md:mt-12 lg:mt-14 font-archivo-bold text-xl md:text-2xl lg:text-3xl text-center text-rehsok-gray'>
-                Evalua su viabilidad
-              </p>
-              <p className='mt-4 md:mt-5 lg:mt-6 md:tex-lg lg:text-xl text-center text-rehsok-gray'>
-                Mide y analiza indicadores clave, elije metricas que muestren claramente la
-                relación directa entre causa y efecto.
-              </p>
-            </div>
-
-            <div className='w-52 relative flex flex-col items-center'>
-              <div className='w-12 lg:w-14 h-12 lg:h-14 absolute -top-12 lg:-top-14 -left-1 lg:-left-2 flex justify-center items-center font-archivo-bold lg:font-archivo-extrabold text-xl text-white bg-rehsok-gray rounded-full'>
-                <div className='mt-0.5'>
-                  3
-                </div>
-              </div>
-              <img
-                className='w-20 md:w-[86px] lg:w-24'
-                src='/images/icons/deployment.svg'
-                alt='Ejecución'
-              />
-              <p className='mt-10 md:mt-12 lg:mt-14 font-archivo-bold text-xl md:text-2xl lg:text-3xl text-center text-rehsok-gray'>
-                Ponla en marhca
-              </p>
-              <p className='mt-4 md:mt-5 lg:mt-6 md:tex-lg lg:text-xl text-center text-rehsok-gray'>
-                Parte de una base solida y a la que le veas potencial y ¡lanzate al mercado!, no tiene
-                que ser perfecto por eso es un MPV.
-              </p>
-            </div>
-
-            <div className='w-52 relative flex flex-col items-center'>
-              <div className='w-12 lg:w-14 h-12 lg:h-14 absolute -top-12 lg:-top-14 -left-1 lg:-left-2 flex justify-center items-center font-archivo-bold lg:font-archivo-extrabold text-xl text-white bg-rehsok-gray rounded-full'>
-                <div className='mt-0.5'>
-                  4
-                </div>
-              </div>
-              <img
-                className='w-20 md:w-[86px] lg:w-24'
-                src='/images/icons/testing.svg'
-                alt='Adaptación'
-              />
-              <p className='mt-10 md:mt-12 lg:mt-14 font-archivo-bold text-xl md:text-2xl lg:text-3xl text-center text-rehsok-gray'>
-                Analiza, ajusta y adaptala
-              </p>
-              <p className='mt-4 md:mt-5 lg:mt-6 md:tex-lg lg:text-xl text-center text-rehsok-gray'>
-                Alineate a las necesidades del mercado, ajusta lo que no esta funcionando, y escala
-                tu progreso con un mayor inpulso.
-              </p>
-            </div>
-
-          </div>
-
-          <CallToAction space='top-xl' />
-
-        </Container>
-      </div>
-
     </section>
   )
 }

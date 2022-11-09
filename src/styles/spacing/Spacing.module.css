@@ -27,3 +27,9 @@
     /* Spacing */
     mt-12 md:mt-14 lg:mt-16;
 }
+
+.spaceTop2XL {
+  @apply
+    /* Spacing */
+    mt-24 md:mt-28 lg:mt-32;
+}

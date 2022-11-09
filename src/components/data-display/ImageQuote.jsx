@@ -1,6 +1,3 @@
-// Components
-import Image from 'next/Image'
-import Button from '../../core/components/input/Button'
 // Styles
 import {
   layoutStyle,
@@ -8,66 +5,56 @@ import {
   contentStyle,
   contentReverseStyle,
   headingStyle,
-  headingReverseStyle,
-  firstTextStyle,
-  secondTextStyle,
+  descriptionStyle,
+  descriptionReverseStyle,
+  textStyle,
   imageContainerStyle,
   imageContainerReverseStyle,
-  imageWrapperStyle,
-  imageStyle
+  imageWrapperStyle
 } from '../../styles/data-display/ImageQuote.module.css'
 
-const ImageQuote = ({ heading, description, src, reverse }) => {
-  const imagePath = `/images/sections/purpose/${src}.jpg` 
+const ImageQuote = ({ heading, descriptions, src, reverse }) => {
+  const backgroundImageStyle = {
+    backgroundImage: `url(/images/sections/${src}.jpg)`
+  }
 
   let layoutReverse = ''
   let contentReverse = ''
-  let headingReverse = ''
+  let descriptionReverse = ''
   let imageContainerReverse = ''
 
   if (reverse) {
     layoutReverse = layoutReverseStyle
     contentReverse = contentReverseStyle
-    headingReverse = headingReverseStyle
+    descriptionReverse = descriptionReverseStyle
     imageContainerReverse = imageContainerReverseStyle
   }
   
   const layoutCustomStyle = `${layoutStyle} ${layoutReverse}`
-
   const contentCustomStyle = `${contentStyle} ${contentReverse}`
-
-  const headingCustomStyle = `${headingStyle} ${headingReverse}`
-  
+  const descriptionCustomStyle = `${descriptionStyle} ${descriptionReverse}`
   const imageContainerCustomStyle = `${imageContainerStyle} ${imageContainerReverse}`
 
   return (
     <div className={layoutCustomStyle}>
 
       <div className={contentCustomStyle}>
-
-        <h2 className={headingCustomStyle}>
-          <span className={firstTextStyle}>{firstText}</span>
-          <br/>
-          <span className={secondTextStyle}>{secondText}</span>
-        </h2>
-
-        <Button onclick={() => alert('Now in contact!')}>
-          CONTACTANOS
-        </Button>
-
+        <p className={headingStyle}>
+          {heading}
+        </p>
+        <div className={descriptionCustomStyle}>
+          {descriptions.map((description) => {
+            return (
+              <p className={textStyle}>
+                {description}
+              </p>
+            )
+          })}
+        </div>
       </div>
 
       <div className={imageContainerCustomStyle}>
-        <div className={imageWrapperStyle}>
-          <Image
-            className={imageStyle}
-            src={imagePath}
-            alt={heading}
-            layout='fill'
-            objectFit='cover'
-            objectPosition='center'
-          />
-        </div>
+        <div className={imageWrapperStyle} style={backgroundImageStyle}></div>
       </div>
 
     </div>

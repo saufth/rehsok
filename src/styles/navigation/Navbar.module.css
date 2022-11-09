@@ -37,10 +37,9 @@
     md:justify-center
     md:items-center
     /* Spacing */
-    [&>li]:px-3 lg:[&>li]:px-4
-    last:[&>li]:pr-0
-    first:[&>li]:pl-0
+    space-x-8 lg:space-x-10
     /* Typography */
+    font-archivo-medium
     text-white
     text-sm lg:text-base
     /* Shadow */

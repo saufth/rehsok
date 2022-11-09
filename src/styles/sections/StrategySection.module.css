@@ -1,27 +1,6 @@
-.listStyle {
+.contentStyle {
   @apply
-    /* Sizing */
-    max-w-4xl
-    lg:[&>li]:w-96
     /* Spacing */
-    px-10 md:px-20 lg:px-0
-    py-16 md:py-20 lg:py-24
-    [&>li]:pl-2
-    /* Layout */
-    flex
-    flex-col lg:flex-row
-    flex-wrap
-    lg:justify-around
-    gap-y-8 md:gap-12 lg:gap-y-16
-    /* Typography */
-    font-archivo-bold
-    text-lg md:text-xl lg:text-2xl
-    text-rehsok-gray
-    list-disc;
-}
-
-.mehodologyStyle {
-  @apply
-    /* Background */
-    bg-zinc-200;
+    space-y-20 md:space-y-28 lg:space-y-32
+    py-20 md:py-28 lg:py-32;
 }

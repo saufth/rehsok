@@ -16,26 +16,27 @@
 .logomarkStyle {
   @apply
     /* Sizing */
-    w-36 md:w-48 lg:w-56;
+    w-36 md:w-44 lg:w-48;
 }
 
 .titleStyle {
   @apply
-  /* Layout */
-  flex flex-col
-  justify-center
-  items-center
-  /* Typography */
-  text-center
-  text-transparent
-  /* Background */
-  bg-clip-text
-  bg-gradient-to-r
-  from-neutral-400
-  via-neutral-400
-  to-neutral-300
-  /* Shadow */
-  drop-shadow-3xl;
+    /* Layout */
+    flex
+    flex-col
+    justify-center
+    items-center
+    /* Typography */
+    text-center
+    text-transparent
+    /* Background */
+    bg-clip-text
+    bg-gradient-to-r
+    from-neutral-400
+    via-neutral-400
+    to-neutral-300
+    /* Shadow */
+    drop-shadow-3xl;
 }
 
 .logoNameStyle {

@@ -7,10 +7,7 @@
     from-rehsok-indigo
     to-blue-pantone
     /* Border */
-    rounded
-    /* Shadow */
-    shadow-lg
-    shadow-rich-black/10;
+    rounded;
 }
 
 .buttonLargeStyle {
@@ -44,7 +41,7 @@
 .buttonSecondaryStyle {
   @apply
     /* Typography */
-    text-rich-black
+    text-rehsok-indigo
     /* Background */
     bg-gradient-to-tr
     from-white

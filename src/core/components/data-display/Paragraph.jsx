@@ -10,7 +10,8 @@ import {
   spaceTopSM,
   spaceTopMD,
   spaceTopLG,
-  spaceTopXL
+  spaceTopXL,
+  spaceTop2XL
 } from '../../../styles/spacing/Spacing.module.css'
 
 const spaceConfig = {
@@ -18,7 +19,8 @@ const spaceConfig = {
   'top-sm': spaceTopSM,
   'top-md': spaceTopMD,
   'top-lg': spaceTopLG,
-  'top-xl': spaceTopXL
+  'top-xl': spaceTopXL,
+  'top-2xl': spaceTop2XL
 }
 
 const Paragraph = ({ children, small, center, space }) => {

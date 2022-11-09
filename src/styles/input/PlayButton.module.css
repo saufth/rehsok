@@ -12,7 +12,8 @@
     w-7 md:w-8 lg:w-10
     h-7 md:h-8 lg:h-10
     /* Layout */
-    flex flex-col
+    flex
+    flex-col
     justify-center
     items-center
     /* Border */

@@ -34,7 +34,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link href='/#propuesta'>
-                Proposito
+                Propósito
               </Link>
             </li>
             <li>
@@ -44,7 +44,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link href='/historia'>
-                Historia
+                Razón de Ser
               </Link>
             </li>
             <li>
