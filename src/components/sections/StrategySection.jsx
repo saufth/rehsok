@@ -31,7 +31,7 @@ const strategy = [
     descriptions: [
       'Se debe tener certeza en cada tarea u objetivo a realizar, nunca asumir en caso no tener certeza plena.',
       'Evitar los retrabajos dando indicaciones claras asegura que las cosas se haran bien a la primera.',
-      'Cualquier duda, pregunta o sugerencia de nuestros clientes es siempre bienvenida.'
+      'Cualquier duda, pregunta o sugerencia de nuestros clientes y colaboradores es siempre bienvenida.'
     ],
     imageSrc: `${imageFolder}requirements`
   },
