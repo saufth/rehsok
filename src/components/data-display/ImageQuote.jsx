@@ -43,9 +43,9 @@ const ImageQuote = ({ heading, descriptions, src, reverse }) => {
           {heading}
         </p>
         <div className={descriptionCustomStyle}>
-          {descriptions.map((description) => {
+          {descriptions.map((description, index) => {
             return (
-              <p className={textStyle}>
+              <p className={textStyle} key={index}>
                 {description}
               </p>
             )
