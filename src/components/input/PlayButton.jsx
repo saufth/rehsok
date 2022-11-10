@@ -69,10 +69,10 @@ const PlayButton = () => {
       </button>
       <div className='w-screen h-screen z-50 absolute top-0 left-0 bg-black hidden' ref={videoWrapperRef}>
         <video
-          className='w-full h-full'
           controls
           disablePictureInPicture
           controlsList='nodownload noplaybackrate'
+          onContextMenu={(event) => event.preventDefault()}
           ref={videoRef}
         >
           <source src="/video/rehsok.mp4" type="video/mp4" />
