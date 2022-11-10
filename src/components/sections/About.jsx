@@ -5,11 +5,11 @@ import Heading from '../../core/components/data-display/Heading'
 // Styles
 import {
   textStyle
-} from '../../styles/sections/StorySection.module.css'
+} from '../../styles/sections/About.module.css'
 
-const StorySection = () => {
+const About = () => {
   return (
-    <section>
+    <section id='razon-de-ser'>
       <Container auto alignment='center' gapY>
 
         <Heading center>
@@ -91,4 +91,4 @@ const StorySection = () => {
   )
 }
 
-export default StorySection
+export default About

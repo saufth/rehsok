@@ -9,9 +9,9 @@ import {
   sectionStyle,
   logoStyle,
   headingStyle
-} from '../../styles/sections/PurposeSection.module.css'
+} from '../../styles/sections/Purpose.module.css'
 
-const PurposeSection = () => {
+const Purpose = () => {
   return (
     <section id='propuesta' className={sectionStyle}>
       <Container auto alignment='center' gapY>
@@ -43,4 +43,4 @@ const PurposeSection = () => {
   )
 }
 
-export default PurposeSection
+export default Purpose

@@ -1,16 +1,16 @@
 // Components
-import SolutionsSection from '../components/sections/SolutionsSection'
-import PurposeSection from '../components/sections/PurposeSection'
-import StrategySection from '../components/sections/StrategySection'
+import Solutions from '../components/sections/Solutions'
+import Purpose from '../components/sections/Purpose'
+import Strategy from '../components/sections/Strategy'
 
-const Home = () => {
+const HomePage = () => {
   return (
     <>
-      <SolutionsSection />
-      <PurposeSection />
-      <StrategySection />
+      <Solutions />
+      <Purpose />
+      <Strategy />
     </>
   )
 }
 
-export default Home
+export default HomePage

@@ -2,6 +2,8 @@
 import CallToAction from '../input/CallToAction'
 import Container from '../../core/components/layout/Container'
 import Link from 'next/link'
+// Hooks
+import { useRef, useEffect } from 'react'
 // Styles
 import {
   navbarStyle,
@@ -13,6 +15,42 @@ import {
 } from '../../styles/navigation/Navbar.module.css'
 
 const Navbar = () => {
+  const contextMenuRef = useRef()
+
+  const handleOpenMenu = () => {
+    const contextMenuNode = contextMenuRef?.current
+    if (contextMenuNode) {
+      contextMenuNode.classList.remove('hidden')
+    }
+  }
+
+  const handleCloseOnClick = () => {
+    const contextMenuNode = contextMenuRef?.current
+    if (contextMenuNode) {
+      contextMenuNode.classList.add('hidden')
+    }
+  }
+
+  const handleCloseOnClickOutside = (event) => {
+    const contextMenuNode = contextMenuRef?.current
+    if (contextMenuNode && !contextMenuNode.contains(event.target)) {
+      contextMenuNode.classList.add('hidden')
+    }
+  }
+  
+  useEffect(() => {
+    const contextMenuNode = contextMenuRef?.current
+    
+    if (contextMenuNode) {
+      document.addEventListener('mousedown', handleCloseOnClickOutside)
+      contextMenuNode.addEventListener('click', handleCloseOnClick)
+      return () => {
+        document.removeEventListener('mousedown', handleCloseOnClickOutside)
+        contextMenuNode.removeEventListener('click', handleCloseOnClick)
+      }
+    }
+  }, [])
+
   return (
     <header className={navbarStyle}>
       <Container auto>
@@ -43,7 +81,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href='/historia'>
+              <Link href='/nosotros/#razon-de-ser'>
                 Razón de Ser
               </Link>
             </li>
@@ -52,11 +90,60 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <button className={buttonBurgerStyle} onClick={() => alert('Menu opened!')} >
+          <button className={buttonBurgerStyle} onClick={handleOpenMenu} >
             <div className={buttonBurgerSticksStyle}></div>
           </button>
 
         </nav>
+
+        <nav className='w-48 py-4 absolute right-[6%] hidden overflow-hidden bg-white rounded-md shadow-xl' ref={contextMenuRef}>
+          <ul className='text-rehsok-gray'>
+            <li>
+              <Link href='/'>
+                <div className='py-2 px-4'>
+                  Inicio
+                </div>
+              </Link>
+            </li>
+            <li>
+              <Link href='/#soluciones'>
+                <div className='py-2 px-4'>
+                  Soluciones
+                </div>
+              </Link>
+            </li>
+            <li>
+              <Link href='/#propuesta'>
+                <div className='py-2 px-4'>
+                  Propósito
+                </div>
+              </Link>
+            </li>
+            <li>
+              <Link href='/#estrategia'>
+                <div className='py-2 px-4'>
+                  Estrategia
+                </div>
+              </Link>
+            </li>
+            <li>
+              <Link href='/nosotros/#razon-de-ser'>
+                <div className='py-2 px-4'>
+                  Razón de Ser
+                </div>
+              </Link>
+            </li>
+            <li>
+              <Link href='/#contactanos'>
+                <div className='py-2 px-4'>
+                  Contactanos
+                </div>
+              </Link>
+            </li>
+          </ul>
+
+        </nav>
+
       </Container>
     </header>
   )

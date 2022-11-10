@@ -12,7 +12,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className={footerStyle}>
+    <footer id='contactanos' className={footerStyle}>
 
       <Container auto gapY>
 

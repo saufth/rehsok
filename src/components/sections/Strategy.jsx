@@ -5,7 +5,9 @@ import Heading from '../../core/components/data-display/Heading'
 import ImageQuote from '../data-display/ImageQuote'
 import Paragraph from '../../core/components/data-display/Paragraph'
 // Styles
-import { contentStyle } from '../../styles/sections/StrategySection.module.css'
+import {
+  contentStyle
+} from '../../styles/sections/Strategy.module.css'
 
 const imageFolder = 'strategy/'
 
@@ -71,7 +73,7 @@ const strategy = [
   },
 ]
 
-const StrategySection = () => {
+const Strategy = () => {
   return (
     <section id='estrategia'>
       <Container auto alignment='center' gapY>
@@ -118,4 +120,4 @@ const StrategySection = () => {
   )
 }
 
-export default StrategySection
+export default Strategy
