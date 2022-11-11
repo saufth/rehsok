@@ -23,14 +23,14 @@ const spaceConfig = {
   'top-xl': spaceTopXL
 }
 
-const Button = ({ children, small, secondary, space }) => {
+const Button = ({ children, page = '', small, secondary, space }) => {
   const sizeStyle = small ? buttonSmallStyle : buttonLargeStyle
   const themeStyle = secondary ? buttonSecondaryStyle : buttonPrimaryStyle
   const spaceStyle = space ? spaceConfig[space] : ''
   const buttonCustomStyle = `${buttonStyle} ${sizeStyle} ${themeStyle} ${spaceStyle}`
 
   return (
-    <Link href='/nosotros#contactanos'>
+    <Link href={`/${page}#contactanos`}>
       <div className={buttonCustomStyle}>
         {children}
       </div>
