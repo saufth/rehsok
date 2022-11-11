@@ -18,28 +18,22 @@ const Navbar = () => {
   const contextMenuRef = useRef()
 
   const handleOpenMenu = () => {
-    const contextMenuNode = contextMenuRef?.current
-    if (contextMenuNode) {
-      contextMenuNode.classList.remove('hidden')
-    }
+    contextMenuRef.current?.classList.remove('hidden')
   }
 
   const handleCloseOnClick = () => {
-    const contextMenuNode = contextMenuRef?.current
-    if (contextMenuNode) {
-      contextMenuNode.classList.add('hidden')
-    }
+    contextMenuRef.current?.classList.add('hidden')
   }
 
   const handleCloseOnClickOutside = (event) => {
-    const contextMenuNode = contextMenuRef?.current
+    const contextMenuNode = contextMenuRef.current
     if (contextMenuNode && !contextMenuNode.contains(event.target)) {
       contextMenuNode.classList.add('hidden')
     }
   }
   
   useEffect(() => {
-    const contextMenuNode = contextMenuRef?.current
+    const contextMenuNode = contextMenuRef.current
     
     if (contextMenuNode) {
       document.addEventListener('mousedown', handleCloseOnClickOutside)
