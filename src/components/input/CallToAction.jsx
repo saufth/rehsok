@@ -1,14 +1,10 @@
 // Components
-import Button from "../../core/components/input/Button"
+import Button from '../../core/components/input/Button'
 
-const callToAction = () => {
-  alert('Now in contact!')
-}
-
-const CallToAction = ({ small, secondary, space }) => {
+const CallToAction = ({ page, small, secondary, space }) => {
   return (
     <Button
-      onclick={callToAction}
+      page={page}
       small={small}
       secondary={secondary}
       space={space}

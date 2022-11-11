@@ -84,7 +84,7 @@ const About = () => {
           su comunidad, para sus familias y para ellos mismos.
         </p>
 
-        <CallToAction space='top-lg' />
+        <CallToAction page='historia' space='top-lg' />
 
       </Container>
     </section>
