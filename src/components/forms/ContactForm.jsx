@@ -81,7 +81,7 @@ const ContactForm = () => {
                   type='text'
                   name='rol'
                   id='rol'
-                  placeholder='ej. Director de administrativo'
+                  placeholder='ej. Director de Administrativo'
                   required
                   className='mt-1 md:mt-1.5 lg:mt-2 w-full block px-2.5 py-1 text-xs md:text-sm lg:text-base rounded text-rehsok-gray border border-zinc-300 focus:border-blue-pantone shadow-md'
                 />

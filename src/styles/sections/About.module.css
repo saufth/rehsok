@@ -6,5 +6,6 @@
     mt-6 md:mt-8 lg:mt-10
     /* Typography */
     md:text-lg lg:text-xl
-    text-white;   
+    text-white
+    text-center md:text-start;   
 }
