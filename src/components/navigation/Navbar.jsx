@@ -87,7 +87,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href='/nosotros/#razon-de-ser'>
+              <Link href='/razon-de-ser'>
                 Razón de Ser
               </Link>
             </li>
@@ -133,7 +133,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href='/nosotros/#razon-de-ser'>
+              <Link href='/razon-de-ser'>
                 <div className='py-2 px-4'>
                   Razón de Ser
                 </div>
