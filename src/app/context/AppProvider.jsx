@@ -2,7 +2,7 @@
 import { createContext, useState } from 'react'
 
 const initialState = {
-  contact: true
+  contact: false
 }
 
 export const AppContext = createContext()

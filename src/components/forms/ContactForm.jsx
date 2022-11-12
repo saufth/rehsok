@@ -10,7 +10,8 @@ import {
 
 const ContactForm = () => {
   const [appState, setAppState] = useContext(AppContext)
-  const layoutCustomStyle = `${layoutStyle} ${appState.contact ? '' : hiddenStyle}`
+  const statusStyle = appState.contact ? '' : hiddenStyle
+  const layoutCustomStyle = `${layoutStyle} ${statusStyle}`
 
   const closeContact = () => {
     setAppState({

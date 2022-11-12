@@ -1,3 +1,7 @@
+// Hooks
+import { useContext } from 'react'
+// Utils
+import { AppContext } from '../../app/context/AppProvider'
 // Components
 import CallToAction from '../input/CallToAction'
 import Container from '../../core/components/layout/Container'
@@ -15,7 +19,15 @@ import {
 } from '../../styles/navigation/Navbar.module.css'
 
 const Navbar = () => {
+  const [_appState, setAppState] = useContext(AppContext)
+
   const contextMenuRef = useRef()
+
+  const openContact = () => {
+    setAppState({
+      contact: true
+    })
+  }
 
   const handleOpenMenu = () => {
     contextMenuRef.current?.classList.remove('hidden')
@@ -128,11 +140,9 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href='/#contactanos'>
-                <div className='py-2 px-4'>
-                  Contactanos
-                </div>
-              </Link>
+              <button onClick={openContact} className='py-2 px-4'>
+                Contactanos
+              </button>
             </li>
           </ul>
 
