@@ -40,7 +40,7 @@ const Footer = () => {
       </Container>
 
       <div className='py-4 flex justify-center bg-zinc-700'>
-        <Link href='#'>
+        <Link href='/'>
           <span className={messageStyle}>
             Rehsok Consultores ®
           </span>

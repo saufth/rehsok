@@ -117,7 +117,7 @@ const ContactForm = () => {
 
               <div>
                 <label htmlFor='description' className='block text-xs md:text-sm lg:text-base text-rehsok-gray'>
-                  Breve descripción de la problematica o solución que necesita
+                  Descripción de la problematica o solución que necesita
                 </label>
                 <textarea
                   name='description'
