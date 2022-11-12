@@ -13,9 +13,9 @@ const Footer = () => {
   return (
     <footer id='contactanos' className={footerStyle}>
 
-      <Container auto gapY>
+      <Container auto>
 
-        <div className='flex flex-col md:flex-row'>
+        <div className='py-12 md:py-14 lg:py-16 flex flex-col md:flex-row'>
 
           <div className='w-full flex flex-col justify-center items-center gap-y-6 md:gap-y-8 lg:gap-y-10 text-lg md:text-xl lg:text-2xl'>
             <img
