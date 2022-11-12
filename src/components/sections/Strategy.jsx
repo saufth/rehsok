@@ -47,7 +47,7 @@ const strategy = [
     imageSrc: `${imageFolder}strategy`
   },
   {
-    heading: 'Prever las tendencias futuras',
+    heading: 'Prevemos tendencias futuras',
     descriptions: [
       'Hay que saber prever o anticipar cuándo entrar y salir de cualquier oportunidad, situación y/o negocio, nada es eterno, todo tiene un ciclo, un punto alto y un punto bajo.',
       'Lo único constante es el cambio.'
