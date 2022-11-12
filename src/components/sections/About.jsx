@@ -9,7 +9,7 @@ import {
 
 const About = () => {
   return (
-    <section className='mt-32'>
+    <section className='mt-16 md:mt-24 lg:mt-32'>
       <Container auto alignment='center' gapY>
 
         <Heading center secondary>
