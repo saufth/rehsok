@@ -1,4 +1,5 @@
 // Components
+import ContactForm from '../../components/forms/ContactForm'
 import Footer from '../../components/sections/Footer'
 import Head from 'next/head'
 import Hero from '../../components/sections/Hero'
@@ -26,9 +27,11 @@ const AppLayout = ({ children }) => {
       <main>
         <Hero />
         {children}
+        <ContactForm />
       </main>
 
       <Footer />
+
 
     </div>
   )

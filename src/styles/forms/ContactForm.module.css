@@ -1,0 +1,37 @@
+.layoutStyle {
+  @apply
+    /* Sizing */
+    w-full
+    h-screen
+    /* Layout */
+    fixed
+    top-0
+    left-0
+    z-50
+    /* Flexbox & Grid */
+    flex
+    justify-center
+    items-center
+    /* Background */
+    bg-black/20;
+}
+
+.hiddenStyle {
+  @apply
+    /* Layout */
+    hidden;
+}
+
+.containerStyle {
+  @apply
+    /* Sizing */
+    w-11/12 md:w-3xl
+    h-md
+    /* Spacing */
+    pt-8
+    pl-8
+    pr-4
+    bg-white
+    rounded
+    shadow-xl;
+}

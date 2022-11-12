@@ -1,13 +1,16 @@
 // Components
 import AppLayout from '../app/components/AppLayout'
+import AppProvider from '../app/context/AppProvider'
 // Styles
 import '../styles/globals.css'
 
 const App = ({ Component, pageProps }) => {
   return (
-    <AppLayout>
-      <Component {...pageProps} />
-    </AppLayout>
+    <AppProvider>
+      <AppLayout>
+        <Component {...pageProps} />
+      </AppLayout>
+    </AppProvider>
   )
 }
 

@@ -1,5 +1,4 @@
 // Styles
-import Link from 'next/link'
 import {
   buttonStyle,
   buttonLargeStyle,
@@ -23,18 +22,16 @@ const spaceConfig = {
   'top-xl': spaceTopXL
 }
 
-const Button = ({ children, page = '', small, secondary, space }) => {
+const Button = ({ children, onclick, small, secondary, space }) => {
   const sizeStyle = small ? buttonSmallStyle : buttonLargeStyle
   const themeStyle = secondary ? buttonSecondaryStyle : buttonPrimaryStyle
   const spaceStyle = space ? spaceConfig[space] : ''
   const buttonCustomStyle = `${buttonStyle} ${sizeStyle} ${themeStyle} ${spaceStyle}`
 
   return (
-    <Link href={`/${page}#contactanos`}>
-      <div className={buttonCustomStyle}>
-        {children}
-      </div>
-    </Link>
+    <button className={buttonCustomStyle} onClick={onclick}>
+      {children}
+    </button>
   )
 }
 
