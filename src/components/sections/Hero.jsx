@@ -1,6 +1,5 @@
 // Components
 import Container from '../../core/components/layout/Container'
-import Navbar from '../navigation/Navbar'
 import PlayButton from '../input/PlayButton'
 // Styles
 import {
@@ -17,9 +16,6 @@ const Hero = () => {
 
   return (
     <section className={heroStyle}>
-
-      <Navbar />
-
       <Container alignment='center' fullHeight>
 
         <img
@@ -38,9 +34,7 @@ const Hero = () => {
           <PlayButton/>
         </div>
 
-
       </Container>
-
     </section>
   )
 }

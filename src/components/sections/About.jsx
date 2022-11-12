@@ -9,11 +9,11 @@ import {
 
 const About = () => {
   return (
-    <section id='razon-de-ser'>
+    <section className='mt-32'>
       <Container auto alignment='center' gapY>
 
-        <Heading center>
-          Nuestra historia
+        <Heading center secondary>
+          Nuestra razón de ser
         </Heading>
 
         <p className={textStyle}>
@@ -84,9 +84,13 @@ const About = () => {
           su comunidad, para sus familias y para ellos mismos.
         </p>
 
-        <CallToAction space='top-lg' />
+        <CallToAction secondary space='top-lg' />
 
       </Container>
+      <div
+        className='w-full h-screen fixed top-0 left-0 -z-10 bg-black bg-cover bg-center bg-no-repeat'
+        style={{backgroundImage: 'url(/images/backgrounds/hero.jpg)'}}
+      ></div>
     </section>
   )
 }

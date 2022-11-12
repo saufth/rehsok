@@ -6,6 +6,12 @@
     text-rehsok-indigo;
 }
 
+.secondaryStyle {
+  @apply
+    /* Typography */
+    text-white;
+}
+
 .centerStyle {
   @apply
     /* Typography */

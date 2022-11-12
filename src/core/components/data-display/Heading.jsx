@@ -1,7 +1,8 @@
 // Styles
 import {
   typographyStyle,
-  centerStyle
+  centerStyle,
+  secondaryStyle
 } from '../../../styles/data-display/Heading.module.css'
 import { 
   spaceTopXS,
@@ -19,10 +20,11 @@ const spaceConfig = {
   'top-xl': spaceTopXL
 }
 
-const Heading = ({ children, center, space }) => {
+const Heading = ({ children, center, space, secondary }) => {
   const centerTextStyle = center ? centerStyle : ''
   const spaceStyle = space ? spaceConfig[space] : ''
-  const headingStyle = `${typographyStyle} ${centerTextStyle} ${spaceStyle}`
+  const whiteThemeStyle = secondary ? secondaryStyle : ''
+  const headingStyle = `${typographyStyle} ${centerTextStyle} ${spaceStyle} ${whiteThemeStyle}`
 
   return (
     <h1 className={headingStyle}>

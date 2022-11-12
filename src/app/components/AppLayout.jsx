@@ -2,7 +2,7 @@
 import ContactForm from '../../components/forms/ContactForm'
 import Footer from '../../components/sections/Footer'
 import Head from 'next/head'
-import Hero from '../../components/sections/Hero'
+import Navbar from '../../components/navigation/Navbar'
 
 const keywordList = [
   'rehsok',
@@ -25,13 +25,13 @@ const AppLayout = ({ children }) => {
       </Head>
 
       <main>
-        <Hero />
+        <Navbar />
         {children}
-        <ContactForm />
       </main>
 
       <Footer />
 
+      <ContactForm />
 
     </div>
   )
