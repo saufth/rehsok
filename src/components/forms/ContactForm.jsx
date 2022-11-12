@@ -123,7 +123,7 @@ const ContactForm = () => {
                   name='description'
                   id='description'
                   rows={3}
-                  placeholder='Cuentanos más sobre como podemos ayudarte'
+                  placeholder='Cuentanos ¿Cómo podemos ayudarte?'
                   defaultValue={''}
                   className='mt-2 w-full block px-2.5 py-1 rounded text-xs md:text-sm lg:text-base text-rehsok-gray border border-zinc-300 focus:border-blue-pantone shadow-md'
                 />
