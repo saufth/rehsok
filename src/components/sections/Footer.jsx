@@ -17,7 +17,7 @@ const Footer = () => {
 
         <div className='flex flex-col md:flex-row'>
 
-          <div className='w-full flex flex-col justify-center items-center gap-y-6 md:gap-y-8 lg:gap-y-10 py-24 md:py-0 text-lg md:text-xl lg:text-2xl'>
+          <div className='w-full flex flex-col justify-center items-center gap-y-6 md:gap-y-8 lg:gap-y-10 text-lg md:text-xl lg:text-2xl'>
             <img
               src='/images/logos/logomark-white.svg'
               alt='Rehsok logo'
@@ -42,7 +42,7 @@ const Footer = () => {
       <div className='py-4 flex justify-center bg-zinc-700'>
         <Link href='#'>
           <span className={messageStyle}>
-            REHSOK<span className={registeredMarkStyle}>®</span>
+            Rehsok Consultores ®
           </span>
         </Link>
       </div>

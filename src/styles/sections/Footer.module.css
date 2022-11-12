@@ -18,14 +18,5 @@
     /* Flexbox & Grid */
     flex
     /* Typography */
-    text-2xl;
-}
-
-.registeredMarkStyle {
-  @apply
-    /* Spacing */
-    ml-1
-    mt-1
-    /* Typography */
-    text-sm;
+    text-sm md:text-base lg:text-lg;
 }

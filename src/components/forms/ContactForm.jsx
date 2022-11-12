@@ -39,7 +39,7 @@ const ContactForm = () => {
                   type='text'
                   name='business-name'
                   id='business-name'
-                  placeholder='ej. Rehsok consultores'
+                  placeholder='ej. Rehsok Consultores'
                   required
                   className='mt-1 md:mt-1.5 lg:mt-2 w-full block px-2.5 py-1 rounded text-xs md:text-sm lg:text-base text-rehsok-gray border border-zinc-300 focus:border-blue-pantone shadow-md'
                 />
@@ -75,7 +75,7 @@ const ContactForm = () => {
 
               <div>
                 <label htmlFor='rol' className='block text-xs md:text-sm lg:text-base text-rehsok-gray'>
-                  Puesto que desempeña en la empresa u oragnización
+                  Puesto que desempeña
                 </label>
                 <input
                   type='text'
@@ -117,7 +117,7 @@ const ContactForm = () => {
 
               <div>
                 <label htmlFor='description' className='block text-xs md:text-sm lg:text-base text-rehsok-gray'>
-                  Breve descripción, problematica o solución que necesita
+                  Breve descripción de la problematica o solución que necesita
                 </label>
                 <textarea
                   name='description'

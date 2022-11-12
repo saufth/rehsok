@@ -6,8 +6,7 @@ import Heading from '../../core/components/data-display/Heading'
 import Paragraph from '../../core/components/data-display/Paragraph'
 // Styles
 import {
-  listStyle,
-  listItemStyle
+  listStyle
 } from '../../styles/sections/Solutions.module.css'
 
 const imageFolder = 'solutions/'
@@ -53,7 +52,7 @@ const Solutions = () => {
 
         <ul className={listStyle}>
           {solutions.map(({ imageSrc, text }, key) => (
-            <li className={listItemStyle} key={key}>
+            <li key={key}>
               <Card imageSrc={imageSrc}>
                 {text}
               </Card>

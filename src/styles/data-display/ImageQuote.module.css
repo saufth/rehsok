@@ -81,8 +81,8 @@
 .imageWrapperStyle {
   @apply
     /* Sizing */
-    w-56 md:w-sm lg:w-md
-    h-32 md:h-sm lg:h-md
+    w-80 md:w-sm lg:w-md
+    h-52 md:h-sm lg:h-md
     /* Layout */
     relative
     overflow-hidden
