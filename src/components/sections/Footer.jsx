@@ -10,6 +10,29 @@ import {
   logonameStyle
 } from '../../styles/sections/Footer.module.css'
 
+const navigationConfig = [
+  {
+    content: 'Inicio',
+    route: '/'
+  },
+  {
+    content: 'Soluciones',
+    route: '/#soluciones'
+  },
+  {
+    content: 'Propósito',
+    route: '/#propuesta'
+  },
+  {
+    content: 'Estrategia',
+    route: '/#estrategia'
+  },
+  {
+    content: 'Razón de ser',
+    route: '/razon-de-ser'
+  },
+]
+
 const Footer = () => {
   return (
     <footer className={footerStyle} data-version='v1'>
@@ -24,31 +47,15 @@ const Footer = () => {
 
         <nav aria-label='Rehsok Directorio' role='navigation'>
           <ul className={listStyle}>
-            <li>
-              <Link href='/'>
-                Inicio
-              </Link>
-            </li>
-            <li>
-              <Link href='/#soluciones'>
-                Soluciones
-              </Link>
-            </li>
-            <li>
-              <Link href='/#propuesta'>
-                Propósito
-              </Link>
-            </li>
-            <li>
-              <Link href='/#estrategia'>
-                Estrategia
-              </Link>
-            </li>
-            <li>
-              <Link href='/razon-de-ser'>
-                Razón de ser
-              </Link>
-            </li>
+            {navigationConfig.map(({content, route}, key) => {
+              return (
+                <li key={key}>
+                  <Link href={route}>
+                    {content}
+                  </Link>
+                </li>
+              )
+            })}
           </ul>
         </nav>
 
