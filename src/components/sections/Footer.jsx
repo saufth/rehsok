@@ -5,80 +5,60 @@ import Link from 'next/link'
 // Styles
 import {
   footerStyle,
-  messageStyle,
-  registeredMarkStyle
+  logomarkStyle,
+  listStyle,
+  logonameStyle
 } from '../../styles/sections/Footer.module.css'
 
 const Footer = () => {
   return (
-    <footer id='contactanos' className={footerStyle}>
+    <footer className={footerStyle} data-version='v1'>
 
-      <Container auto>
+      <Container auto alignment='center' gapY>
 
-        <div className='py-12 md:py-14 lg:py-16 flex flex-col md:flex-row'>
+        <img
+          src='/images/logos/logomark-white.svg'
+          alt='Rehsok Consultores'
+          className={logomarkStyle}
+        />
 
-          <div className='w-full flex flex-col justify-center items-center gap-y-3 md:gap-y-4 text-lg md:text-xl lg:text-2xl'>
-            <img
-              src='/images/logos/logomark-white.svg'
-              alt='Rehsok logo'
-              className='w-20 md:w-24 lg:w-28 opacity-80'
-            />
-            <nav>
-              <ul className='text-sm md:text-base lg:text-lg text-center'>
-                <li>
-                  <Link href='/'>
-                    <div className='py-2'>
-                      Inicio
-                    </div>
-                  </Link>
-                </li>
-                <li>
-                  <Link href='/#soluciones'>
-                    <div className='py-2'>
-                      Soluciones
-                    </div>
-                  </Link>
-                </li>
-                <li>
-                  <Link href='/#propuesta'>
-                    <div className='py-2'>
-                      Propósito
-                    </div>
-                  </Link>
-                </li>
-                <li>
-                  <Link href='/#estrategia'>
-                    <div className='py-2'>
-                      Estrategia
-                    </div>
-                  </Link>
-                </li>
-                <li>
-                  <Link href='/razon-de-ser'>
-                    <div className='py-2'>
-                      Razón de ser
-                    </div>
-                  </Link>
-                </li>
-                <li>
-                  <div className='py-2'>
-                    <CallToAction secondary small />
-                  </div>
-                </li>
-              </ul>
+        <nav aria-label='Rehsok Directorio' role='navigation'>
+          <ul className={listStyle}>
+            <li>
+              <Link href='/'>
+                Inicio
+              </Link>
+            </li>
+            <li>
+              <Link href='/#soluciones'>
+                Soluciones
+              </Link>
+            </li>
+            <li>
+              <Link href='/#propuesta'>
+                Propósito
+              </Link>
+            </li>
+            <li>
+              <Link href='/#estrategia'>
+                Estrategia
+              </Link>
+            </li>
+            <li>
+              <Link href='/razon-de-ser'>
+                Razón de ser
+              </Link>
+            </li>
+          </ul>
+        </nav>
 
-            </nav>
-          </div>
-
-        </div>
+        <CallToAction secondary small />
 
       </Container>
 
-      <div className='py-2 flex justify-center bg-zinc-700'>
+      <div className={logonameStyle}>
         <Link href='/'>
-          <span className={messageStyle}>
-            Rehsok Consultores ®
-          </span>
+          Rehsok Consultores ®
         </Link>
       </div>
 

@@ -1,7 +1,3 @@
-// Hooks
-import { useContext } from 'react'
-// Utils
-import { AppContext } from '../../app/context/AppProvider'
 // Components
 import CallToAction from '../input/CallToAction'
 import Container from '../../core/components/layout/Container'
@@ -19,15 +15,8 @@ import {
 } from '../../styles/navigation/Navbar.module.css'
 
 const Navbar = () => {
-  const [_appState, setAppState] = useContext(AppContext)
 
   const contextMenuRef = useRef()
-
-  const openContact = () => {
-    setAppState({
-      contact: true
-    })
-  }
 
   const handleOpenMenu = () => {
     contextMenuRef.current?.classList.remove('hidden')
@@ -60,7 +49,8 @@ const Navbar = () => {
   return (
     <header className={navbarStyle}>
       <Container auto>
-        <nav className={navigationStyle}>
+
+        <nav className={navigationStyle} aria-label='Rehsok Directorio' role='navigation'>
 
           <Link href='/'>
             <img

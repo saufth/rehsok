@@ -6,17 +6,35 @@
     bg-rehsok-gray;
 }
 
-.headingStyle {
+.logomarkStyle {
   @apply
-    /* Typography */
-    text-3xl md:text-4xl lg:text-5xl
-    text-zinc-200;
+    /* Sizing */
+    w-18 md:w-20 lg:w-24
+    /* Layout */
+    opacity-80;
 }
 
-.messageStyle {
+.listStyle {
   @apply
-    /* Flexbox & Grid */
-    flex
+    /* Spacing */
+    space-y-3.5 lg:space-y-4
+    py-4 md:py-5 lg:py-6
+    /* Layout */
+    flex flex-col
+    justify-center
+    items-center
     /* Typography */
-    text-sm md:text-base lg:text-lg;
+    text-sm md:text-base lg:text-lg
+    [&>li]:text-center;
+}
+
+.logonameStyle {
+  @apply
+    /* Spacing */
+    py-3 md:py-3.5 lg:py-4
+    /* Typography */
+    text-sm md:text-base lg:text-lg
+    text-center
+    /* Background */
+    bg-zinc-700;
 }
