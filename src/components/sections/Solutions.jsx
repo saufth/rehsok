@@ -29,12 +29,12 @@ const solutions =  [
     imageSrc:`${imageFolder}planning`
   },
   {
-    text: 'Litigio fiscal',
-    imageSrc:`${imageFolder}litigation`
-  },
-  {
     text: 'Atención especializada a requerimientos del SAT',
     imageSrc:`${imageFolder}requirements`
+  },
+  {
+    text: 'Litigio fiscal',
+    imageSrc:`${imageFolder}litigation`
   }
 ]
 
