@@ -15,15 +15,16 @@ const PlayButton = () => {
 
   const handlePlayVideo = () => {
     const videoNode = videoRef.current
-    if (videoNode.requestFullscreen) {
+
+    if (videoNode.requestFullscreen)
       videoNode.requestFullscreen()
-		} else if (videoNode.mozRequestFullScreen) {
+		else if (videoNode.mozRequestFullScreen)
 			videoNode.mozRequestFullScreen()
-		} else if (videoNode.webkitRequestFullscreen) {
+		else if (videoNode.webkitRequestFullscreen)
 			videoNode.webkitRequestFullscreen()
-		} else if (videoNode.msRequestFullscreen) {
+		else if (videoNode.msRequestFullscreen)
 			videoNode.msRequestFullscreen()
-		}
+
     videoNode.play()
     videoWrapperRef.current.classList.remove('hidden')
 	}
@@ -37,6 +38,19 @@ const PlayButton = () => {
       videoWrapperRef.current.classList.add('hidden')
     }
   }
+
+  const handleVideoEnded = () => {
+    const videoNode = videoRef.current
+
+    if (videoNode.exitFullscreen) 
+        videoNode.exitFullscreen()
+    else if (videoNode.webkitExitFullscreen)
+        videoNode.webkitExitFullscreen()
+    else if (videoNode.mozCancelFullScreen)
+        videoNode.mozCancelFullScreen()
+    else if (videoNode.msExitFullscreen)
+        videoNode.msExitFullscreen()
+  }
   
   useEffect(() => {
     const playVideoNode = playVideoRef.current
@@ -44,11 +58,13 @@ const PlayButton = () => {
 
     playVideoNode.addEventListener('click', handlePlayVideo)
     videoNode.addEventListener('fullscreenchange', handleFullScreenChange)
+    videoNode.addEventListener('ended', handleVideoEnded)
     
     if (playVideoNode) {
       return () => {
         playVideoNode.removeEventListener('click', handlePlayVideo)
-        videoNode.addEventListener('fullscreenchange', handleFullScreenChange)
+        videoNode.removeEventListener('fullscreenchange', handleFullScreenChange)
+        videoNode.removeEventListener('ended', handleVideoEnded)
       }
     }
   }, [])
