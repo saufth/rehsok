@@ -33,7 +33,7 @@ const solutions =  [
     imageSrc:`${imageFolder}litigation`
   },
   {
-    text: 'Atención personalizada a requerimientos del SAT',
+    text: 'Atención especializada a requerimientos del SAT',
     imageSrc:`${imageFolder}requirements`
   }
 ]
