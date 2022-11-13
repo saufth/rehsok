@@ -21,6 +21,10 @@ const solutions =  [
     imageSrc:`${imageFolder}consulting`
   },
   {
+    text: 'Segunda opinión experta',
+    imageSrc:`${imageFolder}opinion`
+  },
+  {
     text: 'Planeación fiscal',
     imageSrc:`${imageFolder}planning`
   },

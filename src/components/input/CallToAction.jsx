@@ -21,7 +21,7 @@ const CallToAction = ({ small, secondary, space }) => {
       secondary={secondary}
       space={space}
     >
-      Contactanos
+      Contáctanos
     </Button>
   )
 }

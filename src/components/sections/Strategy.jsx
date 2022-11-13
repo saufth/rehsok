@@ -23,33 +23,33 @@ const strategy = [
   {
     heading: 'Transformando problemas en oportunidades',
     descriptions: [
-      'Problemas = Áreas de oportunidad.',
+      'Problemas = áreas de oportunidad.',
       'Mientras más grande y frecuente sea el problema, mayor será la posibilidad de generar valor.'
     ],
     imageSrc: `${imageFolder}oportunity`
   },
   {
-    heading: 'No asumiendo',
+    heading: 'No asumimos',
     descriptions: [
-      'Se debe tener certeza en cada tarea u objetivo a realizar, nunca asumir en caso no tener certeza plena.',
-      'Evitar los retrabajos dando indicaciones claras asegura que las cosas se haran bien a la primera.',
+      'Se debe tener certeza en cada tarea u objetivo a realizar. Nunca asumir en caso no tener certeza plena.',
+      'Evitar los retrabajos dando indicaciones claras asegura que las cosas se harán bien a la primera.',
       'Cualquier duda, pregunta o sugerencia de nuestros clientes y colaboradores es siempre bienvenida.'
     ],
     imageSrc: `${imageFolder}assume`
   },
   {
-    heading: 'Trabajamos con estrategia',
+    heading: 'Planeamos y ejecutamos con estrategia',
     descriptions: [
-      'Cuál es la mejor forma de llegar de un punto A (donde estamos) a un punto B (a donde se quiere llegar).',
-      'Administrar con eficiencia los recursos disponibles.',
+      '¿Cuál es la mejor forma de llegar de un punto A (donde estamos) a un punto B (a donde se quiere llegar)?',
+      'Administramos con eficiencia los recursos disponibles.',
       'Siempre hay una forma óptima o mejor de hacer las cosas.'
     ],
     imageSrc: `${imageFolder}strategy`
   },
   {
-    heading: 'Prevemos tendencias futuras',
+    heading: 'Prevemos futuras tendencias',
     descriptions: [
-      'Hay que saber prever o anticipar cuándo entrar y salir de cualquier oportunidad, situación y/o negocio, nada es eterno, todo tiene un ciclo, un punto alto y un punto bajo.',
+      'Hay que saber prever o anticipar cuándo entrar y salir de cualquier oportunidad, situación y/o negocio. Nada es eterno, todo tiene un ciclo, un punto alto y un punto bajo.',
       'Lo único constante es el cambio.'
     ],
     imageSrc: `${imageFolder}prevent`

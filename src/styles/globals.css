@@ -3,6 +3,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Force light mode always */
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: light;
+  }
+}
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: light;
+  }
+}
+
 @layer base {
   html {
     @apply

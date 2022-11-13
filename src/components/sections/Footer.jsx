@@ -17,29 +17,64 @@ const Footer = () => {
 
         <div className='py-12 md:py-14 lg:py-16 flex flex-col md:flex-row'>
 
-          <div className='w-full flex flex-col justify-center items-center gap-y-6 md:gap-y-8 lg:gap-y-10 text-lg md:text-xl lg:text-2xl'>
+          <div className='w-full flex flex-col justify-center items-center gap-y-3 md:gap-y-4 text-lg md:text-xl lg:text-2xl'>
             <img
               src='/images/logos/logomark-white.svg'
               alt='Rehsok logo'
               className='w-20 md:w-24 lg:w-28 opacity-80'
             />
-            <Link href='mailto:contacto@rehsok.com'>
-              <div className='flex gap-x-2 md:gap-x-2 lg:gap-x-3'>
-                <img
-                  className='w-5 md:w-5 lg:w-6'
-                  src='/images/social/email.svg'
-                />
-                contacto@rehsok.com
-              </div>
-            </Link>
-            <CallToAction secondary small />
+            <nav>
+              <ul className='text-sm md:text-base lg:text-lg text-center'>
+                <li>
+                  <Link href='/'>
+                    <div className='py-2'>
+                      Inicio
+                    </div>
+                  </Link>
+                </li>
+                <li>
+                  <Link href='/#soluciones'>
+                    <div className='py-2'>
+                      Soluciones
+                    </div>
+                  </Link>
+                </li>
+                <li>
+                  <Link href='/#propuesta'>
+                    <div className='py-2'>
+                      Propósito
+                    </div>
+                  </Link>
+                </li>
+                <li>
+                  <Link href='/#estrategia'>
+                    <div className='py-2'>
+                      Estrategia
+                    </div>
+                  </Link>
+                </li>
+                <li>
+                  <Link href='/razon-de-ser'>
+                    <div className='py-2'>
+                      Razón de ser
+                    </div>
+                  </Link>
+                </li>
+                <li>
+                  <div className='py-2'>
+                    <CallToAction secondary small />
+                  </div>
+                </li>
+              </ul>
+
+            </nav>
           </div>
 
         </div>
 
       </Container>
 
-      <div className='py-4 flex justify-center bg-zinc-700'>
+      <div className='py-2 flex justify-center bg-zinc-700'>
         <Link href='/'>
           <span className={messageStyle}>
             Rehsok Consultores ®

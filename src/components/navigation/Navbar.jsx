@@ -88,7 +88,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link href='/razon-de-ser'>
-                Razón de Ser
+                Razón de ser
               </Link>
             </li>
             <li>
@@ -103,49 +103,48 @@ const Navbar = () => {
         </nav>
 
         <nav className='w-48 py-4 absolute right-[6%] hidden overflow-hidden bg-white rounded-md shadow-xl' ref={contextMenuRef}>
-          <ul className='text-rehsok-gray'>
+          <ul className='text-sm md:text-base lg:text-lg text-center text-rehsok-gray'>
             <li>
               <Link href='/'>
-                <div className='py-2 px-4'>
+                <div className='py-2'>
                   Inicio
                 </div>
               </Link>
             </li>
             <li>
               <Link href='/#soluciones'>
-                <div className='py-2 px-4'>
+                <div className='py-2'>
                   Soluciones
                 </div>
               </Link>
             </li>
             <li>
               <Link href='/#propuesta'>
-                <div className='py-2 px-4'>
+                <div className='py-2'>
                   Propósito
                 </div>
               </Link>
             </li>
             <li>
               <Link href='/#estrategia'>
-                <div className='py-2 px-4'>
+                <div className='py-2'>
                   Estrategia
                 </div>
               </Link>
             </li>
             <li>
               <Link href='/razon-de-ser'>
-                <div className='py-2 px-4'>
-                  Razón de Ser
+                <div className='py-2'>
+                  Razón de ser
                 </div>
               </Link>
             </li>
             <li>
-              <button onClick={openContact} className='py-2 px-4'>
-                Contactanos
-              </button>
+              <div className='py-2'>
+                <CallToAction small />
+              </div>
             </li>
           </ul>
-
         </nav>
 
       </Container>

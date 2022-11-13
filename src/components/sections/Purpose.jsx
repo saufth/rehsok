@@ -27,7 +27,7 @@ const Purpose = () => {
 
         <div className={headingStyle}>
           <Heading center>
-            Nuestro proposito
+            Nuestro propósito
           </Heading>
         </div>
 
