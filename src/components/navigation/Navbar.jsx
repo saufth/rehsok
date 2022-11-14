@@ -49,46 +49,45 @@ const Navbar = () => {
   return (
     <header className={navbarStyle}>
       <Container auto>
-
         <nav className={navigationStyle} aria-label='Rehsok Directorio' role='navigation'>
 
-          <Link href='/'>
-            <img
-              className={logoStyle}
-              src='/images/logos/logomark-white.svg'
-              alt='Inicio'
-            />
-          </Link>
+            <Link href='/'>
+              <img
+                className={logoStyle}
+                src='/images/logos/logomark-white.svg'
+                alt='Inicio'
+              />
+            </Link>
 
-          <ul className={listStyle}>
-            <li>
-              <Link href='/#soluciones'>
-                Soluciones
-              </Link>
-            </li>
-            <li>
-              <Link href='/#propuesta'>
-                Propósito
-              </Link>
-            </li>
-            <li>
-              <Link href='/#estrategia'>
-                Estrategia
-              </Link>
-            </li>
-            <li>
-              <Link href='/razon-de-ser'>
-                Razón de ser
-              </Link>
-            </li>
-            <li>
-              <CallToAction small secondary />
-            </li>
-          </ul>
+            <ul className={listStyle}>
+              <li>
+                <Link href='/#soluciones'>
+                  Soluciones
+                </Link>
+              </li>
+              <li>
+                <Link href='/#propuesta'>
+                  Propósito
+                </Link>
+              </li>
+              <li>
+                <Link href='/#estrategia'>
+                  Estrategia
+                </Link>
+              </li>
+              <li>
+                <Link href='/razon-de-ser'>
+                  Razón de ser
+                </Link>
+              </li>
+              <li>
+                <CallToAction small secondary />
+              </li>
+            </ul>
 
-          <button className={buttonBurgerStyle} onClick={handleOpenMenu} >
-            <div className={buttonBurgerSticksStyle}></div>
-          </button>
+            <button className={buttonBurgerStyle} onClick={handleOpenMenu} >
+              <div className={buttonBurgerSticksStyle}></div>
+            </button>
 
         </nav>
 

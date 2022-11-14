@@ -108,10 +108,13 @@ const Strategy = () => {
         </div>
 
         <Paragraph center small>
-          "Aquel que falla en no planear, esta planeado en fallar"
+          "It ain’t what you don’t know that gets you into trouble.
+          It’s what you know for sure that just ain’t so."
         </Paragraph>
 
-        <p className='font-archivo-bold text-xs text-rehsok-gray md:text-sm mt-4'>Sir Winston Churchill</p>
+        <p className='font-archivo-bold text-xs text-rehsok-gray md:text-sm mt-4'>
+          Mark Twain
+        </p>
 
         <CallToAction space='top-md' />
 

@@ -1,8 +1,8 @@
 {
   "name": "rehsok",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
-  "homepage": "https://rehsok.vercel.app",
+  "homepage": "https://rehsok.com",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,14 +10,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "3.9.1",
     "next": "13.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@tailwindcss/forms": "^0.5.3",
-    "autoprefixer": "^10.4.13",
-    "postcss": "^8.4.18",
-    "tailwindcss": "^3.2.2"
+    "@tailwindcss/forms": "0.5.3",
+    "autoprefixer": "10.4.13",
+    "postcss": "8.4.18",
+    "tailwindcss": "3.2.2"
   }
 }

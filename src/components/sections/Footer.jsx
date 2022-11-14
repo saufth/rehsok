@@ -13,23 +13,23 @@ import {
 const navigationConfig = [
   {
     content: 'Inicio',
-    route: '/'
+    url: '/'
   },
   {
     content: 'Soluciones',
-    route: '/#soluciones'
+    url: '/#soluciones'
   },
   {
     content: 'Propósito',
-    route: '/#propuesta'
+    url: '/#propuesta'
   },
   {
     content: 'Estrategia',
-    route: '/#estrategia'
+    url: '/#estrategia'
   },
   {
     content: 'Razón de ser',
-    route: '/razon-de-ser'
+    url: '/razon-de-ser'
   },
 ]
 
@@ -47,15 +47,13 @@ const Footer = () => {
 
         <nav aria-label='Rehsok Directorio' role='navigation'>
           <ul className={listStyle}>
-            {navigationConfig.map(({content, route}, key) => {
-              return (
-                <li key={key}>
-                  <Link href={route}>
-                    {content}
-                  </Link>
-                </li>
-              )
-            })}
+            {navigationConfig.map(({content, url}, key) => (
+              <li key={key}>
+                <Link href={url}>
+                  {content}
+                </Link>
+              </li>
+            ))}
           </ul>
         </nav>
 
