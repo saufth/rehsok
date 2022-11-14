@@ -29,6 +29,9 @@ const ContactForm = () => {
 
   const sendEmail = (event) => {
     event.preventDefault()
+    console.log(process.env.NEXT_PUBLIC_EMAIL_SERVICE_KEY,)
+    console.log(process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_KEY,)
+    console.log(process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY)
 
     emailjs.sendForm(
       process.env.NEXT_PUBLIC_EMAIL_SERVICE_KEY,
@@ -164,11 +167,10 @@ const ContactForm = () => {
               />
             </div>
             
-            <button
-              type='submit'
-              className={submitStyle}
-            >
-              Enviar
+            <button type='submit'>
+              <div className={submitStyle}>
+                Enviar
+              </div>
             </button>
 
           </form>

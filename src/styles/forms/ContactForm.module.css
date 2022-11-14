@@ -108,7 +108,9 @@
     font-archivo-medium
     text-xs md:text-sm lg:text-base
     text-white
-    bg-rehsok-indigo hover:bg-blue-pantone
+    /* Background */
+    bg-rehsok-indigo
+    hover:bg-blue-pantone
     /* Border */
     rounded
     /* Animation */
