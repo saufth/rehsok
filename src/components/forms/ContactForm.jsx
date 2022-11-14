@@ -7,6 +7,15 @@ import emailjs from '@emailjs/browser'
 // Styles
 import {
   layoutStyle,
+  containerStyle,
+  formWrapperStyle,
+  headingStyle,
+  formStyle,
+  labelStyle,
+  inputStyle,
+  submitStyle,
+  toolbarStyle,
+  cancelStyle,
   hiddenStyle
 } from '../../styles/forms/ContactForm.module.css'
 
@@ -44,128 +53,130 @@ const ContactForm = () => {
 
   return (
     <div className={layoutCustomStyle}>
-      <div className='w-[90%] md:w-3xl h-md pt-8 pl-8 pr-4 bg-white rounded shadow-xl'>
+      <div className={containerStyle}>
 
-        <div className='w-full h-[364px] pr-4 overflow-y-scroll overflow-x-hidden'>
-          <h3 className='text-xl md:text-3xl lg:text-3xl text-rehsok-gray'>
+        <div className={formWrapperStyle}>
+          <h3 className={headingStyle}>
             Ponte en contacto con nosotros
           </h3>
 
-          <form ref={formRef} onSubmit={sendEmail} className='mt-4 md:mt-6 lg:mt-8'>
-            <div className='flex flex-col gap-y-4 md:gap-y-5 lg:gap-y-6'>
+          <form
+            ref={formRef}
+            onSubmit={sendEmail}
+            className={formStyle}
+          >
 
-              <div>
-                <label htmlFor='business_name' className='block text-xs md:text-sm lg:text-base text-rehsok-gray'>
-                  Empresa u oraganización
-                </label>
-                <input
-                  type='text'
-                  name='business_name'
-                  id='business_name'
-                  placeholder='ej. Rehsok Consultores'
-                  required
-                  className='mt-1 md:mt-1.5 lg:mt-2 w-full block px-2.5 py-1 rounded text-xs md:text-sm lg:text-base text-rehsok-gray border border-zinc-300 focus:border-blue-pantone shadow-md'
-                />
-              </div>
-
-              <div>
-                <label htmlFor='website' className='block text-xs md:text-sm lg:text-base text-rehsok-gray'>
-                  Página web
-                </label>
-                <input
-                  type='text'
-                  name='website'
-                  id='website'
-                  placeholder='www.ejemplo.com'
-                  required
-                  className='mt-1 md:mt-1.5 lg:mt-2 w-full block px-2.5 py-1 text-xs md:text-sm lg:text-base rounded text-rehsok-gray border border-zinc-300 focus:border-blue-pantone shadow-md'
-                />
-              </div>
-
-              <div>
-                <label htmlFor='contact_name' className='block text-xs md:text-sm lg:text-base text-rehsok-gray'>
-                  Nombre de contacto
-                </label>
-                <input
-                  type='text'
-                  name='contact_name'
-                  id='contact_name'
-                  placeholder='Nombre completo'
-                  required
-                  className='mt-1 md:mt-1.5 lg:mt-2 w-full block px-2.5 py-1 rounded text-xs md:text-sm lg:text-base text-rehsok-gray border border-zinc-300 focus:border-blue-pantone shadow-md'
-                />
-              </div>
-
-              <div>
-                <label htmlFor='role' className='block text-xs md:text-sm lg:text-base text-rehsok-gray'>
-                  Puesto que desempeña
-                </label>
-                <input
-                  type='text'
-                  name='role'
-                  id='role'
-                  placeholder='ej. Director de Administrativo'
-                  required
-                  className='mt-1 md:mt-1.5 lg:mt-2 w-full block px-2.5 py-1 text-xs md:text-sm lg:text-base rounded text-rehsok-gray border border-zinc-300 focus:border-blue-pantone shadow-md'
-                />
-              </div>
-
-              <div>
-                <label htmlFor='phone' className='block text-xs md:text-sm lg:text-base text-rehsok-gray'>
-                  Teléfono de contacto
-                </label>
-                <input
-                  type='tel'
-                  name='phone'
-                  id='phone'
-                  placeholder='ej. 555-555-5555'
-                  required
-                  className='mt-1 md:mt-1.5 lg:mt-2 w-full block px-2.5 py-1 text-xs md:text-sm lg:text-base rounded text-rehsok-gray border border-zinc-300 focus:border-blue-pantone shadow-md'
-                />
-              </div>
-
-              <div>
-                <label htmlFor='email' className='block text-xs md:text-sm lg:text-base text-rehsok-gray'>
-                  Correo de contacto
-                </label>
-                <input
-                  type='email'
-                  name='email'
-                  id='email'
-                  placeholder='ej. nombre@dominio.com'
-                  required
-                  className='mt-1 md:mt-1.5 lg:mt-2 w-full block px-2.5 py-1 text-xs md:text-sm lg:text-base rounded text-rehsok-gray border border-zinc-300 focus:border-blue-pantone shadow-md'
-                />
-              </div>
-
-              <div>
-                <label htmlFor='description' className='block text-xs md:text-sm lg:text-base text-rehsok-gray'>
-                  Descripción de la problematica o solución que necesita
-                </label>
-                <textarea
-                  name='description'
-                  id='description'
-                  rows={3}
-                  placeholder='Cuentanos ¿Cómo podemos ayudarte?'
-                  defaultValue={''}
-                  className='mt-2 w-full block px-2.5 py-1 rounded text-xs md:text-sm lg:text-base text-rehsok-gray border border-zinc-300 focus:border-blue-pantone shadow-md'
-                />
-              </div>
-              
-              <button
-                type='submit'
-                className='w-20 md:w-24 lg:w-28 py-2 md:py-2.5 lg:py-3 mt-2 md:mt-3 lg:mt-4 text-xs md:text-sm lg:text-base text-white bg-rehsok-indigo hover:bg-blue-pantone rounded font-archivo-medium transition-colors'
-              >
-                Enviar
-              </button>
-
+            <div>
+              <label htmlFor='business_name' className={labelStyle}>
+                Empresa u oraganización
+              </label>
+              <input
+                type='text'
+                name='business_name'
+                id='business_name'
+                placeholder='ej. Rehsok Consultores'
+                required
+                className={inputStyle}
+              />
             </div>
+
+            <div>
+              <label htmlFor='website' className={labelStyle}>
+                Página web
+              </label>
+              <input
+                type='text'
+                name='website'
+                id='website'
+                placeholder='www.ejemplo.com'
+                required
+                className={inputStyle}
+              />
+            </div>
+
+            <div>
+              <label htmlFor='contact_name' className={labelStyle}>
+                Nombre de contacto
+              </label>
+              <input
+                type='text'
+                name='contact_name'
+                id='contact_name'
+                placeholder='Nombre completo'
+                required
+                className={inputStyle}
+              />
+            </div>
+
+            <div>
+              <label htmlFor='role' className={labelStyle}>
+                Puesto que desempeña
+              </label>
+              <input
+                type='text'
+                name='role'
+                id='role'
+                placeholder='ej. Director de Administrativo'
+                required
+                className={inputStyle}
+              />
+            </div>
+
+            <div>
+              <label htmlFor='phone' className={labelStyle}>
+                Teléfono de contacto
+              </label>
+              <input
+                type='tel'
+                name='phone'
+                id='phone'
+                placeholder='ej. 555-555-5555'
+                required
+                className={inputStyle}
+              />
+            </div>
+
+            <div>
+              <label htmlFor='email' className={labelStyle}>
+                Correo de contacto
+              </label>
+              <input
+                type='email'
+                name='email'
+                id='email'
+                placeholder='ej. nombre@dominio.com'
+                required
+                className={inputStyle}
+              />
+            </div>
+
+            <div>
+              <label htmlFor='description' className={labelStyle}>
+                Descripción de la problematica o solución que necesita
+              </label>
+              <textarea
+                name='description'
+                id='description'
+                rows={3}
+                placeholder='Cuentanos ¿Cómo podemos ayudarte?'
+                defaultValue={''}
+                className={inputStyle}
+              />
+            </div>
+            
+            <button
+              type='submit'
+              className={submitStyle}
+            >
+              Enviar
+            </button>
+
           </form>
 
         </div>
 
-        <div className='w-full h-12 flex justify-end items-center text-rehsok-gray'>
-          <button className='font-archivo-medium text-xs md:text-sm lg:text-base text-indigo-500' onClick={closeContact}>
+        <div className={toolbarStyle}>
+          <button onClick={closeContact} className={cancelStyle}>
             Cancelar
           </button>
         </div>

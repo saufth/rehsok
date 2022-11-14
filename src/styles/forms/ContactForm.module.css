@@ -25,13 +25,113 @@
 .containerStyle {
   @apply
     /* Sizing */
-    w-11/12 md:w-3xl
+    w-[90%] md:w-3xl
     h-md
     /* Spacing */
     pt-8
     pl-8
     pr-4
+    /* Background */
     bg-white
+    /* Border */
     rounded
+    /* Shadow */
     shadow-xl;
+}
+
+.formWrapperStyle {
+  @apply
+    /* Sizing */
+    w-full
+    h-[364px]
+    /* Spacing */
+    space-y-4 md:space-y-6 lg:space-y-8
+    pr-4
+    /* Layout */
+    overflow-y-scroll
+    overflow-x-hidden;
+}
+
+.headingStyle {
+  @apply
+    /* Typography */
+    text-xl md:text-3xl lg:text-3xl
+    text-rehsok-gray;
+}
+
+.formStyle {
+  @apply
+    /* Flexbox & Grid */
+    flex flex-col
+    gap-y-4 md:gap-y-5 lg:gap-y-6;
+}
+
+.labelStyle {
+  @apply
+    /* Layout */
+    block
+    /* Typography */
+    text-xs md:text-sm lg:text-base
+    text-rehsok-gray;
+}
+
+.inputStyle {
+  @apply
+    /* Sizing */
+    w-full
+    /* Spacing */
+    mt-1 md:mt-1.5 lg:mt-2
+    px-2.5
+    py-1
+    /* Layout */
+    block
+    /* Typography */
+    text-xs md:text-sm lg:text-base
+    text-rehsok-gray
+    /* Border */
+    border
+    border-zinc-300
+    focus:border-blue-pantone
+    rounded
+    /* Shadow */
+    shadow-md;
+}
+
+.submitStyle {
+  @apply
+    /* Sizing */
+    w-20 md:w-24 lg:w-28
+    /* Spacing */
+    py-2 md:py-2.5 lg:py-3
+    mt-2 md:mt-3 lg:mt-4
+    /* Typography */
+    font-archivo-medium
+    text-xs md:text-sm lg:text-base
+    text-white
+    bg-rehsok-indigo hover:bg-blue-pantone
+    /* Border */
+    rounded
+    /* Animation */
+    transition-colors;
+}
+
+.toolbarStyle {
+  @apply
+    /* Sizing */
+    w-full
+    h-12
+    /* Flexbox & Grid */
+    flex
+    justify-end
+    items-center
+    /* Typography */
+    text-rehsok-gray;
+}
+
+.cancelStyle {
+  @apply
+    /* Typography */
+    font-archivo-medium
+    text-xs md:text-sm lg:text-base
+    text-indigo-500;
 }
