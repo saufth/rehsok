@@ -41,3 +41,17 @@
     /* Shadow */
     drop-shadow-3xl;
 }
+
+.videoContainerStyle {
+  @apply
+    /* Sizing */
+    w-screen
+    h-screen
+    /* Layout */
+    absolute
+    top-0
+    left-0
+    z-50
+    /* Background */
+    bg-black hidden;
+}

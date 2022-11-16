@@ -5,13 +5,14 @@ import {
   wrapperStyle,
   cercleStyle,
   iconStyle,
-  textStyle
+  textStyle,
+  videoContainerStyle
 } from '../../styles/input/PlayButton.module.css'
 
 const PlayButton = () => {
   const videoRef = useRef()
   const playVideoRef = useRef()
-  const videoWrapperRef = useRef()
+  const videoContainerRef = useRef()
 
   const handlePlayVideo = () => {
     const videoNode = videoRef.current
@@ -83,17 +84,19 @@ const PlayButton = () => {
           <span className={textStyle}>VER VIDEO</span>
         </span>
       </button>
-      <div className='w-screen h-screen z-50 absolute top-0 left-0 bg-black hidden' ref={videoWrapperRef}>
+
+      <div ref={videoContainerRef} className={videoContainerStyle}>
         <video
+          ref={videoRef}
           controls
           disablePictureInPicture
           controlsList='nodownload noplaybackrate'
           onContextMenu={(event) => event.preventDefault()}
-          ref={videoRef}
         >
           <source src="/video/presentation.mp4" type="video/mp4" />
         </video>
       </div>
+
     </>
   )
 }

@@ -11,7 +11,10 @@ import {
   logoStyle,
   listStyle,
   buttonBurgerStyle,
-  buttonBurgerSticksStyle
+  buttonBurgerSticksStyle,
+  contextMenuStyle,
+  contextMenuListStyle,
+  contextMenuItemStyle
 } from '../../styles/navigation/Navbar.module.css'
 
 const Navbar = () => {
@@ -91,45 +94,45 @@ const Navbar = () => {
 
         </nav>
 
-        <nav className='w-48 py-4 absolute right-[6%] hidden overflow-hidden bg-white rounded-md shadow-xl' ref={contextMenuRef}>
-          <ul className='text-sm md:text-base lg:text-lg text-center text-rehsok-gray'>
+        <nav className={contextMenuStyle} ref={contextMenuRef}>
+          <ul className={contextMenuListStyle}>
             <li>
               <Link href='/'>
-                <div className='py-2'>
+                <div className={contextMenuItemStyle}>
                   Inicio
                 </div>
               </Link>
             </li>
             <li>
               <Link href='/#soluciones'>
-                <div className='py-2'>
+                <div className={contextMenuItemStyle}>
                   Soluciones
                 </div>
               </Link>
             </li>
             <li>
               <Link href='/#propuesta'>
-                <div className='py-2'>
+                <div className={contextMenuItemStyle}>
                   Propósito
                 </div>
               </Link>
             </li>
             <li>
               <Link href='/#estrategia'>
-                <div className='py-2'>
+                <div className={contextMenuItemStyle}>
                   Estrategia
                 </div>
               </Link>
             </li>
             <li>
               <Link href='/razon-de-ser'>
-                <div className='py-2'>
+                <div className={contextMenuItemStyle}>
                   Razón de ser
                 </div>
               </Link>
             </li>
             <li>
-              <div className='py-2'>
+              <div className={contextMenuItemStyle}>
                 <CallToAction small />
               </div>
             </li>

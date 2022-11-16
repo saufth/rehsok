@@ -84,3 +84,38 @@
     after:right-0
     after:bottom-0;
 }
+
+.contextMenuStyle {
+  @apply
+    /* Sizing */
+    w-48
+    /* Spacing */
+    py-4
+    /* Layout */
+    absolute
+    right-[6%]
+    hidden
+    overflow-hidden
+    /* Background */
+    bg-white
+    /* Border */
+    rounded-md
+    /* Shadow */
+    shadow-xl;
+}
+
+.contextMenuListStyle {
+  @apply
+    /* Typography */
+    text-sm
+    md:text-base
+    lg:text-lg
+    text-center
+    text-rehsok-gray;
+}
+
+.contextMenuItemStyle {
+  @apply
+    /* Spacing */
+    py-2;
+}
