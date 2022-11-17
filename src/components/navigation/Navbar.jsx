@@ -95,9 +95,9 @@ const Navbar = () => {
           </ul>
         </nav>
 
-        <button className={buttonBurgerStyle} onClick={openMenu} >
+        <div onClick={openMenu} className={buttonBurgerStyle}>
           <div className={buttonBurgerSticksStyle}></div>
-        </button>
+        </div>
 
         <nav ref={contextMenuRef} className={contextMenuStyle}>
           <ul className={contextMenuListStyle}>

@@ -52,7 +52,8 @@
     w-6
     h-5
     /* Layout */
-    relative md:hidden;
+    relative md:hidden
+    cursor-pointer;
 }
 
 .buttonBurgerSticksStyle {
