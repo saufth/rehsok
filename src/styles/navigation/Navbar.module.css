@@ -53,6 +53,7 @@
     h-5
     /* Layout */
     relative md:hidden
+    /* Interactivity */
     cursor-pointer;
 }
 

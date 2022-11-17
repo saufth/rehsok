@@ -14,6 +14,7 @@ import {
   labelStyle,
   inputStyle,
   submitStyle,
+  submitButtonStyle,
   toolbarStyle,
   cancelStyle,
   hiddenStyle
@@ -164,11 +165,11 @@ const ContactForm = () => {
               />
             </div>
             
-            <button type='submit'>
-              <div className={submitStyle}>
+            <div className={submitStyle}>
+              <button className={submitButtonStyle} type='submit'>
                 Enviar
-              </div>
-            </button>
+              </button>
+            </div>
 
           </form>
 

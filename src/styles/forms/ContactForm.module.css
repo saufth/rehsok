@@ -101,8 +101,8 @@
   @apply
     /* Sizing */
     w-20 md:w-24 lg:w-28
+    h-8 md:h-9 lg:h-10
     /* Spacing */
-    py-2 md:py-2.5 lg:py-3
     mt-2 md:mt-3 lg:mt-4
     /* Typography */
     font-archivo-medium
@@ -115,6 +115,13 @@
     rounded
     /* Animation */
     transition-colors;
+}
+
+.submitButtonStyle {
+  @apply
+    /* Sizing */
+    w-full
+    h-full;
 }
 
 .toolbarStyle {
