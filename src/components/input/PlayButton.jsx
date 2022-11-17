@@ -100,7 +100,7 @@ const PlayButton = () => {
           controlsList='nodownload noplaybackrate'
           onContextMenu={(event) => event.preventDefault()}
         >
-          <source src="/video/presentation.mp4" type="video/mp4" />
+          <source src='/video/presentation.mp4' type='video/mp4' />
         </video>
       </div>
 
