@@ -46,3 +46,33 @@
     justify-center
     items-end;
 }
+
+.flexRowCenterStartStyle {
+  @apply
+    /* Flexbox & Grid */
+    flex
+    justify-start
+    items-center;
+}
+
+.flexRowCenterStyle {
+  @apply
+    /* Flexbox & Grid */
+    flex
+    justify-center
+    items-center;
+}
+
+.flexRowCenterEndStyle {
+  @apply
+    /* Flexbox & Grid */
+    flex
+    justify-end
+    items-center;
+}
+
+.relativeStyle {
+  @apply
+    /* Layout */
+    relative;
+}

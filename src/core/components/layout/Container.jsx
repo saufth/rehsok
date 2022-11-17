@@ -5,13 +5,20 @@ import {
   gapYStyle,
   flexCenterStartStyle,
   flexCenterStyle,
-  flexCenterEndStyle
+  flexCenterEndStyle,
+  flexRowCenterStartStyle,
+  flexRowCenterStyle,
+  flexRowCenterEndStyle,
+  relativeStyle
 } from '../../../styles/layout/Container.module.css'
 
 const alignmentStyles = {
   start: flexCenterStartStyle,
   center: flexCenterStyle,
-  end: flexCenterEndStyle
+  end: flexCenterEndStyle,
+  'row-start': flexRowCenterStartStyle,
+  'row-center': flexRowCenterStyle,
+  'row-end': flexRowCenterEndStyle
 }
 
 const Container = (
@@ -20,14 +27,16 @@ const Container = (
     auto,
     fullHeight,
     alignment,
-    gapY
+    gapY,
+    relative
   }
 ) => {
   const autoStyle = auto ? layoutStyle : ''
   const heightStyle = fullHeight ? fullHeightStyle : ''
   const spacingStyle = gapY ? gapYStyle : ''
   const alignmentStyle = alignment ? alignmentStyles[alignment] : ''
-  const containerStyle = `${autoStyle} ${heightStyle} ${spacingStyle} ${alignmentStyle}`
+  const relativeLayoutStyle = relative ? relativeStyle : ''
+  const containerStyle = `${autoStyle} ${heightStyle} ${spacingStyle} ${alignmentStyle} ${relativeLayoutStyle}`
 
   return (
     <div className={containerStyle}>

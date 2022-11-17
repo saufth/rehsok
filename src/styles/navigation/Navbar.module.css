@@ -10,14 +10,32 @@
     py-6 sm:py-8 lg:py-10;
 }
 
-.navigationStyle {
+.navStyle {
+  @apply
+    /* Sizing*/
+    w-full;
+}
+
+.listStyle {
   @apply
     /* Layout */
-    pr-2 md:pr-0
-    /* Flexbox */
+    [&>li]:hidden md:[&>li]:block
+    first:[&>li]:block
+    /* Flexbox & Grid */
     flex
-    justify-between
-    items-center;
+    justify-end
+    items-center
+    first:[&>li]:justify-self-start
+    first:[&>li]:grow
+    /* Spacing */
+    pr-2 md:pr-0
+    gap-x-8 lg:gap-x-10
+    /* Typography */
+    font-archivo-medium
+    text-white
+    text-sm lg:text-base
+    /* Shadow */
+    drop-shadow-3xl;
 }
 
 .logoStyle {
@@ -26,24 +44,6 @@
     w-16 md:w-18 lg:w-20
     /* Shadow */
     drop-shadow-2xl;
-}
-
-.listStyle {
-  @apply
-    /* Layout */
-    hidden
-    /* Flexbox & Grid */
-    md:md:flex
-    md:justify-center
-    md:items-center
-    /* Spacing */
-    space-x-8 lg:space-x-10
-    /* Typography */
-    font-archivo-medium
-    text-white
-    text-sm lg:text-base
-    /* Shadow */
-    drop-shadow-3xl;
 }
 
 .buttonBurgerStyle {
@@ -93,7 +93,8 @@
     py-4
     /* Layout */
     absolute
-    right-[6%]
+    right-5 sm:right-10
+    top-20 sm:top-24
     hidden
     overflow-hidden
     /* Background */

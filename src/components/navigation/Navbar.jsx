@@ -7,7 +7,7 @@ import { useRef, useEffect } from 'react'
 // Styles
 import {
   navbarStyle,
-  navigationStyle,
+  navStyle,
   logoStyle,
   listStyle,
   buttonBurgerStyle,
@@ -18,21 +18,20 @@ import {
 } from '../../styles/navigation/Navbar.module.css'
 
 const Navbar = () => {
-
   const contextMenuRef = useRef()
 
-  const handleOpenMenu = () => {
-    contextMenuRef.current?.classList.remove('hidden')
+  const openMenu = () => {
+    contextMenuRef.current.style.display = 'block'
   }
 
-  const handleCloseOnClick = () => {
-    contextMenuRef.current?.classList.add('hidden')
+  const closeOnClick = () => {
+    contextMenuRef.current.style.display = 'none'
   }
 
-  const handleCloseOnClickOutside = (event) => {
+  const closeOnClickOutside = (event) => {
     const contextMenuNode = contextMenuRef.current
     if (contextMenuNode && !contextMenuNode.contains(event.target)) {
-      contextMenuNode.classList.add('hidden')
+      closeOnClick()
     }
   }
   
@@ -40,61 +39,61 @@ const Navbar = () => {
     const contextMenuNode = contextMenuRef.current
     
     if (contextMenuNode) {
-      document.addEventListener('mousedown', handleCloseOnClickOutside)
-      contextMenuNode.addEventListener('click', handleCloseOnClick)
+      document.addEventListener('mousedown', closeOnClickOutside)
+      contextMenuNode.addEventListener('click', closeOnClick)
       return () => {
-        document.removeEventListener('mousedown', handleCloseOnClickOutside)
-        contextMenuNode.removeEventListener('click', handleCloseOnClick)
+        document.removeEventListener('mousedown', closeOnClickOutside)
+        contextMenuNode.removeEventListener('click', closeOnClick)
       }
     }
   }, [])
 
   return (
     <header className={navbarStyle}>
-      <Container auto>
-        <nav className={navigationStyle} aria-label='Rehsok Directorio' role='navigation'>
+      <Container auto alignment='row-end'>
 
-            <Link href='/'>
-              <img
-                className={logoStyle}
-                src='/images/logos/logomark-white.svg'
-                alt='Inicio'
-              />
-            </Link>
-
-            <ul className={listStyle}>
-              <li>
-                <Link href='/#soluciones'>
-                  Soluciones
-                </Link>
-              </li>
-              <li>
-                <Link href='/#propuesta'>
-                  Propósito
-                </Link>
-              </li>
-              <li>
-                <Link href='/#estrategia'>
-                  Estrategia
-                </Link>
-              </li>
-              <li>
-                <Link href='/razon-de-ser'>
-                  Razón de ser
-                </Link>
-              </li>
-              <li>
-                <CallToAction small secondary />
-              </li>
-            </ul>
-
-            <button className={buttonBurgerStyle} onClick={handleOpenMenu} >
-              <div className={buttonBurgerSticksStyle}></div>
-            </button>
-
+        <nav aria-label='Rehsok Directorio' role='navigation' className={navStyle}>
+          <ul className={listStyle}>
+            <li>
+              <Link href='/'>
+                <img
+                  className={logoStyle}
+                  src='/images/logos/logomark-white.svg'
+                  alt='Inicio'
+                />
+              </Link>
+            </li>
+            <li>
+              <Link href='/#soluciones'>
+                Soluciones
+              </Link>
+            </li>
+            <li>
+              <Link href='/#propuesta'>
+                Propósito
+              </Link>
+            </li>
+            <li>
+              <Link href='/#estrategia'>
+                Estrategia
+              </Link>
+            </li>
+            <li>
+              <Link href='/razon-de-ser'>
+                Razón de ser
+              </Link>
+            </li>
+            <li>
+              <CallToAction small secondary />
+            </li>
+          </ul>
         </nav>
 
-        <nav className={contextMenuStyle} ref={contextMenuRef}>
+        <button className={buttonBurgerStyle} onClick={openMenu} >
+          <div className={buttonBurgerSticksStyle}></div>
+        </button>
+
+        <nav ref={contextMenuRef} className={contextMenuStyle}>
           <ul className={contextMenuListStyle}>
             <li>
               <Link href='/'>
