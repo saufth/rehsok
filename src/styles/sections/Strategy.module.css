@@ -4,3 +4,13 @@
     space-y-24 md:space-y-28 lg:space-y-32
     py-16 md:py-28 lg:py-32;
 }
+
+.authorStyle {
+  @apply
+    /* Spacing */
+    mt-4
+    /* Typography */
+    font-archivo-bold
+    text-xs md:text-sm
+    text-rehsok-gray;
+}

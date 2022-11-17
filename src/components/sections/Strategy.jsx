@@ -112,7 +112,7 @@ const Strategy = () => {
           It’s what you know for sure that just ain’t so."
         </Paragraph>
 
-        <p className='font-archivo-bold text-xs text-rehsok-gray md:text-sm mt-4'>
+        <p className={authorStyle}>
           Mark Twain
         </p>
 
