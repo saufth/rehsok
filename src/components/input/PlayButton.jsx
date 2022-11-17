@@ -29,7 +29,7 @@ const PlayButton = () => {
 			videoNode.msRequestFullscreen()
 
     videoNode.play()
-    videoWrapperRef.current.style.display = 'none'
+    videoContainerRef.current.style.display = 'block'
 	}
   
   const handleFullScreenChange = () => {
@@ -38,7 +38,7 @@ const PlayButton = () => {
 
     if (!isFullscreen) {
       videoNode.pause()
-      videoWrapperRef.current.style.display = 'block'
+      videoContainerRef.current.style.display = 'none'
     }
   }
 
