@@ -53,7 +53,7 @@ const Navbar = () => {
     <header className={navbarStyle}>
       <Container auto alignment='row-end'>
 
-        <nav aria-label='Rehsok Directorio' role='navigation' className={navStyle}>
+        <nav aria-label='Rehsok Directorio' className={navStyle}>
           <ul className={listStyle}>
             <li>
               <Link href='/'>

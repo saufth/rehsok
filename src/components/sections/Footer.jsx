@@ -51,7 +51,7 @@ const Footer = () => {
           />
         </div>
 
-        <nav aria-label='Rehsok Directorio' role='navigation'>
+        <nav aria-label='Rehsok Directorio'>
           <ul className={listStyle}>
             {navigationConfig.map(({content, url}, key) => (
               <li key={key}>
