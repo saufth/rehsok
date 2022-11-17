@@ -18,10 +18,11 @@ const Purpose = () => {
 
         <div className={logoStyle}>
           <Image
+            alt='Rhesock Consultores'
             src='/images/logos/logomark.svg'
-            alt='Rhesock logotype'
             width={160}
             height={160}
+            quality='100'
           />
         </div>
 

@@ -1,6 +1,7 @@
 // Components
 import CallToAction from '../input/CallToAction'
 import Container from '../../core/components/layout/Container'
+import Image from 'next/image'
 import Link from 'next/link'
 // Styles
 import {
@@ -39,11 +40,16 @@ const Footer = () => {
 
       <Container auto alignment='center' gapY>
 
-        <img
-          src='/images/logos/logomark-white.svg'
-          alt='Rehsok Consultores'
-          className={logomarkStyle}
-        />
+        <div className={logomarkStyle}>
+          <Image
+            alt='Rehsok Consultores'
+            src='/images/logos/logomark-white.svg'
+            layout='responsive'
+            width={96}
+            height={96}
+            quality='100'
+          />
+        </div>
 
         <nav aria-label='Rehsok Directorio' role='navigation'>
           <ul className={listStyle}>

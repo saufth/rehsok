@@ -1,6 +1,7 @@
 // Components
 import CallToAction from '../input/CallToAction'
 import Container from '../../core/components/layout/Container'
+import Image from 'next/image'
 import Link from 'next/link'
 // Hooks
 import { useRef, useEffect } from 'react'
@@ -56,11 +57,16 @@ const Navbar = () => {
           <ul className={listStyle}>
             <li>
               <Link href='/'>
-                <img
-                  className={logoStyle}
-                  src='/images/logos/logomark-white.svg'
-                  alt='Inicio'
-                />
+                <div className={logoStyle}>
+                  <Image
+                    alt='Inicio'
+                    src='/images/logos/logomark-white.svg'
+                    layout='responsive'
+                    width={80}
+                    height={80}
+                    quality='100'
+                  />
+                </div>
               </Link>
             </li>
             <li>

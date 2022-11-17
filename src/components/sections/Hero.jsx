@@ -1,5 +1,6 @@
 // Components
 import Container from '../../core/components/layout/Container'
+import Image from 'next/image'
 import PlayButton from '../input/PlayButton'
 // Styles
 import {
@@ -9,7 +10,8 @@ import {
   logoNameStyle,
   logoDescriptionStyle,
   logoSloganStyle,
-  playButtonStyle
+  playButtonStyle,
+  backgroundStyle
 } from '../../styles/sections/Hero.module.css'
 
 const Hero = () => {
@@ -18,11 +20,16 @@ const Hero = () => {
     <section className={heroStyle}>
       <Container alignment='center' fullHeight>
 
-        <img
-          className={logomarkStyle}
-          src='/images/logos/logomark-hero.png'
-          alt='Rehsok logo'
-        />
+        <div className={logomarkStyle}>
+          <Image
+            alt='Rehsok Consultores'
+            src='/images/logos/logomark-hero.png'
+            layout='responsive'
+            width={192}
+            height={195}
+            quality='100'
+          />
+        </div>
 
         <h1 className={titleStyle}>
           <span className={logoNameStyle}>REHSOK</span>
@@ -35,6 +42,16 @@ const Hero = () => {
         </div>
 
       </Container>
+      <div className={backgroundStyle}>
+        <Image
+          alt='Rehsock background'
+          src='/images/backgrounds/hero.jpg'
+          layout='fill'
+          objectFit='cover'
+          objectPosition='center'
+          quality='100'
+        />
+      </div>
     </section>
   )
 }

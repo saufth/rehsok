@@ -1,4 +1,6 @@
 // Components
+import Image from 'next/image'
+// Hooks
 import { useEffect, useRef } from 'react'
 // Styles
 import {
@@ -75,11 +77,16 @@ const PlayButton = () => {
       <button ref={playVideoRef}>
         <span className={wrapperStyle}>
           <span className={cercleStyle}>
-            <img
-              className={iconStyle}
-              src='/images/icons/play.svg'
-              alt='Play video'
-            />
+            <div className={iconStyle}>
+              <Image
+                alt='Play video'
+                src='/images/icons/play.svg'
+                layout='responsive'
+                width={12}
+                height={12}
+                quality='100'
+              />
+            </div>
           </span>
           <span className={textStyle}>VER VIDEO</span>
         </span>

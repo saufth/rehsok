@@ -2,6 +2,7 @@
 import CallToAction from '../input/CallToAction'
 import Container from '../../core/components/layout/Container'
 import Heading from '../../core/components/data-display/Heading'
+import Image from 'next/image'
 // Styles
 import {
   layoutStyle,
@@ -113,8 +114,16 @@ const About = () => {
       </Container>
       <div
         className={backgroundStyle}
-        style={{backgroundImage: 'url(/images/backgrounds/hero.jpg)'}}
-      ></div>
+      >
+        <Image
+            alt='Rehsock background'
+            src='/images/backgrounds/hero.jpg'
+            layout='fill'
+            objectFit='cover'
+            objectPosition='center'
+            quality='100'
+          />
+      </div>
     </section>
   )
 }

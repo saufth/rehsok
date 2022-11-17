@@ -1,3 +1,5 @@
+// Components
+import Image from 'next/image'
 // Styles
 import {
   layoutStyle,
@@ -14,9 +16,7 @@ import {
 } from '../../styles/data-display/ImageQuote.module.css'
 
 const ImageQuote = ({ heading, descriptions, src, reverse }) => {
-  const backgroundImageStyle = {
-    backgroundImage: `url(/images/sections/${src}.jpg)`
-  }
+  const imageSrc = `/images/sections/${src}.jpg`
 
   let layoutReverse = ''
   let contentReverse = ''
@@ -54,7 +54,16 @@ const ImageQuote = ({ heading, descriptions, src, reverse }) => {
       </div>
 
       <div className={imageContainerCustomStyle}>
-        <div className={imageWrapperStyle} style={backgroundImageStyle}></div>
+        <div className={imageWrapperStyle}>
+          <Image
+            alt={heading}
+            src={imageSrc}
+            layout='fill'
+            objectFit='cover'
+            objectPosition='center'
+            quality='100'
+          />
+        </div>
       </div>
 
     </div>

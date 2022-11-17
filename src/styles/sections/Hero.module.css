@@ -5,12 +5,7 @@
     h-2xl sm:h-3xl lg:h-4xl
     /* Layout */
     relative
-    overflow-hidden
-    /* Background */
-    bg-cover
-    bg-no-repeat
-    bg-center;
-  background-image: url(/images/backgrounds/hero.jpg);
+    overflow-hidden;
 }
 
 .logomarkStyle {
@@ -71,4 +66,12 @@
   @apply
     /* Spacin */
     mt-8 md:mt-9 lg:mt-10;
+}
+
+.backgroundStyle{
+  @apply
+    /* Layout */
+    absolute
+    inset-0
+    -z-10
 }

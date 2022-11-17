@@ -25,10 +25,5 @@
     fixed
     top-0
     left-0
-    -z-10
-    /* Background */
-    bg-black
-    bg-cover
-    bg-center
-    bg-no-repeat;   
+    -z-10;   
 }
