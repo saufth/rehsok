@@ -1,3 +1,9 @@
+.layoutStyle {
+  @apply
+    /* Spacing */
+    mt-16 md:mt-24 lg:mt-32;   
+}
+
 .textStyle {
   @apply
     /* Sizing */
@@ -8,4 +14,21 @@
     md:text-lg lg:text-xl
     text-white
     text-center;   
+}
+
+.backgroundStyle {
+  @apply
+    /* Sizing */
+    w-full
+    h-screen
+    /* Layout */
+    fixed
+    top-0
+    left-0
+    -z-10
+    /* Background */
+    bg-black
+    bg-cover
+    bg-center
+    bg-no-repeat;   
 }

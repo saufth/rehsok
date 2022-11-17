@@ -4,12 +4,14 @@ import Container from '../../core/components/layout/Container'
 import Heading from '../../core/components/data-display/Heading'
 // Styles
 import {
-  textStyle
+  layoutStyle,
+  textStyle,
+  backgroundStyle
 } from '../../styles/sections/About.module.css'
 
 const About = () => {
   return (
-    <section className='mt-16 md:mt-24 lg:mt-32'>
+    <section className={layoutStyle}>
       <Container auto alignment='center' gapY>
 
         <Heading center secondary>
@@ -110,7 +112,7 @@ const About = () => {
 
       </Container>
       <div
-        className='w-full h-screen fixed top-0 left-0 -z-10 bg-black bg-cover bg-center bg-no-repeat'
+        className={backgroundStyle}
         style={{backgroundImage: 'url(/images/backgrounds/hero.jpg)'}}
       ></div>
     </section>
