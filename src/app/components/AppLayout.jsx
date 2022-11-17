@@ -7,7 +7,6 @@ import Navbar from '../../components/navigation/Navbar'
 const keywordList = [
   'rehsok',
   'rehsok consultores',
-  'consultores fiscales',
   'consultoria fiscal',
   'asesoria fiscal',
   'planeacion fiscal',

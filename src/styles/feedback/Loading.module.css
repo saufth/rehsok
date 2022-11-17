@@ -1,0 +1,25 @@
+.containerStyle {
+  @apply
+    /* layout */
+    absolute
+    inset-0
+    z-50
+    /* layout */
+    flex flex-col
+    justify-center
+    items-center
+    text-black
+    /* Backgroun */
+    bg-white;
+}
+
+.logoStyle {
+  @apply
+    /* Sizing */
+    w-40
+    h-40
+    /* Shadow */
+    shadow-lg
+    /* Animation */
+    animate-loading;
+}

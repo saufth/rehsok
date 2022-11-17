@@ -69,6 +69,21 @@ module.exports = {
       },
       dropShadow: {
         '3xl': '0px 4px 8px rgba(0, 0, 0, .4)'
+      },
+      animation: {
+        loading: 'loading 1.4s infinite alternate'
+      },
+      keyframes: {
+        loading: {
+          from: {
+            transform: 'scale(.99)',
+            opacity: .3
+          },
+          to: {
+            transform: 'scale(1)',
+            opacity: .7
+          }
+        }
       }
     }
   },
