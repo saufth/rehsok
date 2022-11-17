@@ -6,10 +6,13 @@ import Navbar from '../../components/navigation/Navbar'
 
 const keywordList = [
   'rehsok',
-  'consultoria financiera',
-  'soluciones financieras',
-  'consultoria',
-  'finansas'
+  'rehsok consultores',
+  'consultores fiscales',
+  'consultoria fiscal',
+  'asesoria fiscal',
+  'planeacion fiscal',
+  'atencion personalizada a rquerimientos del sat',
+  'litigio fiscal'
 ]
 const keywords = String(keywordList)
 

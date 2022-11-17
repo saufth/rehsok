@@ -5,7 +5,7 @@
     /* Layout */
     absolute
     top-0
-    z-40
+    z-20
     /* Spacing */
     py-6 sm:py-8 lg:py-10;
 }
