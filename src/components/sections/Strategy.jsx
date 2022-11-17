@@ -6,7 +6,8 @@ import ImageQuote from '../data-display/ImageQuote'
 import Paragraph from '../../core/components/data-display/Paragraph'
 // Styles
 import {
-  contentStyle
+  contentStyle,
+  authorStyle
 } from '../../styles/sections/Strategy.module.css'
 
 const imageFolder = 'strategy/'
