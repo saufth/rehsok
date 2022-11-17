@@ -3,6 +3,10 @@ const nextConfig = {
   reactStrictMode: true,
   experimental: {
     appDir: true
+  },
+  i18n: {
+    locales: ["es_mx"],
+    defaultLocale: "es_mx",
   }
 }
 
