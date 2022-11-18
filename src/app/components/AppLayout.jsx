@@ -20,9 +20,31 @@ const AppLayout = ({ children }) => {
     <div>
 
       <Head>
-        <meta name='description' content='Rehsok consultores' />
-        <meta name='keywords' content={keywords} />
+        <meta charSet='utf-8' />
+        <meta name='viewport' content='width=device-width' />
         <title>Rehsok Consultores</title>
+        <link rel='canonical' href='https://rehsok.com/' />
+        <link rel='apple-touch-icon' href='/apple-touch-icon.png' />
+        <meta name='theme-color' content='#163A62' />
+        <meta name='description' content='Creamos posibilidades para empresas orientadas al progreso, con el objetivo de construir un legado de verdad.' />
+        <meta name='keywords' content={keywords} />
+        <meta property='og:locale' content='es_MX' />
+        <meta property='og:type' content='website' />
+        <meta property='og:title' content='Rehsok Consultores' />
+        <meta property='og:description' content='Creamos posibilidades para empresas orientadas al progreso, con el objetivo de construir un legado de verdad.' />
+        <meta property='og:type' content='video.other' />
+        <meta property='og:url' content='https://rehsok.com/' />
+        <meta property='og:site_name' content='Rehsok Consultores' />
+        <meta property='og:image' content='https://rehsok.com/images/rehsok.jpg' />
+        <meta property='og:image:secure_url' content='https://rehsok.com/images/rehsok.jpg' />
+        <meta property='og:image:width' content='1200' />
+        <meta property='og:image:height' content='640' />
+        <meta property='og:image:type' content='image/jpeg' />
+        <meta name='twitter:card' content='summary_large_image' />
+        <meta name='twitter:title' content='Rehsok Consultores' />
+        <meta name='twitter:description' content='Creamos posibilidades para empresas orientadas al progreso, con el objetivo de construir un legado de verdad.' />
+        <meta name='twitter:site' content='@rehsok' />
+        <meta name='twitter:image' content='https://rehsok.com/images/rehsok.jpg' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
