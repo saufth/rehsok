@@ -69,7 +69,6 @@ const AppLayout = ({ children }) => {
         <meta property='og:type' content='website' />
         <meta property='og:title' content='Rehsok Consultores' />
         <meta property='og:description' content='Creamos posibilidades para empresas orientadas al progreso, con el objetivo de construir un legado de verdad.' />
-        <meta property='og:type' content='video.other' />
         <meta property='og:url' content='https://rehsok.com/' />
         <meta property='og:site_name' content='Rehsok Consultores' />
         <meta property='og:image' content='https://rehsok.com/images/rehsok.jpg' />
