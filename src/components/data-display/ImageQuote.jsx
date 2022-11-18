@@ -39,9 +39,9 @@ const ImageQuote = ({ heading, descriptions, src, reverse }) => {
     <div className={layoutCustomStyle}>
 
       <div className={contentCustomStyle}>
-        <h3 className={headingStyle}>
+        <h2 className={headingStyle}>
           {heading}
-        </h3>
+        </h2>
         <div className={descriptionCustomStyle}>
           {descriptions.map((description, index) => {
             return (

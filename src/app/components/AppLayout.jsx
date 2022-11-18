@@ -15,10 +15,47 @@ const keywordList = [
 ]
 const keywords = String(keywordList)
 
+function addProductJsonLd() {
+  return {
+    __html: `{
+      '@context': 'https://schema.org/',
+      '@graph': [
+        {
+          '@type': 'Organization',
+          '@id': 'https://rehsok.com/#organization',
+          'name': 'Rehsok Consultores'
+        },
+        {
+          '@type': 'WebSite',
+          '@id': 'https://rehsok.com/#website',
+          'url': 'https://rehsok.com',
+          'name': 'Rehsok Consultores',
+          'publisher': {
+            '@id': 'https://rehsok.com/#organization'
+          },
+          'inLanguage': 'es-MX'
+        },
+        {
+          '@type': 'CollectionPage',
+          '@id': 'https://rehsok.com/#webpage',
+          'url': 'https://rehsok.com/',
+          'name': 'Rehsok Consultores',
+          'about': {
+            '@id': 'https://rehsok.com/#organization'
+          },
+          'isPartOf': {
+            '@id': 'https://rehsok.com/#website'
+          },
+          'inLanguage': 'es-MX'
+        }
+      ]
+    }`
+  }
+}
+
 const AppLayout = ({ children }) => {
   return (
     <div>
-
       <Head>
         <meta charSet='utf-8' />
         <meta name='viewport' content='width=device-width' />
@@ -45,6 +82,12 @@ const AppLayout = ({ children }) => {
         <meta name='twitter:description' content='Creamos posibilidades para empresas orientadas al progreso, con el objetivo de construir un legado de verdad.' />
         <meta name='twitter:site' content='@rehsok' />
         <meta name='twitter:image' content='https://rehsok.com/images/rehsok.jpg' />
+        <script
+          type='application/ld+json'
+          dangerouslySetInnerHTML={addProductJsonLd()}
+          key='product-jsonld'
+          class='rank-math-schema-pro'
+        />
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
@@ -56,7 +99,6 @@ const AppLayout = ({ children }) => {
       <Footer />
 
       <ContactForm />
-
     </div>
   )
 }

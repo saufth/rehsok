@@ -57,9 +57,9 @@ const ContactForm = () => {
       <div className={containerStyle}>
 
         <div className={formWrapperStyle}>
-          <h3 className={headingStyle}>
+          <h1 className={headingStyle}>
             Ponte en contacto con nosotros
-          </h3>
+          </h1>
 
           <form
             ref={formRef}
