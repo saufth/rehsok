@@ -61,7 +61,6 @@ const ImageQuote = ({ heading, descriptions, src, reverse }) => {
             layout='fill'
             objectFit='cover'
             objectPosition='center'
-            quality='100'
           />
         </div>
       </div>

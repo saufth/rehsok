@@ -64,7 +64,6 @@ const Navbar = () => {
                     layout='responsive'
                     width={80}
                     height={80}
-                    quality='100'
                   />
                 </div>
               </Link>
