@@ -28,6 +28,9 @@ const Card = ({ children, src, alt }) => {
           quality='100'
           placeholder='blur'
           blurDataURL={blurDataUrl}
+          style={{
+            zIndex:'-1'
+          }}
         />
       </div>
 

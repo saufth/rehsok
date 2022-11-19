@@ -64,6 +64,9 @@ const ImageQuote = ({ heading, descriptions, src, reverse }) => {
             quality='100'
             placeholder='blur'
             blurDataURL={blurDataUrl}
+            style={{
+              zIndex:'-1'
+            }}
           />
         </div>
       </div>
