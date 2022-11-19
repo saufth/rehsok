@@ -22,7 +22,7 @@ const strategy = [
     imageSrc: `${imageFolder}team`
   },
   {
-    heading: 'Transformando problemas en oportunidades',
+    heading: 'Transformamos problemas en oportunidades',
     descriptions: [
       'Problemas = áreas de oportunidad.',
       'Mientras más grande y frecuente sea el problema, mayor será la posibilidad de generar valor.'
