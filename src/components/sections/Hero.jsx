@@ -4,6 +4,7 @@ import Image from 'next/image'
 import PlayButton from '../input/PlayButton'
 // Media
 import backgroundHero from '../../../public/images/backgrounds/hero.jpg'
+import logomarkHero from '../../../public/images/logos/logomark-hero.png'
 // Styles
 import {
   heroStyle,
@@ -25,7 +26,7 @@ const Hero = () => {
         <div className={logomarkStyle}>
           <Image
             alt='Rehsok Consultores'
-            src='/images/logos/logomark-hero.png'
+            src={logomarkHero}
             layout='responsive'
             width={192}
             height={195}
