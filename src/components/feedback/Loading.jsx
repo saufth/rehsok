@@ -16,6 +16,7 @@ const Loading = () => {
           width={160}
           height={160}
           quality='100'
+          priority
         />
       </div>
     </div>

@@ -28,7 +28,6 @@ const Hero = () => {
             width={192}
             height={195}
             quality='100'
-            priority
           />
         </div>
 
@@ -51,7 +50,6 @@ const Hero = () => {
           objectFit='cover'
           objectPosition='center'
           quality='100'
-          priority
         />
       </div>
     </section>
