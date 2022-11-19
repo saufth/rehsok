@@ -34,6 +34,8 @@ const navigationConfig = [
   },
 ]
 
+const currentYear = new Date().getFullYear()
+
 const Footer = () => {
   return (
     <footer className={footerStyle} data-version='v1'>
@@ -68,9 +70,7 @@ const Footer = () => {
       </Container>
 
       <div className={logonameStyle}>
-        <Link href='/'>
-          Rehsok Consultores ®
-        </Link>
+        Copyright ® 2008 - {currentYear} Grupo Dagda
       </div>
 
     </footer>

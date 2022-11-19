@@ -4,6 +4,8 @@ import Footer from '../../components/sections/Footer'
 import Head from 'next/head'
 import Navbar from '../../components/navigation/Navbar'
 
+const organization = 'Rehsok Consultores'
+const purpose = 'Creamos posibilidades para empresas orientadas al progreso, con el objetivo de construir un legado de verdad.'
 const keywordList = [
   'rehsok',
   'rehsok consultores',
@@ -11,9 +13,10 @@ const keywordList = [
   'asesoria fiscal',
   'planeacion fiscal',
   'atencion personalizada a rquerimientos del sat',
-  'litigio fiscal'
+  'litigio fiscal',
 ]
-const keywords = String(keywordList)
+const baseUrl = process.env.NEXT_PUBLIC_HOST
+const rehsokImageUrl = `${baseUrl}images/rehsok.jpg`
 
 const addProductJsonLd = () => {
   return {
@@ -22,29 +25,29 @@ const addProductJsonLd = () => {
       '@graph': [
         {
           '@type': 'Organization',
-          '@id': 'https://rehsok.com/#organization',
-          'name': 'Rehsok Consultores'
+          '@id': '${baseUrl}#organization',
+          'name': '${organization}'
         },
         {
           '@type': 'WebSite',
-          '@id': 'https://rehsok.com/#website',
-          'url': 'https://rehsok.com',
-          'name': 'Rehsok Consultores',
+          '@id': '${baseUrl}#website',
+          'url': '${baseUrl}',
+          'name': '${organization}',
           'publisher': {
-            '@id': 'https://rehsok.com/#organization'
+            '@id': '${baseUrl}#organization'
           },
           'inLanguage': 'es-MX'
         },
         {
           '@type': 'CollectionPage',
-          '@id': 'https://rehsok.com/#webpage',
-          'url': 'https://rehsok.com/',
-          'name': 'Rehsok Consultores',
+          '@id': '${baseUrl}#webpage',
+          'url': '${baseUrl}',
+          'name': '${organization}',
           'about': {
-            '@id': 'https://rehsok.com/#organization'
+            '@id': '${baseUrl}#organization'
           },
           'isPartOf': {
-            '@id': 'https://rehsok.com/#website'
+            '@id': '${baseUrl}#website'
           },
           'inLanguage': 'es-MX'
         }
@@ -59,28 +62,31 @@ const AppLayout = ({ children }) => {
       <Head>
         <meta charSet='utf-8' />
         <meta name='viewport' content='width=device-width' />
-        <title>Rehsok Consultores</title>
-        <link rel='canonical' href='https://rehsok.com/' />
+        <title>{organization}</title>
+        <link rel='canonical' href={baseUrl} />
         <link rel='apple-touch-icon' href='/apple-touch-icon.png' />
         <meta name='theme-color' content='#163A62' />
-        <meta name='description' content='Creamos posibilidades para empresas orientadas al progreso, con el objetivo de construir un legado de verdad.' />
-        <meta name='keywords' content={keywords} />
+        <meta name='description' content={purpose} />
+        <meta name='keywords' content={String(keywordList)} />
         <meta property='og:locale' content='es_MX' />
         <meta property='og:type' content='website' />
-        <meta property='og:title' content='Rehsok Consultores' />
-        <meta property='og:description' content='Creamos posibilidades para empresas orientadas al progreso, con el objetivo de construir un legado de verdad.' />
-        <meta property='og:url' content='https://rehsok.com/' />
-        <meta property='og:site_name' content='Rehsok Consultores' />
-        <meta property='og:image' content='https://rehsok.com/images/rehsok.jpg' />
-        <meta property='og:image:secure_url' content='https://rehsok.com/images/rehsok.jpg' />
+        <meta property='og:title' content={organization} />
+        <meta property='og:description' content={purpose} />
+        <meta property='og:url' content={baseUrl} />
+        <meta property='og:site_name' content={organization} />
+        <meta property='og:image' content={rehsokImageUrl} />
+        <meta property='og:image:secure_url' content={rehsokImageUrl} />
         <meta property='og:image:width' content='1200' />
         <meta property='og:image:height' content='640' />
         <meta property='og:image:type' content='image/jpeg' />
         <meta name='twitter:card' content='summary_large_image' />
-        <meta name='twitter:title' content='Rehsok Consultores' />
-        <meta name='twitter:description' content='Creamos posibilidades para empresas orientadas al progreso, con el objetivo de construir un legado de verdad.' />
+        <meta name='twitter:title' content={organization} />
+        <meta
+          name='twitter:description'
+          content={purpose}
+        />
         <meta name='twitter:site' content='@rehsok' />
-        <meta name='twitter:image' content='https://rehsok.com/images/rehsok.jpg' />
+        <meta name='twitter:image' content={rehsokImageUrl} />
         <script
           type='application/ld+json'
           dangerouslySetInnerHTML={addProductJsonLd()}

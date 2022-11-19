@@ -33,7 +33,7 @@
     /* Spacing */
     py-3 md:py-3.5 lg:py-4
     /* Typography */
-    text-sm md:text-base lg:text-lg
+    text-xs md:text-sm lg:text-base
     text-center
     /* Background */
     bg-zinc-700;
