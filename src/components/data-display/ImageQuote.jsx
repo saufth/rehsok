@@ -1,5 +1,7 @@
 // Components
 import Image from 'next/image'
+// Utils
+import blurDataUrl from '../../core/modules/feedback/utils/shimmer'
 // Styles
 import {
   layoutStyle,
@@ -43,13 +45,11 @@ const ImageQuote = ({ heading, descriptions, src, reverse }) => {
           {heading}
         </h2>
         <div className={descriptionCustomStyle}>
-          {descriptions.map((description, index) => {
-            return (
-              <p className={textStyle} key={index}>
-                {description}
-              </p>
-            )
-          })}
+          {descriptions.map((description, index) => (
+            <p className={textStyle} key={index}>
+              {description}
+            </p>
+          ))}
         </div>
       </div>
 
@@ -62,6 +62,8 @@ const ImageQuote = ({ heading, descriptions, src, reverse }) => {
             objectFit='cover'
             objectPosition='center'
             quality='100'
+            placeholder='blur'
+            blurDataURL={blurDataUrl}
           />
         </div>
       </div>

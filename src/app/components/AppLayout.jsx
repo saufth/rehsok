@@ -15,7 +15,7 @@ const keywordList = [
 ]
 const keywords = String(keywordList)
 
-function addProductJsonLd() {
+const addProductJsonLd = () => {
   return {
     __html: `{
       '@context': 'https://schema.org/',

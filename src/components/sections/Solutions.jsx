@@ -13,27 +13,27 @@ const imageFolder = 'solutions/'
 
 const solutions =  [
   {
-    text: 'Compliance fiscal',
+    heading: 'Compliance fiscal',
     imageSrc:`${imageFolder}compliance`
   },
   {
-    text: 'Consultoría y asesoría fiscal',
+    heading: 'Consultoría y asesoría fiscal',
     imageSrc:`${imageFolder}consulting`
   },
   {
-    text: 'Segunda opinión experta',
+    heading: 'Segunda opinión experta',
     imageSrc:`${imageFolder}opinion`
   },
   {
-    text: 'Planeación fiscal',
+    heading: 'Planeación fiscal',
     imageSrc:`${imageFolder}planning`
   },
   {
-    text: 'Atención especializada a requerimientos del SAT',
+    heading: 'Atención especializada a requerimientos del SAT',
     imageSrc:`${imageFolder}requirements`
   },
   {
-    text: 'Litigio fiscal',
+    heading: 'Litigio fiscal',
     imageSrc:`${imageFolder}litigation`
   }
 ]
@@ -55,10 +55,10 @@ const Solutions = () => {
         </Paragraph>
 
         <ul className={listStyle}>
-          {solutions.map(({ imageSrc, text }, key) => (
+          {solutions.map(({ imageSrc, heading }, key) => (
             <li key={key}>
-              <Card imageSrc={imageSrc}>
-                {text}
+              <Card src={imageSrc} alt={heading}>
+                {heading}
               </Card>
             </li>
           ))}
