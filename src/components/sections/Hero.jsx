@@ -2,6 +2,8 @@
 import Container from '../../core/components/layout/Container'
 import Image from 'next/image'
 import PlayButton from '../input/PlayButton'
+// Media
+import backgroundHero from '../../../public/images/backgrounds/hero.jpg'
 // Styles
 import {
   heroStyle,
@@ -45,11 +47,12 @@ const Hero = () => {
       <div className={backgroundStyle}>
         <Image
           alt='Rehsock background'
-          src='/images/backgrounds/hero.jpg'
+          src={backgroundHero}
           layout='fill'
           objectFit='cover'
           objectPosition='center'
           quality='100'
+          placeholder='blur'
         />
       </div>
     </section>
