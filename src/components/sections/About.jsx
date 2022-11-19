@@ -3,6 +3,8 @@ import CallToAction from '../input/CallToAction'
 import Container from '../../core/components/layout/Container'
 import Heading from '../../core/components/data-display/Heading'
 import Image from 'next/image'
+// Media
+import backgroundHero from '../../../public/images/backgrounds/hero.jpg'
 // Styles
 import {
   layoutStyle,
@@ -117,11 +119,12 @@ const About = () => {
       >
         <Image
             alt='Rehsock background'
-            src='/images/backgrounds/hero.jpg'
+            src={backgroundHero}
             layout='fill'
             objectFit='cover'
             objectPosition='center'
             quality='100'
+            placeholder='blur'
           />
       </div>
     </section>
