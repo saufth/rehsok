@@ -121,6 +121,7 @@ const About = () => {
             layout='fill'
             objectFit='cover'
             objectPosition='center'
+            quality='100'
           />
       </div>
     </section>

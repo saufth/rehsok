@@ -47,6 +47,7 @@ const Footer = () => {
             layout='responsive'
             width={96}
             height={96}
+            quality='100'
           />
         </div>
 

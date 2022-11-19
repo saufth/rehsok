@@ -84,6 +84,7 @@ const PlayButton = () => {
                 layout='responsive'
                 width={12}
                 height={12}
+                quality='100'
               />
             </div>
           </span>
