@@ -21,13 +21,12 @@ const Hero = () => {
 
   return (
     <section className={heroStyle}>
-      <Container alignment='center' fullHeight>
 
+      <Container alignment='center' fullHeight>
         <div className={logomarkStyle}>
           <Image
             alt='Rehsok Consultores'
             src={logomarkHero}
-            layout='responsive'
             width={192}
             height={195}
             quality='100'
@@ -43,19 +42,19 @@ const Hero = () => {
         <div className={playButtonStyle}>
           <PlayButton/>
         </div>
-
       </Container>
+
       <div className={backgroundStyle}>
         <Image
           alt='Rehsock background'
           src={backgroundHero}
-          layout='fill'
-          objectFit='cover'
-          objectPosition='center'
           quality='100'
           placeholder='blur'
+          fill
+          sizes='(min-width: 1024) 1920px, 1366px'
         />
       </div>
+
     </section>
   )
 }

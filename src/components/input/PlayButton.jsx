@@ -81,7 +81,6 @@ const PlayButton = () => {
               <Image
                 alt='Play video'
                 src='/images/icons/play.svg'
-                layout='responsive'
                 width={12}
                 height={12}
                 quality='100'

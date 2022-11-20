@@ -84,11 +84,22 @@
     w-80 md:w-sm lg:w-md
     h-52 md:h-sm lg:h-md
     /* Layout */
-    relative
     overflow-hidden
+    /* Flexbox & Grid */
+    flex
+    justify-center
+    items-center
     /* Background */
     rounded-md
     /* Shadow */
     shadow-lg
     shadow-rich-black/30;
+}
+
+.imageStyle {
+  @apply
+    /* Layout */
+    -z-10
+    /* Transform */
+    scale-125 md:scale-[1.8];
 }

@@ -5,6 +5,7 @@ import blurDataUrl from '../../modules/feedback/utils/shimmer'
 // Styles
 import {
   layoutStyle,
+  imageWrapper,
   imageStyle,
   headingStyle
 } from '../../../styles/data-display/Card.module.css'
@@ -18,16 +19,16 @@ const Card = ({ children, src, alt }) => {
   return (
     <div className={layoutStyle}>
 
-      <div className={imageStyle}>
+      <div className={imageWrapper}>
         <Image
           alt={alt}
           src={imagePath}
-          layout='fill'
-          objectFit='cover'
-          objectPosition='center'
+          width={1920}
+          height={1080}
           quality='100'
           placeholder='blur'
           blurDataURL={blurDataUrl}
+          className={imageStyle}
         />
       </div>
 

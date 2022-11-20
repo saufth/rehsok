@@ -14,7 +14,8 @@ import {
   textStyle,
   imageContainerStyle,
   imageContainerReverseStyle,
-  imageWrapperStyle
+  imageWrapperStyle,
+  imageStyle
 } from '../../styles/data-display/ImageQuote.module.css'
 
 const ImageQuote = ({ heading, descriptions, src, reverse }) => {
@@ -58,12 +59,12 @@ const ImageQuote = ({ heading, descriptions, src, reverse }) => {
           <Image
             alt={heading}
             src={imageSrc}
-            layout='fill'
-            objectFit='cover'
-            objectPosition='center'
+            width={1920}
+            height={1080}
             quality='100'
             placeholder='blur'
             blurDataURL={blurDataUrl}
+            className={imageStyle}
           />
         </div>
       </div>

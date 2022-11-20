@@ -15,8 +15,8 @@ import {
 const About = () => {
   return (
     <section className={layoutStyle}>
-      <Container auto alignment='center' gapY>
 
+      <Container auto alignment='center' gapY>
         <Heading center secondary>
           Nuestra razón de ser
         </Heading>
@@ -112,21 +112,19 @@ const About = () => {
         </p>
 
         <CallToAction secondary space='top-lg' />
-
       </Container>
-      <div
-        className={backgroundStyle}
-      >
+
+      <div className={backgroundStyle}>
         <Image
             alt='Rehsock background'
             src={backgroundHero}
-            layout='fill'
-            objectFit='cover'
-            objectPosition='center'
             quality='100'
             placeholder='blur'
+            fill
+            sizes='(min-width: 1024) 1920px, 1366px'
           />
       </div>
+
     </section>
   )
 }

@@ -61,7 +61,6 @@ const Navbar = () => {
                   <Image
                     alt='Inicio'
                     src='/images/logos/logomark-white.svg'
-                    layout='responsive'
                     width={80}
                     height={80}
                     quality='100'

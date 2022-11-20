@@ -7,19 +7,30 @@
     flex-col;
 }
 
-.imageStyle {
+.imageWrapper {
   @apply
     /* Sizing */
     w-80
     h-52
     /* Layout */
-    relative
     overflow-hidden
+    /* Flexbox & Grid */
+    flex
+    justify-center
+    items-center
     /* Border */
     rounded
     /* Shadow */
     shadow-lg
     shadow-rich-black/30;
+}
+
+.imageStyle {
+  @apply
+    /* Layout */
+    -z-10
+    /* Transform */
+    scale-125;
 }
 
 .headingStyle {

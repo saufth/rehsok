@@ -46,7 +46,6 @@ const Footer = () => {
           <Image
             alt='Rehsok Consultores'
             src='/images/logos/logomark-white.svg'
-            layout='responsive'
             width={96}
             height={96}
             quality='100'
