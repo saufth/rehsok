@@ -1,8 +1,8 @@
 {
   "name": "rehsok",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "private": true,
-  "homepage": "https://rehsok.com",
+  "homepage": "https://rehsok.com/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
