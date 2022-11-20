@@ -45,7 +45,7 @@ const Footer = () => {
         <div className={logomarkStyle}>
           <Image
             alt='Rehsok Consultores'
-            src='/images/logos/logomark-white.svg'
+            src='/images/logos/logomark-white.png'
             width={96}
             height={96}
             quality='100'

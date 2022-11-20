@@ -43,7 +43,8 @@
     /* Sizing */
     w-16 md:w-18 lg:w-20
     /* Shadow */
-    drop-shadow-2xl;
+    drop-shadow
+    opacity-90;
 }
 
 .buttonBurgerStyle {

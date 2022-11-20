@@ -12,7 +12,7 @@ const Loading = () => {
       <div className={logoStyle}>
         <Image
           alt='Rehsock Consultores'
-          src='/images/logos/logomark.svg'
+          src='/images/logos/logomark.png'
           width={160}
           height={160}
           quality='100'
