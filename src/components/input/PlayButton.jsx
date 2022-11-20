@@ -54,6 +54,8 @@ const PlayButton = () => {
     else if (videoNode.msExitFullscreen)
         videoNode.msExitFullscreen()
   }
+
+  const preventContentMenu = (event) => event.preventDefault()
   
   useEffect(() => {
     const playVideoNode = playVideoRef.current
@@ -93,11 +95,13 @@ const PlayButton = () => {
 
       <div ref={videoContainerRef} className={videoContainerStyle}>
         <video
-          ref={videoRef}
+          width={1920}
+          height={1080}
           controls
           disablePictureInPicture
           controlsList='nodownload noplaybackrate'
-          onContextMenu={(event) => event.preventDefault()}
+          onContextMenu={preventContentMenu}
+          ref={videoRef}
         >
           <source src='/video/presentation.mp4' type='video/mp4' />
         </video>
