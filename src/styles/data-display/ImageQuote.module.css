@@ -85,6 +85,7 @@
     h-52 md:h-sm lg:h-md
     /* Layout */
     overflow-hidden
+    -z-10
     /* Flexbox & Grid */
     flex
     justify-center
@@ -99,7 +100,6 @@
 .imageStyle {
   @apply
     /* Layout */
-    -z-10
     /* Transform */
     scale-125 md:scale-[1.8];
 }
