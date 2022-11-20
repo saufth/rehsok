@@ -49,6 +49,7 @@ const Footer = () => {
             width={96}
             height={96}
             quality='100'
+            priority
           />
         </div>
 
