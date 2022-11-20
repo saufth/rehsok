@@ -60,7 +60,7 @@ const Navbar = () => {
                 <div className={logoStyle}>
                   <Image
                     alt='Inicio'
-                    src='/images/logos/logomark-white.png'
+                    src='/images/logos/logomark-white.svg'
                     width={80}
                     height={80}
                     quality='100'
