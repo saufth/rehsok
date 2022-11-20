@@ -27,7 +27,7 @@ const Card = ({ children, src, alt }) => {
           height={1080}
           quality='100'
           placeholder='blur'
-          blurDataURL={blurDataUrl}
+          blurDataURL={blurDataUrl(1920, 1080)}
           className={imageStyle}
         />
       </div>

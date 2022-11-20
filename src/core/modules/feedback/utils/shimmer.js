@@ -1,8 +1,8 @@
-const shimmer =
+const shimmer = (w, h) =>
   `<svg
     version='1.1'
-    width='24'
-    height='24'
+    width='${w}'
+    height='${h}'
     xmlns='http://www.w3.org/2000/svg'
     xmlns:xlink='http://www.w3.org/1999/xlink'
   >
@@ -13,23 +13,23 @@ const shimmer =
         <stop stop-color='#333' offset='70%' />
       </linearGradient>
     </defs>
-    <rect width='24' height='24' fill='#163A62' />
-    <rect id='r' width='24' height='24' fill='url(#g)' />
+    <rect width='${w}' height='${h}' fill='#163A62' />
+    <rect id='r' width='${w}' height='${h}' fill='url(#g)' />
     <animate
       xlink:href='#r'
       attributeName='x'
-      from='-24'
-      to='24'
+      from='-${w}'
+      to='${w}'
       dur='1s'
       repeatCount='indefinite'
     />
   </svg>`
 
-const toBase64 = () =>
+const toBase64 = (str) =>
   typeof window === 'undefined'
-    ? Buffer.from(shimmer).toString('base64')
-    : window.btoa(shimmer)
+    ? Buffer.from(str).toString('base64')
+    : window.btoa(str)
 
-const blurDataUrl = `data:image/svg+xml;base64,${toBase64()}`
+const blurDataUrl = (w, h) => `data:image/svg+xml;base64,${toBase64(shimmer(w, h))}`
 
 export default blurDataUrl
