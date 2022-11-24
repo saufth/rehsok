@@ -70,7 +70,7 @@ const Footer = () => {
       </Container>
 
       <div className={logonameStyle}>
-        Copyright ® 2008 - {currentYear} Grupo Dagda
+        Copyright ® 2008 - {currentYear} Rehsok Consultores
       </div>
 
     </footer>

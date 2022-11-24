@@ -77,11 +77,11 @@ module.exports = {
         loading: {
           from: {
             transform: 'scale(.99)',
-            opacity: .3
+            opacity: 0.3
           },
           to: {
             transform: 'scale(1)',
-            opacity: .7
+            opacity: 0.7
           }
         }
       }
