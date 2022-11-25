@@ -5,7 +5,7 @@ import Head from 'next/head'
 import Navbar from '../../components/navigation/Navbar'
 import Script from 'next/script'
 // Data
-import googleSearchSchema from '../google-search-schema'
+import googleSearchSchema from '../data/googleSearchSchema'
 
 const organization = 'Rehsok Consultores'
 const description = 'Creamos posibilidades para empresas orientadas al progreso, con el objetivo de construir un legado de verdad.'
@@ -20,6 +20,10 @@ const keywords = String([
 ])
 const baseUrl = process.env.NEXT_PUBLIC_HOST
 const socialImageUrl = `${baseUrl}images/rehsok.jpg`
+
+const addWebsiteJsonId = () => {
+  __html: JSON.stringify(googleSearchSchema)
+}
 
 const AppLayout = ({ children }) => {
   return (
@@ -54,9 +58,7 @@ const AppLayout = ({ children }) => {
 
       <Script
         type='application/ld+json'
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(googleSearchSchema)
-        }}
+        dangerouslySetInnerHTML={addWebsiteJsonId()}
         id='WebSite'
       />
 

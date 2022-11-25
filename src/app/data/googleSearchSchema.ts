@@ -1,7 +1,7 @@
 const baseUrl = process.env.NEXT_PUBLIC_HOST
 const organization = 'Rehsok Consultores'
 
-module.exports = {
+export default {
   '@context': 'https://schema.org/',
   '@graph': [
     {
