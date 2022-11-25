@@ -3,6 +3,9 @@ import ContactForm from '../../components/forms/ContactForm'
 import Footer from '../../components/sections/Footer'
 import Head from 'next/head'
 import Navbar from '../../components/navigation/Navbar'
+import Script from 'next/script'
+// Data
+import googleSearchSchema from '../google-search-schema'
 
 const organization = 'Rehsok Consultores'
 const description = 'Creamos posibilidades para empresas orientadas al progreso, con el objetivo de construir un legado de verdad.'
@@ -17,44 +20,6 @@ const keywords = String([
 ])
 const baseUrl = process.env.NEXT_PUBLIC_HOST
 const socialImageUrl = `${baseUrl}images/rehsok.jpg`
-
-const addGoogleSearchSchema = () => {
-  return {
-    __html: `{
-      '@context': 'https://schema.org/',
-      '@graph': [
-        {
-          '@type': 'Organization',
-          '@id': '${baseUrl}#organization',
-          'name': '${organization}'
-        },
-        {
-          '@type': 'WebSite',
-          '@id': '${baseUrl}#website',
-          'url': '${baseUrl}',
-          'name': '${organization}',
-          'publisher': {
-            '@id': '${baseUrl}#organization'
-          },
-          'inLanguage': 'es-MX'
-        },
-        {
-          '@type': 'CollectionPage',
-          '@id': '${baseUrl}#webpage',
-          'url': '${baseUrl}',
-          'name': '${organization}',
-          'about': {
-            '@id': '${baseUrl}#organization'
-          },
-          'isPartOf': {
-            '@id': '${baseUrl}#website'
-          },
-          'inLanguage': 'es-MX'
-        }
-      ]
-    }`
-  }
-}
 
 const AppLayout = ({ children }) => {
   return (
@@ -85,11 +50,15 @@ const AppLayout = ({ children }) => {
         <meta name='twitter:description' content={description} />
         <meta name='twitter:site' content='@rehsok' />
         <meta name='twitter:image' content={socialImageUrl} />
-        <script
-          type='application/ld+json'
-          dangerouslySetInnerHTML={addGoogleSearchSchema()}
-        />
       </Head>
+
+      <Script
+        type='application/ld+json'
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(googleSearchSchema)
+        }}
+        id='WebSite'
+      />
 
       <main>
         <Navbar />
