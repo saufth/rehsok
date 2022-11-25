@@ -22,7 +22,9 @@ const baseUrl = process.env.NEXT_PUBLIC_HOST
 const socialImageUrl = `${baseUrl}images/rehsok.jpg`
 
 const addWebsiteJsonId = () => {
-  __html: JSON.stringify(googleSearchSchema)
+  return {
+    __html: JSON.stringify(googleSearchSchema)
+  }
 }
 
 const AppLayout = ({ children }) => {
