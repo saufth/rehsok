@@ -22,93 +22,89 @@ const About = () => {
         </Heading>
 
         <p className={textStyle}>
-          A lo largo de los años, todo lo que tiene que ver con temas fiscales ha
-          sido visto como una fuente interminable de estrés, impotencia, decepción,
-          frustración, intranquilidad y miedo para los empresarios mexicanos.
+          A lo largo de los años, todo lo que tiene que ver con cuestiones de tipo
+          fiscal no ha sido considerado de buena manera, pues se le ha relacionado
+          con asuntos de tipo desfavorable, como estrés, impotencia, decepción,
+          frustración, intranquilidad y miedo de parte de los empresarios mexicanos.
           <br/><br/>
           Pero no solo eso. Históricamente, dentro de las mismas empresas, el ramo
-          fiscal se ha caracterizado por ser uno de los más tediosos, cansados o
-          desagradables para laborar. Incluso podríamos decir que muchos colaboradores
-          no disfrutan desempeñarse en él.
+          fiscal se ha caracterizado por ser uno de los más difíciles, desgastantes
+          o incómodos para laborar. Incluso podríamos decir que muchos colaboradores
+          se muestran recelosos a desempeñarse dentro de este.
           <br/><br/>
-          Dicho de otro modo, esta área de trabajo en el “policía malo” con el que nadie
-          quiere tener contacto o ningún tipo de relación.
+          Dicho de otro modo, y en palabras llanas, esta área de trabajo es con la
+          que nadie quiere tener contacto o ningún tipo de relación.
           <br/><br/>
-          Por esta razón, y con la firme convicción y motivación de transformar en historias
-          de éxito e inspiración las desagradables historias que hoy cuentan muchos empresarios
-          respecto al tema, es que nace, en 2008, Rehsok Consultores.
+          Por esta razón, y con la firme convicción y motivación de transformar
+          en historias de éxito e inspiración las desagradables experiencias
+          que hoy cuentan muchos empresarios respecto al tema, es que nace,
+          en 2008, Rehsok Consultores.
           <br/><br/>
-          El área fiscal, a diferencia de lo que muchas personas creen es, en realidad, una fuente
-          de posibilidades y oportunidades de innovación, progreso y bienestar a corto, mediano y
-          largo plazo para el legado empresarial de nuestros clientes que, sobra decirlo, pero son
-          nuestra razón de ser y, sobre todo, nuestra prioridad.
+          El área fiscal, a diferencia de lo que muchas personas piensan es, en
+          realidad, una fuente de posibilidades y oportunidades de innovación,
+          progreso y bienestar a corto, mediano y largo plazo para el legado
+          empresarial de nuestros clientes que, sobra decirlo, son nuestra razón
+          de ser y, sobre todo, nuestra prioridad.
           <br/><br/>
-          Ahora bien, qué mejor símbolo para un legado que el árbol de la vida, mismo que representa
-          a Rehsok Consultores.
+          Ahora bien, no hay mejor símbolo para un legado que el árbol de la vida,
+          mismo que representa a Rehsok Consultores.
           <br/><br/>
-          Tal vez se preguntarán por qué, entre tantos símbolos, elegimos al árbol.
+          Existe una razón por la que se ha elegido el símbolo del árbol de entre
+          tantos; la cual es, por demás, de interés.
           <br/><br/>
-          La razón es, por demás, interesante.
+          A lo largo de la historia, para muchas culturas y civilizaciones el árbol
+          de la vida ha tenido diferentes significados y simbolismos. No obstante,
+          en todas ellas existe uno en común: el ciclo de la vida.
           <br/><br/>
-          Para muchas culturas y civilizaciones, a lo largo de la historia, el árbol de la vida tiene
-          diferentes significados y simbolismos. No obstante, en todas ellas representa un denominador
-          común. El ciclo de la vida. 
+          El tronco como metáfora representa esa unión tan específica entre la vida
+          y la muerte, mientras que las ramas representan las muchas posibilidades y
+          caminos que hay a lo largo de este gran viaje que es la vida.
           <br/><br/>
-          El tronco como metáfora representa esa unión tan específica entre la vida y la muerte,
-          mientras que las ramas representan las muchas posibilidades y caminos que hay a lo largo
-          de este gran viaje al que llamamos vida.
+          Y es que, aunque todos en este mundo compartimos un destino en común,
+          el viaje no tiene por qué ser el mismo.
           <br/><br/>
-          Y es que, aunque para todos en este mundo, el final es el mismo, el viaje no tiene por
-          qué serlo.
+          Tomando en cuenta esa convicción y simbología, en Rehsok Consultores
+          buscamos que la razón de ser de tu empresa se diferencie de las demás
+          en cada una de las etapas que le tocará enfrentar.
           <br/><br/>
-          Tomando en cuenta esa convicción y simbología, en Rehsok Consultores buscamos que la razón
-          de ser de tu empresa se diferencie de las demás en cada una de las etapas que le tocarán
-          enfrentar.
+          Seguramente ahora mismo salta a la vista una pregunta: ¿Qué tiene que
+          ver esto con mis negocios?
           <br/><br/>
-          Seguramente en este momento te estás preguntando: ¿Qué tiene que ver esto con mis negocios?
+          La respuesta supera las expectativas.
           <br/><br/>
-          Y con humildad te decimos que más de lo que te imaginas y te vamos a decir por qué.
+          Las empresas son como un ser vivo: tienen un ciclo. El nacimiento se da en
+          la firma del acta constitutiva. Luego, en la juventud de las organizaciones es
+          en donde se da el fortalecimiento necesario, a través de estrategias y decisiones,
+          que será crucial y determinante en la madurez de las empresas, etapa en la que se
+          busca una consolidación fuerte y saludable. De ahí se deduce que la máxima obtención
+          de frutos futuros depende del correcto manejo de las etapas de crecimiento, en cuanto
+          a planeación, organización y toma adecuada de decisiones. Si se ha tenido una vida
+          saludable y se han tomado los caminos adecuados, serán mayores las posibilidades de
+          disfrutar las recompensas del trabajo y del dinero invertidos.
           <br/><br/>
-          Este mismo ciclo que vive el ser humano, también lo viven las empresas.  Simbólicamente
-          nacen en la firma del acta constitutiva, posterior a esto viene la etapa de la juventud
-          donde el o los socios deben de alimentar y nutrirla con todo lo que necesitan para que
-          puedan llegar a la edad adulta y a la vejez lo más fuertes y saludables posible.
+          Aquí surge la pregunta capital de todo este asunto: ¿Cuál es la mejor etapa para planear
+          y realizar todo lo relacionado con los asuntos fiscales del negocio? La cuestión es compleja
+          y requiere de observaciones puntuales para poderse responder adecuadamente.
           <br/><br/>
-          Por lo tanto, es un hecho que, si las dos primeras etapas de vida de la empresa se llevaron
-          a cabo previendo y planeando correctamente, serán mucho mayores las posibilidades de
-          disfrutar los frutos de todo el trabajo, tiempo y dinero invertido a lo largo de los años.
+          Generalmente, tanto empresarios como emprendedores consideran oportuno comenzar a planear
+          desde el nacimiento de la organización. Aunque parezca lo contrario, esta respuesta está
+          lejos de ser acertada.
           <br/><br/>
-          La pregunta central de todo esto: ¿En qué etapa se debería estar analizando y planeando
-          todo el tema fiscal de tu negocio?
+          Es desde antes del nacimiento de la empresa, en la planeación integral de toda la organización
+          el cuándo se debe tomar en cuenta el aspecto fiscal. Como parte esencial para el funcionamiento
+          de las organizaciones, es capital observar en su gestación el tema fiscal y darle la atención
+          necesaria.  Todo esto con el objetivo de que a su nacimiento los pasos sean firmes, seguros y
+          llenos de confianza, pues sabemos el gran trabajo que conlleva la realización y la puesta en
+          marcha de un negocio.
           <br/><br/>
-          Es una pregunta compleja que, aunque pudiera parecer obvio, casi nadie logra contestar
-          correctamente.
+          Las posibilidades de éxito a futuro de la empresa dependerán de estos pasos previos, que es
+          cuando se le debe arropar y proteger de todas las amenazas y debilidades que puedan surgir.
           <br/><br/>
-          Por lo general, los emprendedores y empresarios contestan que desde el momento en el
-          que nace se debe de estar haciendo la planeación, pero, aunque no lo crean, esta
-          respuesta es la segunda mejor, pero no la primera.
+          En Rehsok Consultores buscamos solamente un objetivo: Más y mejores posibilidades de éxito para
+          que, a través de nuestros servicios de compliance y planeación fiscal, nuestros clientes puedan
+          construir un patrimonio empresarial para su comunidad, para sus familias y para ellos mismos.
           <br/><br/>
-          La respuesta correcta, o ideal, es que el o los futuros emprendedores realicen una
-          planeación de toda su empresa incluyendo, obviamente, el área fiscal, desde antes
-          del nacimiento de esta.
-          <br/><br/>
-          ¿Para qué?
-          <br/><br/> 
-          Para que cuando la empresa finalmente nazca, con todo el esfuerzo que esto sabemos
-          que conlleva, no existan pasos en falso, sino todo lo contrario. Cada paso, pasito
-          o pasote que se tome deberá estar cargado de un propósito lleno de certeza.
-          <br/><br/>
-          O a poco cuando nace un bebé no se tiene lista su ropa para cobijarlo, el alimento
-          para nutrirlo y la planeación de las vacunas para protegerlo. Del mismo modo, las
-          empresas deben tener todos los frentes cubiertos para poder, con ello, incrementar
-          sustancialmente las posibilidades de éxito a futuro.
-          <br/><br/>
-          Y justamente eso es lo que desde Rehsok Consultores queremos:  Más y mejores
-          posibilidades de éxito para que, a través de nuestros servicios de compliance
-          y planeación fiscal, nuestros clientes puedan construir un legado empresarial
-          para su comunidad, para sus familias y para ellos mismos.
-          <br/><br/>
-          Permítenos acompañarte en este camino.
+          Permítenos ser tus compañeros de viaje.
         </p>
 
         <CallToAction secondary space='top-lg' />
@@ -116,13 +112,13 @@ const About = () => {
 
       <div className={backgroundStyle}>
         <Image
-            alt='Rehsock background'
-            src={backgroundHero}
-            quality='100'
-            placeholder='blur'
-            fill
-            sizes='(min-width: 1024) 1920px, 1366px'
-          />
+          alt='Rehsock background'
+          src={backgroundHero}
+          quality='100'
+          placeholder='blur'
+          fill
+          sizes='(min-width: 1024) 1920px, 1366px'
+        />
       </div>
 
     </section>
