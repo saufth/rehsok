@@ -1,6 +1,6 @@
 // Styles
 import { 
-  paragraphStyle,
+  textStyle,
   textColorStyle,
   textLargeStyle,
   textSmallStyle,
@@ -28,7 +28,7 @@ const Paragraph = ({ children, small, center, space }) => {
   const sizeStyle = small ? textSmallStyle : textLargeStyle
   const centerStyle = center ? textCenterStyle : ''
   const spaceStyle = space ? spaceConfig[space] : ''
-  const paragraphStyle = `${paragraphStyle} ${textColorStyle} ${sizeStyle} ${centerStyle} ${spaceStyle}`
+  const paragraphStyle = `${textStyle} ${textColorStyle} ${sizeStyle} ${centerStyle} ${spaceStyle}`
 
   return (
     <p className={paragraphStyle}>
