@@ -100,7 +100,7 @@ const About = () => {
           cual se le debe arropar y proteger de todas las amenazas y debilidades que puedan surgir.
           <br/><br/>
           En Rehsok Consultores buscamos solamente un objetivo: Más y mejores posibilidades de éxito para que,
-          a través de nuestros servicios de compliance y planeación fiscal, nuestros clientes puedan construir
+          a través de nuestras soluciones, nuestros clientes puedan construir
           un patrimonio empresarial para su comunidad, para sus familias y para ellos mismos.
           <br/><br/>
           Permítenos ser tus compañeros de viaje.

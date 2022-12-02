@@ -1,3 +1,9 @@
+.paragraphStyle {
+  @apply
+    /* Typography */
+    select-none;
+}
+
 .textColorStyle {
   @apply
     /* Typography */

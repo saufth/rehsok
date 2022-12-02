@@ -3,7 +3,8 @@
     /* Typography */
     font-archivo-semibold
     text-3xl md:text-4xl lg:text-5xl
-    text-rehsok-indigo;
+    text-rehsok-indigo
+    select-none;
 }
 
 .secondaryStyle {

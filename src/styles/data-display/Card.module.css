@@ -42,5 +42,6 @@
     text-lg md:text-xl lg:text-2xl
     text-center
     leading-none
-    text-rehsok-gray;
+    text-rehsok-gray
+    select-none;
 }

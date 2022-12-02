@@ -37,7 +37,8 @@
     /* Typography */
     font-archivo-semibold
     text-xl md:text-3xl lg:text-4xl
-    text-rehsok-indigo;
+    text-rehsok-indigo
+    select-none;
 }
 
 .descriptionStyle {
@@ -47,7 +48,9 @@
     pr-0 md:pr-10
     /* Spacing */
     text-sm md:text-base lg:text-lg
-    text-rehsok-gray;
+    text-rehsok-gray
+    /* Typography */
+    select-none;
 }
 
 .descriptionReverseStyle {
