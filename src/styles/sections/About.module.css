@@ -1,13 +1,16 @@
 .layoutStyle {
   @apply
     /* Spacing */
-    mt-16 md:mt-24 lg:mt-32;   
+    mt-16 md:mt-24 lg:mt-32
+    /* Typography */
+    select-none;
 }
 
 .textStyle {
   @apply
     /* Sizing */
     max-w-2xl
+    /* Spacing */
     /* Spacing */
     mt-6 md:mt-8 lg:mt-10
     /* Typography */
