@@ -49,9 +49,6 @@ const About = () => {
           Ahora bien, no hay mejor símbolo para un legado que el árbol de la vida, mismo que
           representa a Rehsok Consultores.
           <br/><br/>
-          Ahora bien, no hay mejor símbolo para un legado que el árbol de la vida, mismo que
-          representa a Rehsok Consultores.
-          <br/><br/>
           A lo largo de la historia, para muchas culturas y civilizaciones el árbol de la
           vida ha tenido diferentes significados y simbolismos. No obstante, en todas ellas
           existe uno en común: el ciclo de la vida.
@@ -62,10 +59,6 @@ const About = () => {
           <br/><br/>
           Y es que, aunque todos en este mundo compartimos un destino en común, el viaje
           no tiene por qué ser el mismo.
-          <br/><br/>
-          Tomando en cuenta esa convicción y simbología, en Rehsok Consultores buscamos
-          que la razón de ser de tu empresa se diferencie de las demás en cada una de
-          las etapas que le tocará enfrentar.
           <br/><br/>
           Tomando en cuenta esa convicción y simbología, en Rehsok Consultores buscamos que
           la razón de ser de tu empresa se diferencie de las demás en cada una de las etapas
