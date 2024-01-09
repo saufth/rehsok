@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --background: 13.49% 0.019 241.1; #010407 */
+
+@layer base {
+  :root {
+    /* Theme */
+    --background: 0% 0 0; /* #000000 */
+    --foreground: 100% 0 0; /* #FFFFFF */
+    --card: 0% 0 0; /* #000000 */
+    --card-foreground: 100% 0 0; /* #FFFFFF */
+    --popover: 99.47% 0.0045028269124313515 78.2985522745648; /* #FFFDFA */
+    --popover-foreground: 100% 0 0; /* #FFFFFF */
+    --primary: 100% 0 0; /* #FFFFFF */
+    --primary-foreground: 0% 0 0; /* #000000 */
+    --secondary: 0% 0 0; /* #000000 */
+    --secondary-foreground: 100% 0 0; /* #FFFFFF */
+    --muted: 47.49% 0.005 271.31; /* #5B5C5F */
+    --muted-foreground: 46.97% 0.009 73.65; /* #5E5A55 */
+    --accent: 52.43% 0.115 245.85; /* #246FA8 */
+    --accent-foreground: 100% 0 0; /* #FFFFFF */
+    --destructive: 94.79% 0.03 351.51; /* #FFE6F0 */
+    --destructive-foreground: 52.22% 0.198 10; /* #BF174F */
+    --border: 100% 0 0, /* #FFFFFF */
+    --input: 100% 0 0; /* #FFFFFF */
+    --ring: 100% 0 0; /* #FFFFFF */
+    --radius: 0.5rem; /* 8px */
+    /* Shell */
+    --inner-gutter: 16px;
+    --outer-gutter: 16px;
+    --grid-columns: 6;
+    /* Spacing */
+    --spacing-spacing-1: .25rem;
+    --spacing-spacing-2: .5rem;
+    --spacing-spacing-3: .5rem;
+    --spacing-spacing-4: 1rem;
+    --spacing-spacing-5: 1.5rem;
+    --spacing-spacing-6: 2.25rem;
+    --spacing-spacing-7: 4.5rem;
+    --spacing-spacing-8: 5.25rem;
+    --spacing-spacing-9: 9rem;
+    --spacing-spacing-10: 11.25rem;
+    --spacing-spacing-11: 11.25rem;
+  }
+
+  @media (min-width: 768px) {
+    :root {
+        /* Shell */
+      --inner-gutter: 16px;
+      --outer-gutter: 16px;
+      --grid-columns: 8;
+      /* Spacing */
+      --spacing-spacing-5: 2.25rem;
+      --spacing-spacing-6: 3rem;
+      --spacing-spacing-7: 5.25rem;
+      --spacing-spacing-8: 7rem;
+      --spacing-spacing-9: 10rem;
+      --spacing-spacing-10: 12.5rem;
+      --spacing-spacing-11: 12.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    :root {
+      --inner-gutter: 24px;
+      --outer-gutter: 24px;
+      --grid-columns: 12;
+      /* Spacing */
+      --spacing-spacing-3: .75rem;
+      --spacing-spacing-4: 1.5rem;
+      --spacing-spacing-5: 3rem;
+      --spacing-spacing-6: 3.75rem;
+      --spacing-spacing-7: 6rem;
+      --spacing-spacing-8: 9rem;
+      --spacing-spacing-9: 11.25rem;
+      --spacing-spacing-10: 13.75rem;
+      --spacing-spacing-11: 16.5rem;
+    }
+  }
+
+  @media (min-width: 1680px) {
+    :root {
+      --container-width: 1632px;
+    }
+  }
+
+  .dark {
+    /* Theme */
+    --background: 0% 0 0; /* #000000 */
+    --foreground: 100% 0 0; /* #FFFFFF */
+    --card: 0% 0 0; /* #000000 */
+    --card-foreground: 100% 0 0; /* #FFFFFF */
+    --popover: 99.47% 0.0045028269124313515 78.2985522745648; /* #FFFDFA */
+    --popover-foreground: 100% 0 0; /* #FFFFFF */
+    --primary: 100% 0 0; /* #FFFFFF */
+    --primary-foreground: 0% 0 0; /* #000000 */
+    --secondary: 0% 0 0; /* #000000 */
+    --secondary-foreground: 100% 0 0; /* #FFFFFF */
+    --muted: 47.49% 0.005 271.31; /* #5B5C5F */
+    --muted-foreground: 46.97% 0.009 73.65; /* #5E5A55 */
+    --accent: 52.43% 0.115 245.85; /* #246FA8 */
+    --accent-foreground: 100% 0 0; /* #FFFFFF */
+    --destructive: 94.79% 0.03 351.51; /* #FFE6F0 */
+    --destructive-foreground: 52.22% 0.198 10; /* #BF174F */
+    --border: 100% 0 0, /* #FFFFFF */
+    --input: 100% 0 0; /* #FFFFFF */
+    --ring: 100% 0 0; /* #FFFFFF */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border text-foreground;
+  }
+
+  ::-webkit-scrollbar {
+    @apply h-1.5 w-1.5 bg-primary/40;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary rounded-[1ex];
+  }
+
+  ::-webkit-scrollbar-corner {
+    @apply bg-primary;
+  }
+
+  .cols-container>[class*=-cols] {
+    @apply ml-gutter;
+  }
+}
+
+@layer utilities {
+  /* Typography */
+
+  .f-heading-1 {
+    @apply text-h1 leading-[1.15] xl:leading-none antialiased;
+  }
+
+  .f-heading-2 {
+    @apply text-[1.75rem] sm:text-4xl xl:text-5xl antialiased;
+  }
+
+  .f-heading-3 {
+    @apply text-[1.3125rem] md:text-2xl xl:text-[1.75rem] font-medium antialiased;
+  }
+
+  .text-p1 {
+    @apply text-[clamp(0.2rem,1dvw+0.8rem,1.7rem)] font-medium;
+  }
+
+  .text-p2 {
+    @apply text-[clamp(0.5rem,1dvw+0.8rem,1.7rem)];
+  }
+
+  .text-p3 {
+    @apply text-lg lg:text-xl;
+  }
+
+  /* Container */
+  
+  .container {
+    @apply w-[calc(var(--container-width,100%)-(2*var(--outer-gutter,0)))] mx-auto;
+  }
+
+  .cols-container {
+    @apply flex flex-wrap -ml-gutter;
+  }
+
+  .full-bleed-container {
+    @apply 3xl:w-[calc(var(--container-width,100%)-var(--outer-gutter,0))] 3xl:mx-auto;
+  }
+}
