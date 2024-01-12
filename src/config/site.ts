@@ -21,10 +21,6 @@ export const siteNav = [
     href: '/cultura'
   },
   {
-    title: 'Razon de ser',
-    href: '/razon-de-ser'
-  },
-  {
     title: 'Contáctanos',
     href: '/contacto'
   }
