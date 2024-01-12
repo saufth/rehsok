@@ -11,11 +11,13 @@ export default function ContactPage () {
   return (
     <>
       <section className='px-4 mt-spacing-9'>
-        <div className='max-w-4xl mx-auto sm:px-0 space-y-12 sm:space-y-16'>
+        <div className='max-w-4xl mx-auto'>
           <h1 className='f-display-1'>
             Pongámonos en contacto
           </h1>
-          <ContactForm />
+          <div className='mt-spacing-7'>
+            <ContactForm />
+          </div>
         </div>
       </section>
     </>
