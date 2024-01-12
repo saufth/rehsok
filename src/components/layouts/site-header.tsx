@@ -82,7 +82,7 @@ export default function SiteHeader () {
           </div>
         </nav>
       </header>
-      <div className={cn('w-full h-0 bg-black fixed flex flex-col justify-between top-0 left-0 z-20 overflow-hidden transition-[height] duration-300', isOpen && 'h-screen')}>
+      <div className={cn('w-full h-0 bg-black fixed flex flex-col justify-between top-0 left-0 z-20 overflow-hidden transition-[height] duration-300', isOpen && 'h-[100dvh]')}>
         <nav className='container mt-spacing-9'>
           {siteConfig.mainNav.map((navItem, key) => (
             <Button className='rounded-none w-full px-0 border-b first:border-t' variant='link' size='lg' asChild key={key}>
@@ -95,7 +95,7 @@ export default function SiteHeader () {
             </Button>
           ))}
         </nav>
-        <div className='container pb-12'>
+        <div className='container pb-8'>
           <div className='text-xs sm:text-sm text-muted'>
             Correo electrónico
           </div>
