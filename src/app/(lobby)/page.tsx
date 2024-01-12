@@ -13,8 +13,8 @@ export default function IndexPage () {
         <div className='w-full h-screen min-h-[500xp] lg:min-h-[600px] max-h-[1000px] relative z-10'>
           <div className='container absolute inset-x-0 bottom-[0.8125rem] md:bottom-[1.375rem] z-10'>
             <div className='cols-container justify-center'>
-              <div className='w-6-cols md:w-8-cols lg:w-9-cols'>
-                <h1 className='f-heading-1 text-white dark:text-white'>
+              <div className='w-6-cols md:w-9-cols'>
+                <h1 className='f-display-2 text-white dark:text-white'>
                   {siteConfig.description}
                 </h1>
                 <Button
@@ -56,17 +56,15 @@ export default function IndexPage () {
           <div className='border-t'>
             <div className='cols-container pt-spacing-3'>
               <div className='w-6-cols md:w-4-cols lg:w-6-cols'>
-                <h2 className='f-heading-2 font-secondary md:pr-9 lg:pr-11'>
-                  Responsabilidad y seguridad
+                <h2 className='f-heading-1 md:pr-9 lg:pr-11'>
+                  Seguridad y responsabilidad
                 </h2>
               </div>
-              {services.description && (
-                <div className='w-6-cols md:w-4-cols lg:w-6-cols mt-4 md:mt-0'>
-                  <p className='f-heading-3'>
-                    Nuestra razón de ser consiste en convertirnos en un aliado determinante en el éxito presente y futuro de nuestros clientes.
-                  </p>
-                </div>
-              )}
+              <div className='w-6-cols md:w-4-cols lg:w-6-cols mt-4 md:mt-0'>
+                <p className='f-subhead-1'>
+                  Nuestra razón de ser consiste en convertirnos en un aliado determinante en el éxito presente y futuro de nuestros clientes.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -85,15 +83,15 @@ export default function IndexPage () {
       <section id='soluciones' className='mt-spacing-7'>
         <div className='container'>
           <div className='border-t'>
-            <div className='cols-container pt-spacing-3 border-t'>
+            <div className='cols-container pt-spacing-3'>
               <div className='w-6-cols md:w-4-cols lg:w-6-cols'>
-                <h2 className='f-heading-2 font-secondary md:pr-9 lg:pr-11'>
+                <h2 className='f-heading-1 font-serif md:pr-9 lg:pr-11'>
                   {services.title}
                 </h2>
               </div>
               {services.description && (
                 <div className='w-6-cols md:w-4-cols lg:w-6-cols mt-4 md:mt-0'>
-                  <p className='f-heading-3'>
+                  <p className='f-subhead-1'>
                     {services.description}
                   </p>
                 </div>
@@ -138,21 +136,28 @@ export default function IndexPage () {
       </section>
       <div className='mt-spacing-7'>
         <div className='container border-t'>
-          <div className='cols-container pt-spacing-3'>
-            <div className='w-6-cols md:w-8-cols lg:w-5-cols'>
-              <div className='f-heading-2 font-secondary md:pr-9 lg:pr-11'>
-                "Lo que no sabes no es lo que te mete en problemas. Es lo que sabes y das por hecho que resulta no ser."
-              </div>
-              <div className='mt-spacing-5 font-secondary text-sm sm:text-base'>
-                Mark Twain
-              </div>
+          <div className='cols-container mt-spacing-4'>
+            <div className='w-6-cols sm:w-1/2-cols relative 2xl:pl-6 mt-10 sm:mt-0 order-2 sm:order-1'>
+              <blockquote className='f-display-3 2xl:pr-11'>
+                <p className='before:content-["“"] before:2xl:absolute before:2xl:left-0 after:content-["”"]'>
+                  Lo que no sabes no es lo que te mete en problemas. Es lo que sabes y das por hecho que resulta no ser.
+                </p>
+              </blockquote>
+              <figcaption className='mt-spacing-4'>
+                <span className='font-medium block'>
+                  Mark Twain
+                </span>
+                <span className='block'>
+                  Escritor, orador y humorista estadounidense
+                </span>
+              </figcaption>
             </div>
-            <div className='w-8-cols lg:w-7-cols mt-spacing-7 lg:mt-0'>
+            <div className='w-6-cols sm:w-1/2-cols order-1 sm:order-2'>
               <Image
-                src='/images/home-banner.webp'
+                src='/images/home-quote.webp'
                 alt='Dos hombres de negocios discutiendo en una oficina moderna'
-                width={3200}
-                height={2400}
+                width={2840}
+                height={2840}
                 sizes='(max-width: 744px) 100vw, (max-width: 1280px) 100vw, (max-width: 1440px) 100vw, 100vw'
                 loading='lazy'
                 className='w-full'

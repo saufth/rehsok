@@ -11,19 +11,19 @@
     --foreground: 100% 0 0; /* #FFFFFF */
     --card: 0% 0 0; /* #000000 */
     --card-foreground: 100% 0 0; /* #FFFFFF */
-    --popover: 99.47% 0.0045028269124313515 78.2985522745648; /* #FFFDFA */
+    --popover: 0% 0 0; /* #000000 */
     --popover-foreground: 100% 0 0; /* #FFFFFF */
     --primary: 100% 0 0; /* #FFFFFF */
     --primary-foreground: 0% 0 0; /* #000000 */
     --secondary: 0% 0 0; /* #000000 */
     --secondary-foreground: 100% 0 0; /* #FFFFFF */
     --muted: 47.49% 0.005 271.31; /* #5B5C5F */
-    --muted-foreground: 46.97% 0.009 73.65; /* #5E5A55 */
+    --muted-foreground: 73.16% 0 0; /* #A8A8A8 */
     --accent: 52.43% 0.115 245.85; /* #246FA8 */
     --accent-foreground: 100% 0 0; /* #FFFFFF */
     --destructive: 94.79% 0.03 351.51; /* #FFE6F0 */
     --destructive-foreground: 52.22% 0.198 10; /* #BF174F */
-    --border: 100% 0 0, /* #FFFFFF */
+    --border: 73.16% 0 0; /* #A8A8A8 */
     --input: 100% 0 0; /* #FFFFFF */
     --ring: 100% 0 0; /* #FFFFFF */
     --radius: 0.5rem; /* 8px */
@@ -92,14 +92,14 @@
     --foreground: 100% 0 0; /* #FFFFFF */
     --card: 0% 0 0; /* #000000 */
     --card-foreground: 100% 0 0; /* #FFFFFF */
-    --popover: 99.47% 0.0045028269124313515 78.2985522745648; /* #FFFDFA */
+    --popover: 0% 0 0; /* #000000 */
     --popover-foreground: 100% 0 0; /* #FFFFFF */
     --primary: 100% 0 0; /* #FFFFFF */
     --primary-foreground: 0% 0 0; /* #000000 */
     --secondary: 0% 0 0; /* #000000 */
     --secondary-foreground: 100% 0 0; /* #FFFFFF */
     --muted: 47.49% 0.005 271.31; /* #5B5C5F */
-    --muted-foreground: 46.97% 0.009 73.65; /* #5E5A55 */
+    --muted-foreground: 73.16% 0 0; /* #A8A8A8 */
     --accent: 52.43% 0.115 245.85; /* #246FA8 */
     --accent-foreground: 100% 0 0; /* #FFFFFF */
     --destructive: 94.79% 0.03 351.51; /* #FFE6F0 */
@@ -126,25 +126,47 @@
   ::-webkit-scrollbar-corner {
     @apply bg-primary;
   }
-
-  .cols-container>[class*=-cols] {
-    @apply ml-gutter;
-  }
 }
 
 @layer utilities {
   /* Typography */
 
-  .f-heading-1 {
-    @apply text-h1 leading-[1.15] xl:leading-none antialiased;
+  .f-display-1 {
+    @apply text-[2.625rem] sm:text-[3.4375rem] xl:text-[4.5625rem] font-serif leading-[110%] -tracking-[0.01em] xl:-tracking-[0.02] antialiased;
+    -webkit-font-feature-settings: "liga";
+    font-feature-settings: "liga";
   }
 
-  .f-heading-2 {
-    @apply text-[1.75rem] sm:text-4xl xl:text-5xl antialiased;
+  .f-display-2 {
+    @apply text-[2.625rem] sm:text-[3.4375rem] xl:text-[4.5625rem] -tracking-[0.01em] sm:-tracking-[0.02em] leading-[1.15] sm:leading-[110%] xl:leading-[100%] antialiased font-light;
+  }
+
+  .f-display-3 {
+    @apply text-[2rem] sm:text-[2.625rem] xl:text-[3.4375rem] font-serif leading-[110%] -tracking-[0.01em] antialiased;
+    -webkit-font-feature-settings: "liga";
+    font-feature-settings: "liga";
+  }
+
+  .f-heading-1 {
+    @apply text-[1.75rem] sm:text-[2.25rem] xl:text-[3rem] font-serif leading-[110%] -tracking-[0.01em] xl:-tracking-[0.02] antialiased;
+    -webkit-font-feature-settings: "liga";
+    font-feature-settings: "liga";
   }
 
   .f-heading-3 {
-    @apply text-[1.3125rem] md:text-2xl xl:text-[1.75rem] font-medium antialiased;
+    @apply text-[1.3125rem] md:text-2xl xl:text-[1.75rem] leading-[130%] tracking-normal sm:-tracking-[0.01em] font-medium antialiased;
+  }
+
+  .f-subhead-1 {
+    @apply text-[1.3125rem] md:text-2xl xl:text-[1.75rem] leading-[130%] sm:leading-[120%] -tracking-[0.01em] antialiased;
+  }
+
+  .f-subhead-2 {
+    @apply text-[1rem] xl:text-[1.125rem] font-medium leading-[130%] tracking-normal antialiased;
+  }
+
+  .f-body-1 {
+    @apply text-[1rem] xl:text-[1.125rem] tracking-normal leading-[130%] antialiased;
   }
 
   .text-p1 {
@@ -166,10 +188,10 @@
   }
 
   .cols-container {
-    @apply flex flex-wrap -ml-gutter;
+    @apply flex flex-wrap -ml-gutter [&>[class*=-cols]]:ml-gutter;
   }
 
   .full-bleed-container {
-    @apply 3xl:w-[calc(var(--container-width,100%)-var(--outer-gutter,0))] 3xl:mx-auto;
+    @apply 3xl:w-[calc(var(--container-width,100%)-var(--outer-gutter,0))] 3xl:mx-auto 3xl:px-4;
   }
 }

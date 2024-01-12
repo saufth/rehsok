@@ -1,5 +1,4 @@
 import ContactForm from '@/components/forms/contact-form'
-import Balancer from 'react-wrap-balancer'
 import { type Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -11,20 +10,12 @@ export const metadata: Metadata = {
 export default function ContactPage () {
   return (
     <>
-      <section className='px pt-8 sm:pt-24 2xl:pb-28'>
-        <div className='container sm:px-0 space-y-12 sm:space-y-16'>
-          <div className='space-y-10 sm:space-y-12'>
-            <h2>
-              <Balancer className='text-h2 font-primary text-center w-full'>
-                Pongámonos en contacto
-              </Balancer>
-            </h2>
-          </div>
-          <div className='w-full flex justify-center'>
-            <div className='w-3xl'>
-              <ContactForm />
-            </div>
-          </div>
+      <section className='px-4 mt-spacing-9'>
+        <div className='max-w-4xl mx-auto sm:px-0 space-y-12 sm:space-y-16'>
+          <h1 className='f-display-1'>
+            Pongámonos en contacto
+          </h1>
+          <ContactForm />
         </div>
       </section>
     </>

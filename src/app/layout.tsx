@@ -5,7 +5,7 @@ import ThemeProvider from '@/components/layouts/theme-provider'
 import { Toaster } from '@/components/ui/toaster'
 import GoogleSearchScript from '@/components/layouts/google-seacrch-script'
 import { cn } from '@/lib/utils'
-import { fontPrimary, fontSecondary } from '@/lib/fonts'
+import { fontSans, fontSerif } from '@/lib/fonts'
 import { services } from '@/config/services'
 import { siteConfig } from '@/config/site'
 import './globals.css'
@@ -51,9 +51,9 @@ export const viewport: Viewport = {
 
 export default function RootLayout ({ children }: React.PropsWithChildren) {
   return (
-    <html className={cn(fontPrimary.variable, fontSecondary.variable, 'font-primary antialiased !scroll-smooth select-none')} lang='es' suppressHydrationWarning>
+    <html className={cn(fontSans.variable, fontSerif.variable, 'font-sans antialiased !scroll-smooth select-none')} lang='es' suppressHydrationWarning>
       <body className='bg-background min-h-screen'>
-        <ThemeProvider attribute='class' defaultTheme='dark'>
+        <ThemeProvider attribute='class' forcedTheme='dark' defaultTheme='dark'>
           {children}
           <Toaster />
           <TailwindIndicator />

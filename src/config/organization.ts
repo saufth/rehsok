@@ -2,7 +2,7 @@ import { NavItem, type Article, type Section } from '@/types'
 
 export const culture: Section = {
   title: 'Nuestra cultura',
-  description: 'El éxito a corto, mediano y largo plazo de cualquier empresa, no depende de un solo aspecto, sino de la sincronización de muchos. Aquí te presentamos los mas importantes para nosotros, mismos que forman parte de nuestro ADN y que son la clave en la generación de soluciones de valor para nuestros clientes.',
+  description: 'Te presentamos los mas importantes para nosotros, mismos que forman parte de nuestro ADN y que son la clave en la generación de soluciones de valor para nuestros clientes.',
   items: [
     {
       title: 'Trabajamos en equipo',
@@ -12,7 +12,7 @@ export const culture: Section = {
         'El éxito a corto, mediano y largo plazo de cualquier empresa no depende de un solo aspecto, sino de la sincronización de muchos.'
       ],
       image: {
-        src: '/images/value1.webp',
+        src: '/images/culture1.webp',
         alt: 'Trabajamos en equipo'
       }
     },
@@ -23,7 +23,7 @@ export const culture: Section = {
         'Mientras más grande y frecuente sea el problema, mayor será la posibilidad de generar valor.'
       ],
       image: {
-        src: '/images/value2.webp',
+        src: '/images/culture2.webp',
         alt: 'Transformamos problemas en oportunidades'
       }
     },
@@ -35,7 +35,7 @@ export const culture: Section = {
         'Cualquier duda, pregunta o sugerencia de nuestros clientes y colaboradores es siempre bienvenida.'
       ],
       image: {
-        src: '/images/value3.webp',
+        src: '/images/culture3.webp',
         alt: 'No asumimos'
       }
     },
@@ -47,7 +47,7 @@ export const culture: Section = {
         'Siempre hay una forma óptima o mejor de hacer las cosas.'
       ],
       image: {
-        src: '/images/value4.webp',
+        src: '/images/culture4.webp',
         alt: 'Planeamos y ejecutamos con estrategia'
       }
     },
@@ -58,7 +58,7 @@ export const culture: Section = {
         'Lo único constante es el cambio.'
       ],
       image: {
-        src: '/images/value5.webp',
+        src: '/images/culture5.webp',
         alt: 'Prevenimos futuras tendencias'
       }
     },
@@ -69,7 +69,7 @@ export const culture: Section = {
         'Para lograr generar innovaciones de valor, es imperativo conocer al cliente, a la competencia, al mercado y a ti mismo como organización.'
       ],
       image: {
-        src: '/images/value6.webp',
+        src: '/images/culture6.webp',
         alt: 'Inovamos constantemente'
       }
     },
@@ -79,7 +79,7 @@ export const culture: Section = {
         'El mundo de los negocios es un juego infinito en el que no se tiene una certeza plena de todos los elementos que participan en el mercado, ni de la variabilidad de estos. A lo máximo que se puede aspirar es a tener estimaciones.'
       ],
       image: {
-        src: '/images/value7.webp',
+        src: '/images/culture7.webp',
         alt: 'Buscamos progreso, no perfección'
       }
     }

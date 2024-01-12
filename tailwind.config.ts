@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import { fontFamily } from 'tailwindcss/defaultTheme'
 
 const breakpoints = {
   xs: '20rem', /* 320px */
@@ -27,6 +28,7 @@ const config: Config = {
       screens: {
         xs: '480px',
         xxs: '380px',
+        sm: '744px',
         '3xl': '1680px'
       },
       spacing: {
@@ -44,8 +46,8 @@ const config: Config = {
         'spacing-11': 'var(--spacing-spacing-11)'
       },
       fontFamily: {
-        primary: 'var(--font-primary)',
-        secondary: 'var(--font-secondary)'
+        sans: ['var(--font-sans)', ...fontFamily.sans],
+        serif: ['var(--font-serif)', ...fontFamily.serif]
       },
       fontSize: {
         h1: 'clamp(2.6rem,4vw,4.2rem)'
@@ -99,6 +101,7 @@ const config: Config = {
         '10-cols': 'calc(((10 / var(--container-grid-columns, var(--grid-columns))) * (100% - var(--inner-gutter))) - (var(--inner-gutter) - (10 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter))))',
         '11-cols': 'calc(((11 / var(--container-grid-columns, var(--grid-columns))) * (100% - var(--inner-gutter))) - (var(--inner-gutter) - (11 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter))))',
         '12-cols': 'calc(((12 / var(--container-grid-columns, var(--grid-columns))) * (100% - var(--inner-gutter))) - (var(--inner-gutter) - (12 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter))))',
+        '1/2-cols': 'calc(50% - var(--inner-gutter))',
         '1/3-cols': 'calc(33.333% - var(--inner-gutter))',
         ...breakpoints
       },

@@ -52,8 +52,8 @@ export function InfoCard ({ article, ...props }: ArticleCardProps) {
       <CardContent>
         <div className='aspect-[308/173] overflow-hidden rounded-xl bg-primary relative'>
           <Image
-            src={article.image}
-            alt={article.title}
+            src={article.image.src}
+            alt={article.image.alt}
             className='object-cover'
             sizes='(min-width: 1024px) 20vw, (min-width: 768px) 25vw, (min-width: 640px) 33vw, (min-width: 475px) 50vw, 100vw'
             fill

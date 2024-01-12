@@ -26,7 +26,7 @@ export const siteNav = [
   },
   {
     title: 'Contáctanos',
-    href: '/contáctanos'
+    href: '/contacto'
   }
 ]
 

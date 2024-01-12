@@ -98,7 +98,7 @@ export default function ContactForm () {
             <FormItem>
               <FormLabel>Tu nombre</FormLabel>
               <FormControl>
-                <Input placeholder='¿Cuál es tu nombre?' {...field} />
+                <Input className='text-background' placeholder='¿Cuál es tu nombre?' {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -112,6 +112,7 @@ export default function ContactForm () {
               <FormLabel>Email</FormLabel>
               <FormControl>
                 <Input
+                  className='text-background'
                   placeholder='correo@ejemplo.com'
                   {...field}
                 />
@@ -132,7 +133,7 @@ export default function ContactForm () {
                   field.onChange(value)}
               >
                 <FormControl>
-                  <SelectTrigger>
+                  <SelectTrigger className='[&>*]:text-background'>
                     <SelectValue placeholder={field.value} />
                   </SelectTrigger>
                 </FormControl>
@@ -164,7 +165,7 @@ export default function ContactForm () {
               <FormLabel>Asunto</FormLabel>
               <FormControl>
                 <Textarea
-                  className='resize-none'
+                  className='resize-none text-background'
                   rows={4}
                   placeholder='Cúentanos sobre tu proyecto'
                   {...field}
@@ -179,17 +180,19 @@ export default function ContactForm () {
           sitekey={recaptchaSitekey}
         />
         <Button
+          className='rounded-sm hover:bg-transparent'
+          variant='outline'
           disabled={isPending}
           size='full'
         >
           {isPending
             ? (
-              <span className='flex items-center gap-x-2 text-primary-foreground/50'>
-                Enviando <Icons.Spinner className='h-3 w-3 stroke-primary-foreground/50' aria-hidden='true' />
+              <span className='flex items-center gap-x-2'>
+                Enviando <Icons.Spinner className='h-3 w-3' aria-hidden='true' />
               </span>)
             : (
-              <span className='flex items-center gap-x-2 text-primary-foreground group-hover:text-accent-foreground'>
-                Enviar <PaperPlaneIcon className='h-3 w-3 [&>*]:fill-primary-foreground [&>*]:group-hover:fill-accent-foreground transition-colors duration-500' aria-hidden='true' />
+              <span className='flex items-center gap-x-2'>
+                Enviar <PaperPlaneIcon className='h-3 w-3' aria-hidden='true' />
               </span>)}
         </Button>
       </form>
