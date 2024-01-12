@@ -8,7 +8,7 @@ import {
   useScroll
 } from 'framer-motion'
 import { cn } from '@/lib/utils'
-import { siteConfig, siteNav } from '@/config/site'
+import { contactEmail, siteConfig, siteNav } from '@/config/site'
 
 const aboutLink = siteNav.find(({ title }) => title === 'Nuestra cultura')!
 const contactLink = siteNav.find(({ title }) => title === 'Contáctanos')!
@@ -16,6 +16,7 @@ const contactLink = siteNav.find(({ title }) => title === 'Contáctanos')!
 export default function SiteHeader () {
   const { scrollY } = useScroll()
   const [isOnTop, setIsOnTop] = React.useState(true)
+  const [isOpen, setIsOpen] = React.useState(false)
 
   useMotionValueEvent(scrollY, 'change', (latestScrollY) => {
     setIsOnTop(latestScrollY < 1)
@@ -65,14 +66,44 @@ export default function SiteHeader () {
                 </Button>
               </div>
               <div className='block lg:hidden'>
-                <Button variant='link' size='icon'>
-                  Menú
-                </Button>
+                {!isOpen
+                  ? (
+                    <Button onClick={() => setIsOpen(true)} variant='link' size='icon'>
+                      Menú
+                    </Button>
+                    )
+                  : (
+                    <Button onClick={() => setIsOpen(false)} variant='link' size='icon'>
+                      Cerrar
+                    </Button>
+                    )}
               </div>
             </div>
           </div>
         </nav>
       </header>
+      <div className={cn('w-full h-0 bg-black fixed flex flex-col justify-between top-0 left-0 z-20 overflow-hidden transition-[height] duration-300', isOpen && 'h-screen')}>
+        <nav className='container mt-spacing-9'>
+          {siteConfig.mainNav.map((navItem, key) => (
+            <Button className='rounded-none w-full px-0 border-b first:border-t' variant='link' size='lg' asChild key={key}>
+              <Link className='flex justify-between' href={navItem.href}>
+                {navItem?.title || 'not-found'}
+                <Icons.ArrowRight
+                  className='w-4 lg:w-4.5 h-auto stroke-white dark:stroke-white'
+                />
+              </Link>
+            </Button>
+          ))}
+        </nav>
+        <div className='container pb-12'>
+          <div className='text-xs sm:text-sm text-muted'>
+            Correo electrónico
+          </div>
+          <Link className='text-base xl:text-lg' href={`mailto:${contactEmail}`}>
+            {contactEmail}
+          </Link>
+        </div>
+      </div>
     </>
   )
 }

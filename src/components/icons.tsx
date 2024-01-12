@@ -1,12 +1,14 @@
 import React from 'react'
 import {
   IconArrowUpRight,
+  IconArrowRight,
   IconMenu2
 } from '@tabler/icons-react'
 
 type IconProps = React.HTMLAttributes<SVGElement>
 
 export const Icons = {
+  ArrowRight: IconArrowRight,
   ArrowUpRight: IconArrowUpRight,
   Menu: IconMenu2,
   Logotype: (props: IconProps) => {
