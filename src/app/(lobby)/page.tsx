@@ -14,7 +14,7 @@ export default function IndexPage () {
           <div className='container absolute inset-x-0 bottom-[0.8125rem] md:bottom-[1.375rem] z-10 pointer-events-none'>
             <div className='cols-container justify-center'>
               <div className='w-6-cols md:w-9-cols'>
-                <h1 className='f-display-2 max-w-[322px] bg-blue-500/20 xs:max-w-none'>
+                <h1 className='f-display-2 max-w-[322px] xs:max-w-none'>
                   {siteConfig.description}
                 </h1>
                 <Button
