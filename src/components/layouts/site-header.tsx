@@ -66,7 +66,7 @@ export default function SiteHeader () {
               </div>
               <div className='block lg:hidden'>
                 <Button variant='link' size='icon'>
-                  Menu
+                  Menú
                 </Button>
               </div>
             </div>
