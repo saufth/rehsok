@@ -26,7 +26,7 @@ export const services: Category = {
       }
     },
     {
-      title: 'Planeación fiscal',
+      title: 'Planificación y estrategia fiscal',
       image: {
         src: '/images/service4.webp',
         alt: 'Abogado trabajando en una planeación fiscal en la computadora portátil'

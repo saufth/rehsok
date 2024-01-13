@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { type Metadata } from 'next'
 import { history } from '@/config/organization'
 
@@ -11,7 +10,7 @@ export const metadata: Metadata = {
 export default function RazonDeSerPage () {
   return (
     <>
-      <section className='mt-spacing-7'>
+      {/* <section className='mt-spacing-7'>
         <div className='container'>
           <div className='pt-spacing-9'>
             <div className='cols-container pt-spacing-3'>
@@ -39,15 +38,15 @@ export default function RazonDeSerPage () {
             className='w-full'
           />
         </div>
-      </section>
-      <section className='mt-spacing-7'>
+      </section> */}
+      <section className='mt-spacing-9'>
         <div className='container'>
           <div className='border-t'>
             <div className='cols-container pt-spacing-3'>
               <div className='w-6-cols md:w-4-cols lg:w-6-cols'>
-                <h2 className='f-heading-1 font-serif md:pr-9 lg:pr-11'>
+                <h1 className='f-heading-1 font-serif md:pr-9 lg:pr-11'>
                   {history.title}
-                </h2>
+                </h1>
               </div>
               {history.description && (
                 <div className='w-6-cols md:w-4-cols lg:w-6-cols mt-4 md:mt-0'>

@@ -151,20 +151,24 @@ export default function IndexPage () {
                 <h3 className='f-heading-1'>
                   Nuestro proposito
                 </h3>
-                <p className='mt-4 f-body-1'>
+                <p className='mt-4 text-p3'>
                   Creamos posibilidades para empresas orientadas a desarrollar un legado de progreso generacional.
                 </p>
               </div>
-              <div className='mt-spacing-4'>
-                <Button variant='outline' size='lg' asChild>
-                  <Link
-                    className='text-primary hover:text-primary-foreground'
-                    href={contactLink.href}
-                  >
-                    Ponte en contacto con nosotros
-                  </Link>
-                </Button>
-              </div>
+              <Button
+                className='mt-spacing-5 pointer-events-auto'
+                variant='outline'
+                size='lg'
+                asChild
+              >
+                <Link
+                  className='group flex items-center gap-x-1 text-primary hover:text-primary-foreground'
+                  href={contactLink.href}
+                >
+                  {contactLink.title}
+                  <Icons.ArrowUpRight className='w-4 sm:w-4.5 h-auto stroke-primary group-hover:stroke-primary-foreground' />
+                </Link>
+              </Button>
             </div>
             <div className='w-6-cols sm:w-4-cols lg:w-6-cols mt-10 sm:mt-0'>
               <Image
