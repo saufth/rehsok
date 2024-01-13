@@ -2,7 +2,7 @@ import { type Category } from '@/types'
 
 export const services: Category = {
   title: 'Soluciones',
-  description: 'Nos apasiona crear posibilidades que generen valor a sus modelos de negocio para que, día con día, se vuelvan más competitivos.',
+  description: 'Nos apasiona crear posibilidades que generen valor a sus modelos de negocio para que, día con día, se vuelvan más competitivos. Nuestra razón de ser consiste en convertirnos en un aliado determinante en el éxito presente y futuro de nuestros clientes.',
   items: [
     {
       title: 'Compliance fiscal',

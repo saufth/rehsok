@@ -53,7 +53,7 @@ export default function IndexPage () {
           </ul>
         </div>
       </div> */}
-      <section className='mt-spacing-7'>
+      {/* <section className='mt-spacing-7'>
         <div className='container'>
           <div className='border-t'>
             <div className='cols-container pt-spacing-3'>
@@ -81,7 +81,7 @@ export default function IndexPage () {
             className='w-full'
           />
         </div>
-      </section>
+      </section> */}
       <section id='soluciones' className='mt-spacing-7'>
         <div className='container'>
           <div className='border-t'>
