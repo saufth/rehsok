@@ -2,18 +2,17 @@ import Image from 'next/image'
 import Link from 'next/link'
 import BackgroundVideo from '@/components/background-video'
 import { Button } from '@/components/ui/button'
-import { benefits, culture } from '@/config/organization'
+import { culture } from '@/config/organization'
 import { services } from '@/config/services'
 import { siteConfig, siteNav } from '@/config/site'
 
 const contactLink = siteNav.find(({ title }) => title === 'Contáctanos')!
-const aboutLink = siteNav.find(({ title }) => title === 'Razón de ser')!
 
 export default function IndexPage () {
   return (
     <>
       <section>
-        <div className='w-full h-screen min-h-[500xp] lg:min-h-[600px] max-h-[1000px] relative z-10'>
+        <div className='w-full h-[100dvh] min-h-[500xp] lg:min-h-[600px] max-h-[1000px] relative z-10'>
           <div className='container absolute inset-x-0 bottom-[0.8125rem] md:bottom-[1.375rem] z-10 pointer-events-none'>
             <div className='cols-container justify-center'>
               <div className='w-6-cols md:w-9-cols'>
@@ -26,8 +25,8 @@ export default function IndexPage () {
                   size='lg'
                   asChild
                 >
-                  <Link href={aboutLink.href} className='pointer-events-auto'>
-                    Nuestra {aboutLink.title.toLowerCase()}
+                  <Link href={contactLink.href} className='pointer-events-auto'>
+                    {contactLink.title}
                   </Link>
                 </Button>
               </div>
@@ -36,7 +35,7 @@ export default function IndexPage () {
           <BackgroundVideo src='/video/home-hero.mp4' />
         </div>
       </section>
-      <div>
+      {/* <div>
         <div className='container mt-spacing-1'>
           <ul className='cols-container'>
             {benefits.map((benefit) => (
@@ -53,7 +52,7 @@ export default function IndexPage () {
             ))}
           </ul>
         </div>
-      </div>
+      </div> */}
       <section className='mt-spacing-7'>
         <div className='container'>
           <div className='border-t'>
