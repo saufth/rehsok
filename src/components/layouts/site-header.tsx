@@ -10,7 +10,7 @@ import {
 import { cn } from '@/lib/utils'
 import { contactEmail, siteConfig, siteNav } from '@/config/site'
 
-const aboutLink = siteNav.find(({ title }) => title === 'Nuestra cultura')!
+const aboutLink = siteNav.find(({ title }) => title === 'Razón de ser')!
 const contactLink = siteNav.find(({ title }) => title === 'Contáctanos')!
 
 export default function SiteHeader () {

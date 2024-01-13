@@ -125,8 +125,8 @@ export const benefits: Benefists[] = [
   {
     title: 'Construccion de patrimonio empresarial estable y duradero',
     nav: {
-      title: 'Conoce nuestra cultura',
-      href: '/cultura'
+      title: 'Conoce razón de ser',
+      href: '/razon-de-ser'
     }
   },
   {
