@@ -7,6 +7,7 @@ import { services } from '@/config/services'
 import { siteConfig, siteNav } from '@/config/site'
 
 const contactLink = siteNav.find(({ title }) => title === 'Contáctanos')!
+const aboutLink = siteNav.find(({ title }) => title === 'Razón de ser')!
 
 export default function IndexPage () {
   return (
@@ -25,8 +26,8 @@ export default function IndexPage () {
                   size='lg'
                   asChild
                 >
-                  <Link href='/contacto' className='pointer-events-auto'>
-                    Conoce nuestra cultura
+                  <Link href={aboutLink.href} className='pointer-events-auto'>
+                    Nuestra {aboutLink.title.toLowerCase()}
                   </Link>
                 </Button>
               </div>

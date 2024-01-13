@@ -10,8 +10,8 @@ import {
 import { cn } from '@/lib/utils'
 import { contactEmail, siteConfig, siteNav } from '@/config/site'
 
-const aboutLink = siteNav.find(({ title }) => title === 'Razón de ser')!
 const contactLink = siteNav.find(({ title }) => title === 'Contáctanos')!
+const aboutLink = siteNav.find(({ title }) => title === 'Razón de ser')!
 
 export default function SiteHeader () {
   const { scrollY } = useScroll()
