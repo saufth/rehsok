@@ -47,7 +47,7 @@ export default function SiteHeader () {
               <div className='hidden lg:flex items-center gap-x-1 lg:gap-x-3'>
                 <Button variant='link' size='lg' asChild>
                   <Link className='flex items-center gap-x-1' href={aboutLink.href}>
-                    {aboutLink?.title || 'not-found'}
+                    {aboutLink.title}
                     <Icons.ArrowUpRight
                       className='w-4 lg:w-4.5 h-auto stroke-white dark:stroke-white'
                     />
@@ -58,7 +58,7 @@ export default function SiteHeader () {
                     className='group flex items-center gap-x-1 text-primary hover:text-primary-foreground'
                     href={contactLink.href}
                   >
-                    {contactLink?.title || 'not-found'}
+                    {contactLink.title}
                     <Icons.ArrowUpRight
                       className='w-4 sm:w-4.5 h-auto stroke-primary group-hover:stroke-primary-foreground'
                     />
@@ -87,7 +87,7 @@ export default function SiteHeader () {
           {siteConfig.mainNav.map((navItem, key) => (
             <Button className='rounded-none w-full px-0 border-b first:border-t' variant='link' size='lg' asChild key={key}>
               <Link className='flex justify-between' href={navItem.href} onClick={() => setIsOpen(false)}>
-                {navItem?.title || 'not-found'}
+                {navItem.title}
                 <Icons.ArrowRight
                   className='w-4 lg:w-4.5 h-auto stroke-white dark:stroke-white'
                 />

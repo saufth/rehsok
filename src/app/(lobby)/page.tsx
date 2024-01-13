@@ -2,9 +2,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import BackgroundVideo from '@/components/background-video'
 import { Button } from '@/components/ui/button'
-import { culture } from '@/config/organization'
+import { benefits, culture } from '@/config/organization'
 import { services } from '@/config/services'
 import { siteConfig, siteNav } from '@/config/site'
+import { Icons } from '@/components/icons'
 
 const contactLink = siteNav.find(({ title }) => title === 'Contáctanos')!
 
@@ -25,8 +26,14 @@ export default function IndexPage () {
                   size='lg'
                   asChild
                 >
-                  <Link href={contactLink.href} className='pointer-events-auto'>
+                  <Link
+                    className='group flex items-center gap-x-1 text-primary hover:text-primary-foreground'
+                    href={contactLink.href}
+                  >
                     {contactLink.title}
+                    <Icons.ArrowUpRight
+                      className='w-4 sm:w-4.5 h-auto stroke-primary group-hover:stroke-primary-foreground'
+                    />
                   </Link>
                 </Button>
               </div>
@@ -52,8 +59,8 @@ export default function IndexPage () {
             ))}
           </ul>
         </div>
-      </div> */}
-      {/* <section className='mt-spacing-7'>
+      </div>
+      <section className='mt-spacing-7'>
         <div className='container'>
           <div className='border-t'>
             <div className='cols-container pt-spacing-3'>
