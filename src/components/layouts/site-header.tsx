@@ -11,7 +11,6 @@ import { cn } from '@/lib/utils'
 import { contactEmail, siteConfig, siteNav } from '@/config/site'
 
 const contactLink = siteNav.find(({ title }) => title === 'Contáctanos')!
-const aboutLink = siteNav.find(({ title }) => title === 'Razón de ser')!
 
 export default function SiteHeader () {
   const { scrollY } = useScroll()
@@ -45,14 +44,18 @@ export default function SiteHeader () {
                 </Link>
               </div>
               <div className='hidden lg:flex items-center gap-x-1 lg:gap-x-3'>
-                <Button variant='link' size='lg' asChild>
-                  <Link className='flex items-center gap-x-1' href={aboutLink.href}>
-                    {aboutLink.title}
-                    <Icons.ArrowUpRight
-                      className='w-4 lg:w-4.5 h-auto stroke-white dark:stroke-white'
-                    />
-                  </Link>
-                </Button>
+                {siteNav.map((navItem, key) => (
+                  key < siteNav.length - 1 && (
+                    <Button key={key} variant='link' size='lg' asChild>
+                      <Link className='flex items-center gap-x-1' href={navItem.href}>
+                        {navItem.title}
+                        <Icons.ArrowUpRight
+                          className='w-4 lg:w-4.5 h-auto stroke-white dark:stroke-white'
+                        />
+                      </Link>
+                    </Button>
+                  )
+                ))}
                 <Button variant='outline' size='lg' asChild>
                   <Link
                     className='group flex items-center gap-x-1 text-primary hover:text-primary-foreground'

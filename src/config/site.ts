@@ -17,6 +17,10 @@ export const author: Author = {
 
 export const siteNav = [
   {
+    title: 'Nuestra cultura',
+    href: '/cultura'
+  },
+  {
     title: 'Razón de ser',
     href: '/razon-de-ser'
   },
