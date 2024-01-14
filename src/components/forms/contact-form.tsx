@@ -98,7 +98,11 @@ export default function ContactForm () {
             <FormItem>
               <FormLabel>Tu nombre</FormLabel>
               <FormControl>
-                <Input className='text-background' placeholder='¿Cuál es tu nombre?' {...field} />
+                <Input
+                  className='text-background rounded-none'
+                  placeholder='¿Cuál es tu nombre?'
+                  {...field}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -112,7 +116,7 @@ export default function ContactForm () {
               <FormLabel>Email</FormLabel>
               <FormControl>
                 <Input
-                  className='text-background'
+                  className='text-background rounded-none'
                   placeholder='correo@ejemplo.com'
                   {...field}
                 />
@@ -133,11 +137,11 @@ export default function ContactForm () {
                   field.onChange(value)}
               >
                 <FormControl>
-                  <SelectTrigger className='[&>*]:text-background'>
+                  <SelectTrigger className='[&>*]:text-background rounded-none'>
                     <SelectValue placeholder={field.value} />
                   </SelectTrigger>
                 </FormControl>
-                <SelectContent>
+                <SelectContent className='rounded-none'>
                   <SelectGroup>
                     {services.items.map(
                       (service) => (
@@ -145,6 +149,7 @@ export default function ContactForm () {
                           key={service.title}
                           value={service.title}
                           placeholder='Selecciona una categoría'
+                          className='rounded-none hover:cursor-pointer'
                         >
                           {service.title}
                         </SelectItem>
@@ -165,7 +170,7 @@ export default function ContactForm () {
               <FormLabel>Asunto</FormLabel>
               <FormControl>
                 <Textarea
-                  className='resize-none text-background'
+                  className='resize-none text-background rounded-none'
                   rows={4}
                   placeholder='Cúentanos sobre tu proyecto'
                   {...field}

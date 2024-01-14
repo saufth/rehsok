@@ -2,7 +2,7 @@ import { NavItem, type Article, type Section } from '@/types'
 
 export const culture: Section = {
   title: 'Nuestra cultura',
-  description: 'Aquí te presentamos los mas importantes para nosotros, mismos que forman parte de nuestro ADN y que son la clave en la generación de soluciones de valor para nuestros clientes.',
+  description: 'Aquí te presentamos los más importantes para nosotros, mismos que forman parte de nuestro ADN y que son la clave en la generación de soluciones de valor para nuestros clientes.',
   items: [
     {
       title: 'Trabajamos en equipo',

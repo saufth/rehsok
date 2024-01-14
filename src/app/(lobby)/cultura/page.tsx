@@ -30,7 +30,7 @@ export default function CulturaPage () {
         </div>
         <div className='full-bleed-container mt-spacing-7'>
           <Image
-            src='/images/about-hero.webp'
+            src='/images/cultura-hero.webp'
             alt='Un joven y feliz hombre de negocios está escribiendo en una computadora portátil mientras trabaja remotamente desde la cafetería'
             width={3200}
             height={2400}
