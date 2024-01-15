@@ -136,6 +136,13 @@ export default function IndexPage () {
                   <h3 className='text-p3 font-medium'>
                     {serviceItem.title}
                   </h3>
+                  {serviceItem.description && (
+                    <div className='mt-2'>
+                      <p className='f-body-1 text-muted-foreground'>
+                        {serviceItem.description}
+                      </p>
+                    </div>
+                  )}
                 </div>
               </article>
             ))}
