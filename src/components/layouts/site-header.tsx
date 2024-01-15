@@ -27,7 +27,8 @@ export default function SiteHeader () {
       <header
         className={cn(
           'w-full sticky top-0 left-0 z-30 bg-black transition-colors duration-300',
-          isOnTop && 'bg-transparent'
+          isOnTop && 'bg-transparent',
+          isOpen && 'bg-black'
         )}
       >
         <nav
@@ -44,11 +45,11 @@ export default function SiteHeader () {
                   <span className='sr-only'>{siteConfig.name} home</span>
                 </Link>
               </div>
-              <div className='hidden lg:flex items-center gap-x-1 lg:gap-x-3'>
+              <div className='flex items-center gap-x-5 lg:gap-x-3'>
                 {siteNav.map((navItem, key) => (
                   key < siteNav.length - 1
                     ? (
-                      <Button variant='link' size='lg' asChild key={key}>
+                      <Button className='hidden lg:flex' variant='link' size='lg' asChild key={key}>
                         <Link className='flex items-center gap-x-1 text-white' href={navItem.href}>
                           {navItem.title}
                           <Icons.ArrowUpRight
@@ -58,7 +59,13 @@ export default function SiteHeader () {
                       </Button>
                       )
                     : (
-                      <Button variant='outline' size='lg' asChild key={key} className='border-white hover:bg-white text-white hover:text-black'>
+                      <Button
+                        className='hidden lg:flex border-white hover:bg-white text-white hover:text-black'
+                        variant='outline'
+                        size='lg'
+                        asChild
+                        key={key}
+                      >
                         <Link
                           className='group flex items-center gap-x-1'
                           href={contactLink.href}
@@ -74,32 +81,35 @@ export default function SiteHeader () {
                 <div className='block lg:hidden'>
                   {!isOpen
                     ? (
-                      <Button onClick={() => setIsOpen(true)} variant='link' size='icon'>
+                      <Button className='text-white' onClick={() => setIsOpen(true)} variant='link' size='icon'>
                         Menú
                       </Button>
                       )
                     : (
-                      <Button onClick={() => setIsOpen(false)} variant='link' size='icon'>
+                      <Button className='text-white' onClick={() => setIsOpen(false)} variant='link' size='icon'>
                         Cerrar
                       </Button>
                       )}
                 </div>
-                <div className='relative'>
-                  <ModeToggle />
-                </div>
+                <ModeToggle />
               </div>
             </div>
           </div>
         </nav>
       </header>
-      <div className={cn('w-full h-0 bg-black fixed flex flex-col justify-between top-0 left-0 z-20 overflow-hidden transition-[height] duration-300', isOpen && 'h-[100dvh]')}>
+      <div
+        className={cn(
+          'w-full h-0 bg-background fixed flex flex-col justify-between top-0 left-0 z-20 overflow-hidden transition-[height] duration-300',
+          isOpen && 'h-[100dvh]'
+        )}
+      >
         <nav className='container mt-spacing-9'>
           {siteConfig.mainNav.map((navItem, key) => (
             <Button className='rounded-none w-full px-0 border-b first:border-t' variant='link' size='lg' asChild key={key}>
               <Link className='flex justify-between' href={navItem.href} onClick={() => setIsOpen(false)}>
                 {navItem.title}
                 <Icons.ArrowRight
-                  className='w-4 lg:w-4.5 h-auto stroke-white dark:stroke-white'
+                  className='w-4 lg:w-4.5 h-auto stroke-secondary-foreground'
                 />
               </Link>
             </Button>

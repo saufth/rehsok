@@ -18,7 +18,7 @@ export function ModeToggle () {
         <Button
           variant='outline'
           size='icon'
-          className='group h-8 w-8 border-none hover:bg-transparent focus-visible:ring-0'
+          className='group border-white bg-transparent hover:bg-transparent ring-white ring-0.5 focus-visible:ring-transparent'
         >
           <Icons.Sun className='rotate-0 scale-100 transition-all duration-500 dark:-rotate-90 dark:scale-0 fill-white' />
           <Icons.Moon className='absolute rotate-90 scale-0 transition-all duration-500 dark:rotate-0 dark:scale-100 fill-white' />
