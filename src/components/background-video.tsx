@@ -50,6 +50,7 @@ export default function BackgroundVideo ({ src }: BackgroundVideoProps) {
               <span className='hidden xl:block xl:text-lg text-white group-hover:text-black'>
                 Reproducir video
               </span>
+              <span className='sr-only xl:hidden'>Reproducir video</span>
             </span>
             )
           : (
@@ -58,6 +59,7 @@ export default function BackgroundVideo ({ src }: BackgroundVideoProps) {
               <span className='hidden xl:block xl:text-lg text-white group-hover:text-black'>
                 Pausar video
               </span>
+              <span className='sr-only xl:hidden'>Pausar video</span>
             </span>
             )}
       </Button>
