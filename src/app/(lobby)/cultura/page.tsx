@@ -12,19 +12,14 @@ export default function CulturaPage () {
   return (
     <>
       <div className='w-full h-[68px] lg:h-[84px] fixed top-0 left-0 bg-black z-20' />
-      <section className='mt-spacing-7'>
+      <section>
         <div className='container'>
-          <div className='pt-spacing-9'>
+          <div className='pt-spacing-7'>
             <div className='cols-container pt-spacing-3'>
               <div className='w-6-cols md:w-4-cols lg:w-6-cols'>
-                <h1 className='f-display-2 md:pr-9 lg:pr-11'>
-                  Cultura
+                <h1 className='f-display-2 md:pr-9 lg:pr-11 font-serif'>
+                  Nuestra cultura
                 </h1>
-              </div>
-              <div className='w-6-cols md:w-4-cols lg:w-6-cols mt-4 md:mt-0'>
-                <p className='f-subhead-1'>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea totam perspiciatis quis voluptates iste nemo, veritatis voluptatum numquam, quos voluptatem tenetur exercitationem illo. Accusamus harum architecto nihil perspiciatis reprehenderit quae.
-                </p>
               </div>
             </div>
           </div>
@@ -40,18 +35,16 @@ export default function CulturaPage () {
             className='w-full'
           />
         </div>
-      </section>
-      <section className='mt-spacing-7'>
-        <div className='container'>
+        <div className='container mt-spacing-7'>
           <div className='border-t'>
             <div className='cols-container pt-spacing-3'>
-              <div className='w-6-cols md:w-4-cols lg:w-6-cols'>
+              {/* <div className='w-6-cols md:w-4-cols lg:w-6-cols'>
                 <h2 className='f-heading-1 font-serif md:pr-9 lg:pr-11'>
                   {culture.title}
                 </h2>
-              </div>
+              </div> */}
               {culture.description && (
-                <div className='w-6-cols md:w-4-cols lg:w-6-cols mt-4 md:mt-0'>
+                <div className='w-6-cols md:w-8-cols lg:w-12-cols mt-4 md:mt-0'>
                   <p className='f-subhead-1'>
                     {culture.description}
                   </p>
@@ -59,7 +52,7 @@ export default function CulturaPage () {
               )}
             </div>
           </div>
-          <div className='cols-container mt-spacing-7'>
+          <div className='cols-container'>
             {culture.items.map((cultureItem, key) => (
               <article className='cols-container items-center 2xl:items-start w-full 2xl:w-6-cols mt-spacing-7 !ml-0 even:flex-row-reverse 2xl:even:flex-row' key={key}>
                 <div className='w-8-cols md:w-4-cols lg:w-6-cols'>
