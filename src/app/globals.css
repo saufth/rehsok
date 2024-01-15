@@ -92,8 +92,8 @@
     --foreground: 100% 0 0; /* #FFFFFF */
     --card: 0% 0 0; /* #000000 */
     --card-foreground: 100% 0 0; /* #FFFFFF */
-    --popover: 100% 0 0; /* #FFFFFF */
-    --popover-foreground: 0% 0 0; /* #000000 */
+    --popover: 0% 0 0; /* #000000 */
+    --popover-foreground: 100% 0 0; /* #FFFFFF */
     --primary: 100% 0 0; /* #FFFFFF */
     --primary-foreground: 0% 0 0; /* #000000 */
     --secondary: 0% 0 0; /* #000000 */

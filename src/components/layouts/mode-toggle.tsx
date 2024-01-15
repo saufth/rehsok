@@ -18,7 +18,7 @@ export function ModeToggle () {
         <Button
           variant='outline'
           size='icon'
-          className='group h-8 w-8 border-none hover:bg-transparent'
+          className='group h-8 w-8 border-none hover:bg-transparent focus-visible:ring-0'
         >
           <Icons.Sun className='rotate-0 scale-100 transition-all duration-500 dark:-rotate-90 dark:scale-0 fill-white' />
           <Icons.Moon className='absolute rotate-90 scale-0 transition-all duration-500 dark:rotate-0 dark:scale-100 fill-white' />
@@ -27,16 +27,16 @@ export function ModeToggle () {
       </DropdownMenuTrigger>
       <DropdownMenuContent align='end'>
         <DropdownMenuItem className='group cursor-pointer transition-colors duration-500' onClick={() => setTheme('light')}>
-          <Icons.Sun className='mr-2 h-4 w-4 fill-muted-foreground group-hover:fill-accent-foreground transition-colors duration-500' />
-          <span className='text-muted-foreground group-hover:text-accent-foreground transition-colors duration-500'>Calro</span>
+          <Icons.Sun className='mr-2 h-4 w-4 fill-primary group-hover:fill-secondary transition-colors duration-500' />
+          <span className='text-primary group-hover:text-primary-foreground transition-colors duration-500'>Calro</span>
         </DropdownMenuItem>
         <DropdownMenuItem className='group cursor-pointer transition-colors duration-500' onClick={() => setTheme('dark')}>
-          <Icons.Moon className='mr-2 h-4 w-4 fill-muted-foreground group-hover:fill-accent-foreground transition-colors duration-500' />
-          <span className='text-muted-foreground group-hover:text-accent-foreground transition-colors duration-500'>Oscuro</span>
+          <Icons.Moon className='mr-2 h-4 w-4 fill-primary group-hover:fill-secondary transition-colors duration-500' />
+          <span className='text-primary group-hover:text-primary-foreground transition-colors duration-500'>Oscuro</span>
         </DropdownMenuItem>
         <DropdownMenuItem className='group cursor-pointer transition-colors duration-500' onClick={() => setTheme('system')}>
-          <Icons.Laptop className='mr-2 h-4 w-4 fill-muted-foreground group-hover:fill-accent-foreground transition-colors duration-500' />
-          <span className='text-muted-foreground group-hover:text-accent-foreground transition-colors duration-500'>Sistema</span>
+          <Icons.Laptop className='mr-2 h-4 w-4 fill-primary group-hover:fill-secondary transition-colors duration-500' />
+          <span className='text-primary group-hover:text-primary-foreground transition-colors duration-500'>Sistema</span>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
