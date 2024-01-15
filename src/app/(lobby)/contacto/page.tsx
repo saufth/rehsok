@@ -19,10 +19,10 @@ export default function ContactPage () {
             </h1>
           </div>
           <div className='cols-container mt-spacing-6'>
-            <div className='w-full lg:w-5-cols xl:w-6-cols relative mt-12 lg:mt-0 order-2 lg:order-1'>
+            <div className='w-full lg:w-5-cols relative mt-12 lg:mt-0 order-2 lg:order-1'>
               <ContactForm />
             </div>
-            <div className='w-full lg:w-7-cols xl:w-6-cols order-1 lg:order-2'>
+            <div className='w-full lg:w-7-cols order-1 lg:order-2'>
               <Image
                 src='/images/contact-hero.webp'
                 alt='Dos hombres de negocios discutiendo en una oficina moderna'

@@ -39,7 +39,11 @@ export default function ContactForm () {
   const form = useForm<Inputs>({
     resolver: zodResolver(contactEmailSchema),
     defaultValues: {
+      company: '',
+      website: '',
       name: '',
+      positionHeld: '',
+      phone: '',
       email: '',
       category: services.items[0]!.title,
       subject: ''
@@ -93,14 +97,82 @@ export default function ContactForm () {
       >
         <FormField
           control={form.control}
-          name='name'
+          name='company'
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Tu nombre</FormLabel>
+              <FormLabel>Empresa</FormLabel>
               <FormControl>
                 <Input
                   className='text-background rounded-none'
-                  placeholder='¿Cuál es tu nombre?'
+                  placeholder='Ejemplo S.A. de C.V.'
+                  {...field}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name='website'
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Página web</FormLabel>
+              <FormControl>
+                <Input
+                  className='text-background rounded-none'
+                  placeholder='www.ejemplo.com'
+                  {...field}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name='name'
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Nombre de contacto</FormLabel>
+              <FormControl>
+                <Input
+                  className='text-background rounded-none'
+                  placeholder='Tu nombre completo'
+                  {...field}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name='positionHeld'
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Puesto que desempeña</FormLabel>
+              <FormControl>
+                <Input
+                  className='text-background rounded-none'
+                  placeholder='Director administrativo'
+                  {...field}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name='phone'
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Teléfono de contacto</FormLabel>
+              <FormControl>
+                <Input
+                  className='text-background rounded-none'
+                  placeholder='Ingresa un número de 10 dígitos'
                   {...field}
                 />
               </FormControl>
@@ -113,7 +185,7 @@ export default function ContactForm () {
           name='email'
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Email</FormLabel>
+              <FormLabel>Correo de contacto</FormLabel>
               <FormControl>
                 <Input
                   className='text-background rounded-none'
@@ -167,7 +239,7 @@ export default function ContactForm () {
           name='subject'
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Asunto</FormLabel>
+              <FormLabel>Descripción de la problemática o solución que necesita</FormLabel>
               <FormControl>
                 <Textarea
                   className='resize-none text-background rounded-none'

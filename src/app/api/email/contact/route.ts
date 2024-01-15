@@ -32,10 +32,14 @@ export async function POST (req: Request) {
       to: contactEmail,
       subject: 'Nuevo mensaje desde formulario web',
       html: `
+        <p><b>Empresa:</b> ${input.company}</p>
+        <p><b>Página web:</b> ${input.website}</p>
         <p><b>Nombre de contacto:</b> ${input.name}</p>
-        <p><b>Correo electrónico:</b> ${input.email}</p>
+        <p><b>Puesto que desempeña:</b> ${input.positionHeld}</p>
+        <p><b>Teléfono de contacto:</b> ${input.phone}</p>
+        <p><b>Correo de contacto:</b> ${input.email}</p>
         <p><b>Categoría:</b> ${input.category}</p>
-        <p><b>Asunto:</b> ${input.subject}</p>
+        <p><b>Descripción de la problemática o solución que necesita:</b> ${input.subject}</p>
       `
     })
 
