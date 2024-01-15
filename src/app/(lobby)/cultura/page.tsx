@@ -71,11 +71,11 @@ export default function CulturaPage () {
                   </h3>
                   {typeof cultureItem.description === 'string'
                     ? (
-                      <p className='text-muted-foreground f-body-1'>{cultureItem.description}</p>
+                      <p className='text-secondary-foreground f-body-1'>{cultureItem.description}</p>
                       )
                     : (
                         cultureItem.description.map((descriptionItem) => (
-                          <p className='text-muted-foreground f-body-1' key={descriptionItem}>{descriptionItem}</p>
+                          <p className='text-secondary-foreground f-body-1' key={descriptionItem}>{descriptionItem}</p>
                         ))
                       )}
                 </div>

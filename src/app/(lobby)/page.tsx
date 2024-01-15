@@ -138,7 +138,7 @@ export default function IndexPage () {
                   </h3>
                   {serviceItem.description && (
                     <div className='mt-2'>
-                      <p className='f-body-1 text-muted-foreground'>
+                      <p className='f-body-1 text-secondary-foreground'>
                         {serviceItem.description}
                       </p>
                     </div>
