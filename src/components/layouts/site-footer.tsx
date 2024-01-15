@@ -32,7 +32,7 @@ export default function SiteFooter () {
           </ul>
         </nav>
         <div>
-          <div className='text-xs sm:text-sm text-muted'>
+          <div className='text-xs sm:text-sm text-muted-foreground'>
             Correo electrónico
           </div>
           <Link size='xs' className='text-base xl:text-lg' href={`mailto:${contactEmail}`}>

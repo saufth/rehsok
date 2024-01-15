@@ -116,7 +116,7 @@ export default function SiteHeader () {
           ))}
         </nav>
         <div className='container pb-8'>
-          <div className='text-xs sm:text-sm text-muted'>
+          <div className='text-xs sm:text-sm text-muted-foreground'>
             Correo electrónico
           </div>
           <Link className='text-base xl:text-lg' href={`mailto:${contactEmail}`} onClick={() => setIsOpen(false)}>
