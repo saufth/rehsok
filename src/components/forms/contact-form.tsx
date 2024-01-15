@@ -103,7 +103,7 @@ export default function ContactForm () {
               <FormLabel>Empresa</FormLabel>
               <FormControl>
                 <Input
-                  className='text-background rounded-none'
+                  className='rounded-none'
                   placeholder='Ejemplo S.A. de C.V.'
                   {...field}
                 />
@@ -120,7 +120,7 @@ export default function ContactForm () {
               <FormLabel>Página web</FormLabel>
               <FormControl>
                 <Input
-                  className='text-background rounded-none'
+                  className='rounded-none'
                   placeholder='www.ejemplo.com'
                   {...field}
                 />
@@ -137,7 +137,7 @@ export default function ContactForm () {
               <FormLabel>Nombre de contacto</FormLabel>
               <FormControl>
                 <Input
-                  className='text-background rounded-none'
+                  className='rounded-none'
                   placeholder='Tu nombre completo'
                   {...field}
                 />
@@ -154,7 +154,7 @@ export default function ContactForm () {
               <FormLabel>Puesto que desempeña</FormLabel>
               <FormControl>
                 <Input
-                  className='text-background rounded-none'
+                  className='rounded-none'
                   placeholder='Director administrativo'
                   {...field}
                 />
@@ -171,7 +171,7 @@ export default function ContactForm () {
               <FormLabel>Teléfono de contacto</FormLabel>
               <FormControl>
                 <Input
-                  className='text-background rounded-none'
+                  className='rounded-none'
                   placeholder='Ingresa un número de 10 dígitos'
                   {...field}
                 />
@@ -188,7 +188,7 @@ export default function ContactForm () {
               <FormLabel>Correo de contacto</FormLabel>
               <FormControl>
                 <Input
-                  className='text-background rounded-none'
+                  className='rounded-none'
                   placeholder='correo@ejemplo.com'
                   {...field}
                 />
@@ -209,7 +209,7 @@ export default function ContactForm () {
                   field.onChange(value)}
               >
                 <FormControl>
-                  <SelectTrigger className='[&>*]:text-background rounded-none'>
+                  <SelectTrigger className='rounded-none'>
                     <SelectValue placeholder={field.value} />
                   </SelectTrigger>
                 </FormControl>
@@ -221,7 +221,7 @@ export default function ContactForm () {
                           key={service.title}
                           value={service.title}
                           placeholder='Selecciona una categoría'
-                          className='rounded-none hover:cursor-pointer'
+                          className='rounded-none hover:cursor-pointer group-hover:bg-secondary'
                         >
                           {service.title}
                         </SelectItem>
@@ -242,7 +242,7 @@ export default function ContactForm () {
               <FormLabel>Descripción de la problemática o solución que necesita</FormLabel>
               <FormControl>
                 <Textarea
-                  className='resize-none text-background rounded-none'
+                  className='resize-none border-none  ring-ring ring-1focus-visible:ring-ring rounded-none'
                   rows={4}
                   placeholder='Cúentanos ¿Cómo podemos ayudarte?'
                   {...field}

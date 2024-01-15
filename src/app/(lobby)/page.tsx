@@ -12,7 +12,7 @@ export default function IndexPage () {
   return (
     <>
       <section>
-        <div className='w-full h-[100dvh] min-h-[500xp] lg:min-h-[600px] max-h-[1000px] relative z-10'>
+        <div className='w-full h-[100dvh] min-h-[500xp] lg:min-h-[600px] max-h-[1000px] relative z-10 -mt-[68px] lg:-mt-[84px]'>
           <div className='container absolute inset-x-0 bottom-[0.8125rem] md:bottom-[1.375rem] z-10 pointer-events-none'>
             <div className='cols-container justify-center'>
               <div className='w-6-cols md:w-9-cols'>

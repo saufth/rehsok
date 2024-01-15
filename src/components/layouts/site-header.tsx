@@ -26,7 +26,7 @@ export default function SiteHeader () {
     <>
       <header
         className={cn(
-          'w-screen fixed top-0 left-0 z-30 bg-black transition-colors duration-300',
+          'w-full sticky top-0 left-0 z-30 bg-black transition-colors duration-300',
           isOnTop && 'bg-transparent'
         )}
       >
@@ -34,9 +34,9 @@ export default function SiteHeader () {
           className='relative'
           aria-label='Emah Directory'
         >
-          <div className='container py-4 lg:py-6'>
+          <div className='container'>
             <div
-              className='w-full h-full flex justify-between items-center'
+              className='w-full h-[68px] lg:h-[84px] flex justify-between items-center'
             >
               <div className='h-8 lg:h-9'>
                 <Link href='/'>
