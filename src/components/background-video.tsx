@@ -40,23 +40,22 @@ export default function BackgroundVideo ({ src }: BackgroundVideoProps) {
         <source src={src} type='video/mp4' />
       </video>
       <Button
-        className='group absolute bottom-4 xl:bottom-5 right-4 xl:right-5 z-20'
+        className='group absolute bottom-4 xl:bottom-5 right-4 xl:right-5 z-20 bg-black hover:bg-white'
         onClick={handleVideo}
-        variant='secondary'
       >
         {isPlaying
           ? (
             <span className='flex items-center gap-x-3'>
-              <Icons.Play className='fill-secondary-foreground w-4 xl:w-4 h-auto group-hover:fill-primary-foreground' />
-              <span className='hidden xl:block xl:text-lg text-secondary-foreground group-hover:text-primary-foreground'>
+              <Icons.Play className='fill-white w-4 xl:w-4 h-auto group-hover:fill-black' />
+              <span className='hidden xl:block xl:text-lg text-white group-hover:text-black'>
                 Reproducir video
               </span>
             </span>
             )
           : (
             <span className='flex items-center gap-x-3'>
-              <Icons.Pause className='fill-secondary-foreground w-4 xl:w-4 h-auto group-hover:fill-primary-foreground' />
-              <span className='hidden xl:block xl:text-lg text-secondary-foreground group-hover:text-primary-foreground'>
+              <Icons.Pause className='fill-white w-4 xl:w-4 h-auto group-hover:fill-black' />
+              <span className='hidden xl:block xl:text-lg text-white group-hover:text-black'>
                 Pausar video
               </span>
             </span>
