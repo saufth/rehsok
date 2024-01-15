@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 export default function ContactPage () {
   return (
     <>
+      <div className='w-full h-[68px] lg:h-[84px] fixed top-0 left-0 bg-black z-20' />
       <div className='mt-spacing-9'>
         <div className='container border-t'>
           <div className='mt-spacing-3'>

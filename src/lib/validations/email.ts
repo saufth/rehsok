@@ -8,6 +8,7 @@ const nameLimitsErrorMessage = limitsErrorMessage(nameLimits)
 const subjectLimits: Limits = { min: 12, max: 512 }
 const subjectLimitsErrorMessage = limitsErrorMessage(subjectLimits)
 
+const websiteRegExp = /^(?:(ftp|http|https)?:\/\/)?(?:[\w-]+\.)+([a-z]|[A-Z]|[0-9]){2,6}$/gi
 const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
 
 export const emailSchema = z.object({
@@ -21,7 +22,7 @@ export const contactEmailSchema = z.object({
     .min(nameLimits.min, { message: nameLimitsErrorMessage })
     .max(nameLimits.max, { message: nameLimitsErrorMessage }),
   website: z.string()
-    .url()
+    .regex(websiteRegExp, { message: 'Porfavor ingresa una URL válida.' })
     .max(nameLimits.max, { message: nameLimitsErrorMessage }),
   name: z.string()
     .min(nameLimits.min, { message: nameLimitsErrorMessage })

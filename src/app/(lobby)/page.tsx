@@ -16,22 +16,22 @@ export default function IndexPage () {
           <div className='container absolute inset-x-0 bottom-[0.8125rem] md:bottom-[1.375rem] z-10 pointer-events-none'>
             <div className='cols-container justify-center'>
               <div className='w-6-cols md:w-9-cols'>
-                <h1 className='f-display-2 max-w-[322px] xs:max-w-none pointer-events-auto'>
-                  {siteConfig.description}.
+                <h1 className='f-display-2 max-w-[322px] xs:max-w-none pointer-events-auto text-white'>
+                  {siteConfig.description}
                 </h1>
                 <Button
-                  className='mt-spacing-6 pointer-events-auto'
+                  className='mt-spacing-6 pointer-events-auto border-white hover:bg-white text-white hover:text-black'
                   variant='outline'
                   size='lg'
                   asChild
                 >
                   <Link
-                    className='group flex items-center gap-x-1 text-primary hover:text-primary-foreground'
+                    className='group flex items-center gap-x-1'
                     href={contactLink.href}
                   >
                     {contactLink.title}
                     <Icons.ArrowUpRight
-                      className='w-4 sm:w-4.5 h-auto stroke-primary group-hover:stroke-primary-foreground'
+                      className='w-4 sm:w-4.5 h-auto stroke-white group-hover:stroke-black'
                     />
                   </Link>
                 </Button>

@@ -7,25 +7,25 @@
 @layer base {
   :root {
     /* Theme */
-    --background: 0% 0 0; /* #000000 */
-    --foreground: 100% 0 0; /* #FFFFFF */
-    --card: 0% 0 0; /* #000000 */
-    --card-foreground: 100% 0 0; /* #FFFFFF */
-    --popover: 0% 0 0; /* #000000 */
-    --popover-foreground: 100% 0 0; /* #FFFFFF */
-    --primary: 100% 0 0; /* #FFFFFF */
-    --primary-foreground: 0% 0 0; /* #000000 */
-    --secondary: 0% 0 0; /* #000000 */
-    --secondary-foreground: 100% 0 0; /* #FFFFFF */
+    --background: 100% 0 0; /* #FFFFFF */
+    --foreground: 0% 0 0; /* #000000 */
+    --card: 100% 0 0; /* #FFFFFF */
+    --card-foreground: 0% 0 0; /* #000000 */
+    --popover: 100% 0 0; /* #FFFFFF */
+    --popover-foreground: 0% 0 0; /* #000000 */
+    --primary: 0% 0 0; /* #000000 */
+    --primary-foreground: 100% 0 0; /* #FFFFFF */
+    --secondary: 100% 0 0; /* #FFFFFF */
+    --secondary-foreground: 0% 0 0; /* #000000 */
     --muted: 47.49% 0.005 271.31; /* #5B5C5F */
     --muted-foreground: 73.16% 0 0; /* #A8A8A8 */
     --accent: 52.43% 0.115 245.85; /* #246FA8 */
     --accent-foreground: 100% 0 0; /* #FFFFFF */
     --destructive: 94.79% 0.03 351.51; /* #FFE6F0 */
     --destructive-foreground: 52.22% 0.198 10; /* #BF174F */
-    --border: 73.16% 0 0; /* #A8A8A8 */
+    --border: 0% 0 0; /* #000000 */
     --input: 100% 0 0; /* #FFFFFF */
-    --ring: 100% 0 0; /* #FFFFFF */
+    --ring: 0% 0 0; /* #000000 */
     --radius: 0.5rem; /* 8px */
     /* Shell */
     --inner-gutter: 16px;
@@ -92,8 +92,8 @@
     --foreground: 100% 0 0; /* #FFFFFF */
     --card: 0% 0 0; /* #000000 */
     --card-foreground: 100% 0 0; /* #FFFFFF */
-    --popover: 0% 0 0; /* #000000 */
-    --popover-foreground: 100% 0 0; /* #FFFFFF */
+    --popover: 100% 0 0; /* #FFFFFF */
+    --popover-foreground: 0% 0 0; /* #000000 */
     --primary: 100% 0 0; /* #FFFFFF */
     --primary-foreground: 0% 0 0; /* #000000 */
     --secondary: 0% 0 0; /* #000000 */
@@ -104,7 +104,7 @@
     --accent-foreground: 100% 0 0; /* #FFFFFF */
     --destructive: 94.79% 0.03 351.51; /* #FFE6F0 */
     --destructive-foreground: 52.22% 0.198 10; /* #BF174F */
-    --border: 100% 0 0, /* #FFFFFF */
+    --border: 73.16% 0 0; /* #A8A8A8 */
     --input: 100% 0 0; /* #FFFFFF */
     --ring: 100% 0 0; /* #FFFFFF */
   }

@@ -53,7 +53,7 @@ export default function RootLayout ({ children }: React.PropsWithChildren) {
   return (
     <html className={cn(fontSans.variable, fontSerif.variable, 'font-sans antialiased !scroll-smooth select-none')} lang='es' suppressHydrationWarning>
       <body className='bg-background min-h-screen'>
-        <ThemeProvider attribute='class' forcedTheme='dark' defaultTheme='dark'>
+        <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
           {children}
           <Toaster />
           <TailwindIndicator />

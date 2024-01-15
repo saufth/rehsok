@@ -35,7 +35,7 @@ export const contactEmail = `contacto@${domain}`
 
 export const siteConfig: SiteConfig = {
   name: 'Rehsok',
-  description: 'Creamos posibilidades para empresas orientadas a desarrollar un legado de progreso generacional',
+  description: 'Creamos posibilidades para empresas orientadas a desarrollar un legado de progreso generacional.',
   slogan: 'Creamos posibilidades',
   url: `https://${domain}`,
   author,

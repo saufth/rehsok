@@ -90,7 +90,7 @@ export default function ContactForm () {
   return (
     <Form {...form}>
       <form
-        className='space-y-4 sm:space-y-6'
+        className='space-y-4'
         // eslint-disable-next-line no-void
         onSubmit={(...args) => void form.handleSubmit(onSubmit)(...args)}
         ref={formRef}
@@ -244,7 +244,7 @@ export default function ContactForm () {
                 <Textarea
                   className='resize-none text-background rounded-none'
                   rows={4}
-                  placeholder='Cúentanos sobre tu proyecto'
+                  placeholder='Cúentanos ¿Cómo podemos ayudarte?'
                   {...field}
                 />
               </FormControl>
@@ -257,10 +257,8 @@ export default function ContactForm () {
           sitekey={recaptchaSitekey}
         />
         <Button
-          className='rounded-sm hover:bg-transparent'
-          variant='outline'
+          className='rounded-none [&>*]:text-primary-foreground px-6'
           disabled={isPending}
-          size='full'
         >
           {isPending
             ? (
@@ -269,7 +267,7 @@ export default function ContactForm () {
               </span>)
             : (
               <span className='flex items-center gap-x-2'>
-                Enviar <PaperPlaneIcon className='h-3 w-3' aria-hidden='true' />
+                Enviar <PaperPlaneIcon className='h-3 w-3 [&>*]:fill-primary-foreground' aria-hidden='true' />
               </span>)}
         </Button>
       </form>

@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 export default function CulturaPage () {
   return (
     <>
+      <div className='w-full h-[68px] lg:h-[84px] fixed top-0 left-0 bg-black z-20' />
       <section className='mt-spacing-7'>
         <div className='container'>
           <div className='pt-spacing-9'>

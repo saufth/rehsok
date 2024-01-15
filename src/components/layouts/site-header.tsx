@@ -9,6 +9,7 @@ import {
 } from 'framer-motion'
 import { cn } from '@/lib/utils'
 import { contactEmail, siteConfig, siteNav } from '@/config/site'
+import { ModeToggle } from './mode-toggle'
 
 const contactLink = siteNav.find(({ title }) => title === 'Contáctanos')!
 
@@ -25,7 +26,7 @@ export default function SiteHeader () {
     <>
       <header
         className={cn(
-          'w-full fixed top-0 left-0 z-30 bg-background transition-colors duration-300',
+          'w-screen fixed top-0 left-0 z-30 bg-black transition-colors duration-300',
           isOnTop && 'bg-transparent'
         )}
       >
@@ -39,47 +40,53 @@ export default function SiteHeader () {
             >
               <div className='h-8 lg:h-9'>
                 <Link href='/'>
-                  <Icons.Logotype className='w-auto h-full fill-primary' />
+                  <Icons.Logotype className='w-auto h-full fill-white' />
                   <span className='sr-only'>{siteConfig.name} home</span>
                 </Link>
               </div>
               <div className='hidden lg:flex items-center gap-x-1 lg:gap-x-3'>
                 {siteNav.map((navItem, key) => (
-                  key < siteNav.length - 1 && (
-                    <Button key={key} variant='link' size='lg' asChild>
-                      <Link className='flex items-center gap-x-1' href={navItem.href}>
-                        {navItem.title}
-                        <Icons.ArrowUpRight
-                          className='w-4 lg:w-4.5 h-auto stroke-white dark:stroke-white'
-                        />
-                      </Link>
-                    </Button>
-                  )
+                  key < siteNav.length - 1
+                    ? (
+                      <Button variant='link' size='lg' asChild key={key}>
+                        <Link className='flex items-center gap-x-1 text-white' href={navItem.href}>
+                          {navItem.title}
+                          <Icons.ArrowUpRight
+                            className='w-4 lg:w-4.5 h-auto stroke-white dark:stroke-white'
+                          />
+                        </Link>
+                      </Button>
+                      )
+                    : (
+                      <Button variant='outline' size='lg' asChild key={key} className='border-white hover:bg-white text-white hover:text-black'>
+                        <Link
+                          className='group flex items-center gap-x-1'
+                          href={contactLink.href}
+                        >
+                          {contactLink.title}
+                          <Icons.ArrowUpRight
+                            className='w-4 sm:w-4.5 h-auto stroke-white group-hover:stroke-black'
+                          />
+                        </Link>
+                      </Button>
+                      )
                 ))}
-                <Button variant='outline' size='lg' asChild>
-                  <Link
-                    className='group flex items-center gap-x-1 text-primary hover:text-primary-foreground'
-                    href={contactLink.href}
-                  >
-                    {contactLink.title}
-                    <Icons.ArrowUpRight
-                      className='w-4 sm:w-4.5 h-auto stroke-primary group-hover:stroke-primary-foreground'
-                    />
-                  </Link>
-                </Button>
-              </div>
-              <div className='block lg:hidden'>
-                {!isOpen
-                  ? (
-                    <Button onClick={() => setIsOpen(true)} variant='link' size='icon'>
-                      Menú
-                    </Button>
-                    )
-                  : (
-                    <Button onClick={() => setIsOpen(false)} variant='link' size='icon'>
-                      Cerrar
-                    </Button>
-                    )}
+                <div className='block lg:hidden'>
+                  {!isOpen
+                    ? (
+                      <Button onClick={() => setIsOpen(true)} variant='link' size='icon'>
+                        Menú
+                      </Button>
+                      )
+                    : (
+                      <Button onClick={() => setIsOpen(false)} variant='link' size='icon'>
+                        Cerrar
+                      </Button>
+                      )}
+                </div>
+                <div className='relative'>
+                  <ModeToggle />
+                </div>
               </div>
             </div>
           </div>
