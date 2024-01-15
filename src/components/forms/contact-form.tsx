@@ -244,7 +244,7 @@ export default function ContactForm () {
                 <Textarea
                   className='resize-none border-none  ring-ring ring-1focus-visible:ring-ring rounded-none'
                   rows={4}
-                  placeholder='Cúentanos ¿Cómo podemos ayudarte?'
+                  placeholder='Cuéntanos ¿Cómo podemos ayudarte?'
                   {...field}
                 />
               </FormControl>
