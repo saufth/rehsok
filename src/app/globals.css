@@ -99,12 +99,12 @@
     --secondary: 0% 0 0; /* #000000 */
     --secondary-foreground: 100% 0 0; /* #FFFFFF */
     --muted: 47.49% 0.005 271.31; /* #5B5C5F */
-    --muted-foreground: 85% 0 0; /* #A8A8A8 */
+    --muted-foreground: 94% 0 0; /* #A8A8A8 */
     --accent: 52.43% 0.115 245.85; /* #246FA8 */
     --accent-foreground: 100% 0 0; /* #FFFFFF */
     --destructive: 94.79% 0.03 351.51; /* #FFE6F0 */
     --destructive-foreground: 52.22% 0.198 10; /* #BF174F */
-    --border: 85% 0 0; /* #A8A8A8 */
+    --border: 94% 0 0; /* #A8A8A8 */
     --input: 0% 0 0; /* #000000 */
     --ring: 100% 0 0; /* #FFFFFF */
   }
