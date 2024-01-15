@@ -23,7 +23,7 @@ export default function CulturaPage () {
               </div>
               <div className='w-6-cols md:w-4-cols lg:w-6-cols mt-4 md:mt-0'>
                 <p className='f-subhead-1'>
-                  El éxito a corto, mediano y largo plazo de cualquier empresa, no depende de un solo aspecto, sino de la sincronización de muchos.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea totam perspiciatis quis voluptates iste nemo, veritatis voluptatum numquam, quos voluptatem tenetur exercitationem illo. Accusamus harum architecto nihil perspiciatis reprehenderit quae.
                 </p>
               </div>
             </div>
