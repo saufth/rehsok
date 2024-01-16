@@ -26,7 +26,7 @@ export default function SiteHeader () {
     <>
       <header
         className={cn(
-          'w-full sticky top-0 left-0 z-30 bg-black transition-colors duration-300',
+          'w-full sticky top-0 left-0 z-40 bg-black transition-colors duration-300',
           isOnTop && 'bg-transparent',
           isOpen && 'bg-black'
         )}
@@ -99,12 +99,12 @@ export default function SiteHeader () {
       </header>
       <div
         className={cn(
-          'w-full h-0 bg-background fixed flex flex-col justify-between top-0 left-0 z-20 overflow-hidden transition-[height] duration-300',
+          'w-full h-0 bg-background fixed flex flex-col justify-between top-0 left-0 z-30 overflow-hidden transition-[height] duration-300',
           isOpen && 'h-[100dvh]'
         )}
       >
         <nav className='container mt-spacing-9'>
-          {siteConfig.mainNav.map((navItem, key) => (
+          {siteNav.map((navItem, key) => (
             <Button className='rounded-none w-full px-0 border-b first:border-t' variant='link' size='lg' asChild key={key}>
               <Link className='flex justify-between' href={navItem.href} onClick={() => setIsOpen(false)}>
                 {navItem.title}
