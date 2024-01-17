@@ -1,11 +1,12 @@
 import { type Metadata } from 'next'
 import Image from 'next/image'
 import ContactForm from '@/components/forms/contact-form'
+import { siteConfig } from '@/config/site'
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL!),
-  title: 'Contáctanos – Impacto positivo en cada interacción comercial.',
-  description: 'Somos una empresa con visión de futuro, trabajando para brindarle los mejores productos al mejor precio.'
+  title: `Contáctanos – ${siteConfig.slogan}.`,
+  description: siteConfig.description
 }
 
 export default function ContactPage () {

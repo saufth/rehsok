@@ -1,11 +1,12 @@
 import { type Metadata } from 'next'
 import Image from 'next/image'
 import { history } from '@/config/organization'
+import { siteConfig } from '@/config/site'
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL!),
-  title: 'Conócenos – Más que un proveedor, somos tu aliado estratégico.',
-  description: 'Nos dedicamos incansablemente a ofrecerte la agilidad y éxito que requieres para destacarte en un entorno empresarial cada vez más desafiante.'
+  title: `Razón de ser – ${siteConfig.slogan}.`,
+  description: siteConfig.description
 }
 
 export default function RazonDeSerPage () {
