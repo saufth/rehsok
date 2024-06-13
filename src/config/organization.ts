@@ -41,9 +41,8 @@ export const culture: Section = {
     {
       title: 'Planeamos y ejecutamos con estrategia y táctica',
       description: [
-        'Se debe analizar y elegir con mucho cuidado la mejor forma de llegar del punto A (en donde estamos) al punto B (a donde se quiere llegar).',
-        'Administramos con eficiencia los recursos disponibles.',
-        'Siempre hay una forma óptima o mejor de hacer las cosas.'
+        'En cada tarea u objetivo analizamos y elegimos la estrategia y táctica correcta que nos permita llegar del punto A (en donde estamos) al punto B (a donde se quiere llegar) de una forma eficiente y eficaz.',
+        'Siempre hay una forma óptima o mejor de lograr los objetivos.'
       ],
       image: {
         src: '/images/culture4.webp',

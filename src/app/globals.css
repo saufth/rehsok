@@ -171,6 +171,11 @@
     -webkit-font-feature-settings: "liga";
     font-feature-settings: "liga";
   }
+  .f-heading-2 {
+    @apply text-[1.5rem] sm:text-[2.25rem] xl:text-[3rem] font-serif leading-[110%] -tracking-[0.01em] xl:-tracking-[0.02] antialiased;
+    -webkit-font-feature-settings: "liga";
+    font-feature-settings: "liga";
+  }
 
   .f-heading-3 {
     @apply text-[1.3125rem] md:text-2xl xl:text-[1.75rem] leading-[130%] tracking-normal sm:-tracking-[0.01em] font-medium antialiased;

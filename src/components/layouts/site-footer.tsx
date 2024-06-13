@@ -3,8 +3,7 @@ import { Icons } from '@/components/icons'
 import { Link } from '@/components/ui/link'
 import {
   contactEmail,
-  siteConfig,
-  siteNav
+  siteConfig
 } from '@/config/site'
 
 export default function SiteFooter () {
@@ -22,7 +21,7 @@ export default function SiteFooter () {
             </span>
           </div>
           <ul className='space-y-0.5'>
-            {siteNav.map((navItem, key) => (
+            {siteConfig.mainNav.map((navItem, key) => (
               <li key={key}>
                 <Link size='xs' className='text-base xl:text-lg' href={navItem.href}>
                   {navItem.title}

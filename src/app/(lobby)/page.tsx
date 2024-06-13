@@ -41,7 +41,14 @@ export default function IndexPage () {
           <BackgroundVideo src='/video/home-hero.mp4' />
         </div>
         <div className='container f-subhead-1 pt-spacing-7'>
-          Generar e implementar soluciones fiscales efectivas y eficientes, que brinden tranquilidad y seguridad absoluta a nuestros clientes y asociados.
+          <h2 className='f-heading-1 font-serif'>
+            Nuestra razón de ser
+          </h2>
+          <p className='mt-spacing-4'>
+            Generar e implementar soluciones fiscales efectivas
+            y eficientes, que brinden tranquilidad y seguridad
+            absoluta a nuestros clientes y asociados.
+          </p>
         </div>
       </section>
       {/* <div>
@@ -197,9 +204,10 @@ export default function IndexPage () {
         <div className='container border-t'>
           <div className='cols-container mt-spacing-4'>
             <div className='w-6-cols sm:w-1/2-cols relative 2xl:pl-6 mt-10 sm:mt-0 order-2 sm:order-1'>
-              <blockquote className='f-heading-1 2xl:pr-11'>
+              <blockquote className='f-heading-2 2xl:pr-11'>
                 <p className='before:content-["“"] before:2xl:absolute before:2xl:left-0 after:content-["”"]'>
-                  Lo que no sabes no es lo que te mete en problemas. Es lo que sabes y das por hecho que resulta no ser.
+                  Lo que no sabes no es lo que te mete en problemas.
+                  Es lo que sabes y das por hecho que resulta no ser.
                 </p>
               </blockquote>
               <figcaption className='mt-spacing-4'>
