@@ -39,7 +39,7 @@ export const culture: Section = {
       }
     },
     {
-      title: 'Planeamos y ejecutamos con estrategia',
+      title: 'Planeamos y ejecutamos con estrategia y táctica',
       description: [
         'Se debe analizar y elegir con mucho cuidado la mejor forma de llegar del punto A (en donde estamos) al punto B (a donde se quiere llegar).',
         'Administramos con eficiencia los recursos disponibles.',
@@ -62,14 +62,14 @@ export const culture: Section = {
       }
     },
     {
-      title: 'Inovamos constantemente',
+      title: 'Innovamos constantemente',
       description: [
         'Lo importante es generar innovación alrededor de lo que el cliente considera valioso.',
         'Para lograr generar innovaciones de valor, es imperativo conocer al cliente, a la competencia, al mercado y a ti mismo como organización.'
       ],
       image: {
         src: '/images/culture6.webp',
-        alt: 'Inovamos constantemente'
+        alt: 'Innovamos constantemente'
       }
     },
     {
@@ -80,6 +80,18 @@ export const culture: Section = {
       image: {
         src: '/images/culture7.webp',
         alt: 'Buscamos progreso, no perfección'
+      }
+    },
+    {
+      title: 'Trabajamos de adentro hacia afuera',
+      description: [
+        'Bien por dentro = Bien por fuera.',
+        'La única forma de generar un verdadero desarrollo o crecimiento autosustentable a corto, mediano y largo plazo en cualquier empresa es trabajar desde adentro con cada uno de los integrantes de su equipo.',
+        'Buscamos constantemente generar mejoras en nosotros mismos que se vean reflejadas en nuestro corporativo empresarial y por ende en el bienestar y satisfacción de nuestros clientes.'
+      ],
+      image: {
+        src: '/images/culture8.webp',
+        alt: 'Trabajamos de adentro hacia afuera'
       }
     }
   ]
@@ -124,8 +136,8 @@ export const benefits: Benefists[] = [
   {
     title: 'Construccion de patrimonio empresarial estable y duradero',
     nav: {
-      title: 'Conoce razón de ser',
-      href: '/razon-de-ser'
+      title: 'Conoce nuestra historia',
+      href: '/nuestra-historia'
     }
   },
   {

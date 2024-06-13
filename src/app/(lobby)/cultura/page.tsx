@@ -4,7 +4,7 @@ import { culture } from '@/config/organization'
 import { siteConfig } from '@/config/site'
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL!),
+  metadataBase: new URL(String(process.env.NEXT_PUBLIC_APP_URL || 'https://localhost:3000/')),
   title: `Cultura – ${siteConfig.slogan}.`,
   description: siteConfig.description
 }
@@ -66,8 +66,8 @@ export default function CulturaPage () {
                     loading='lazy'
                   />
                 </div>
-                <div className='mt-2 lg:mt-0 h-fit space-y-1.5 w-8-cols md:w-4-cols lg:w-6-cols lg:px-12 2xl:px-0'>
-                  <h3 className='f-subhead-2'>
+                <div className='mt-2 lg:mt-0 h-fit space-y-4 w-8-cols md:w-4-cols lg:w-6-cols lg:px-12 2xl:px-0'>
+                  <h3 className='f-subhead-1 font-medium'>
                     {cultureItem.title}
                   </h3>
                   {typeof cultureItem.description === 'string'

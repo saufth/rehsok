@@ -104,7 +104,7 @@ export default function SiteHeader () {
         )}
       >
         <nav className='container mt-spacing-9'>
-          {siteNav.map((navItem, key) => (
+          {siteConfig.mainNav.map((navItem, key) => (
             <Button className='rounded-none w-full px-0 border-b first:border-t' variant='link' size='lg' asChild key={key}>
               <Link className='flex justify-between' href={navItem.href} onClick={() => setIsOpen(false)}>
                 {navItem.title}

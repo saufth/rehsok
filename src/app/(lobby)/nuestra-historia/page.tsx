@@ -5,11 +5,11 @@ import { siteConfig } from '@/config/site'
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL!),
-  title: `Razón de ser – ${siteConfig.slogan}.`,
+  title: `Nuestra Historia – ${siteConfig.slogan}.`,
   description: siteConfig.description
 }
 
-export default function RazonDeSerPage () {
+export default function NuestraHistoriaPage () {
   return (
     <>
       <div className='w-full h-[68px] lg:h-[84px] fixed top-0 left-0 bg-black z-20' />
@@ -18,7 +18,7 @@ export default function RazonDeSerPage () {
           <div className='cols-container pt-spacing-3'>
             <div className='w-6-cols md:w-4-cols lg:w-6-cols'>
               <h1 className='f-display-2 md:pr-9 lg:pr-11 font-serif'>
-                Razón de ser
+                Nuestra historia
               </h1>
             </div>
           </div>

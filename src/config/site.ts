@@ -21,8 +21,8 @@ export const siteNav = [
     href: '/cultura'
   },
   {
-    title: 'Razón de ser',
-    href: '/razon-de-ser'
+    title: 'Nuestra historia',
+    href: '/nuestra-historia'
   },
   {
     title: 'Contáctanos',
@@ -41,7 +41,7 @@ export const siteConfig: SiteConfig = {
   author,
   mainNav: [
     {
-      title: 'Inicio',
+      title: 'Página principal',
       href: '/'
     },
     ...siteNav
